@@ -97,24 +97,24 @@
   <meta name="description" content="因为感觉自己之前学的都很散，很多论文都只是读了个大概，仿佛理解了他的方法。后来发现自己对其中的理解太不细致。所以每周我都会挑两到三篇文章做翻译，同时写一些我读的时候的笔记。">
 <meta name="keywords" content="NLP,深度学习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="论文翻译和笔记——Attention">
-<meta property="og:url" content="http://yoursite.com/2019/01/18/论文翻译和笔记——Attention/index.html">
+<meta property="og:title" content="neural machine translation by jointly learning to align and translate">
+<meta property="og:url" content="http://yoursite.com/2019/01/17/论文翻译和笔记——Attention/index.html">
 <meta property="og:site_name" content="Horseee">
 <meta property="og:description" content="因为感觉自己之前学的都很散，很多论文都只是读了个大概，仿佛理解了他的方法。后来发现自己对其中的理解太不细致。所以每周我都会挑两到三篇文章做翻译，同时写一些我读的时候的笔记。">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/2019/01/18/论文翻译和笔记——Attention/43728D1ACE2E7CA557F066EA8570453B.jpg">
-<meta property="og:updated_time" content="2019-01-16T13:25:41.457Z">
+<meta property="og:image" content="http://yoursite.com/2019/01/17/论文翻译和笔记——Attention/43728D1ACE2E7CA557F066EA8570453B.jpg">
+<meta property="og:updated_time" content="2019-01-17T17:31:59.490Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="论文翻译和笔记——Attention">
+<meta name="twitter:title" content="neural machine translation by jointly learning to align and translate">
 <meta name="twitter:description" content="因为感觉自己之前学的都很散，很多论文都只是读了个大概，仿佛理解了他的方法。后来发现自己对其中的理解太不细致。所以每周我都会挑两到三篇文章做翻译，同时写一些我读的时候的笔记。">
-<meta name="twitter:image" content="http://yoursite.com/2019/01/18/论文翻译和笔记——Attention/43728D1ACE2E7CA557F066EA8570453B.jpg">
+<meta name="twitter:image" content="http://yoursite.com/2019/01/17/论文翻译和笔记——Attention/43728D1ACE2E7CA557F066EA8570453B.jpg">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/01/18/论文翻译和笔记——Attention/">
+  <link rel="canonical" href="http://yoursite.com/2019/01/17/论文翻译和笔记——Attention/">
 
 
 
@@ -124,7 +124,7 @@
   };
 </script>
 
-  <title>论文翻译和笔记——Attention | Horseee</title>
+  <title>neural machine translation by jointly learning to align and translate | Horseee</title>
   
 
 
@@ -340,7 +340,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/18/论文翻译和笔记——Attention/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/17/论文翻译和笔记——Attention/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ma Xinyin">
@@ -357,7 +357,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">论文翻译和笔记——Attention
+          <h1 class="post-title" itemprop="name headline">neural machine translation by jointly learning to align and translate
 
               
             
@@ -383,7 +383,7 @@
                 
               
 
-              <time title="Created: 2019-01-18 16:28:00" itemprop="dateCreated datePublished" datetime="2019-01-18T16:28:00+08:00">2019-01-18</time>
+              <time title="Created: 2019-01-17 16:28:00" itemprop="dateCreated datePublished" datetime="2019-01-17T16:28:00+08:00">2019-01-17</time>
             
 
             
@@ -400,7 +400,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-01-16 21:25:41" itemprop="dateModified" datetime="2019-01-16T21:25:41+08:00">2019-01-16</time>
+                <time title="Modified: 2019-01-18 01:31:59" itemprop="dateModified" datetime="2019-01-18T01:31:59+08:00">2019-01-18</time>
               
             
           </span>
@@ -475,7 +475,7 @@
 <blockquote>
 <p>对于该公式的理解：对于i时刻输出$y_i$，需要计算$c_i$。取其前一时刻的解码器隐藏层和编码器的每一个隐藏层做alignment，得到T个值，做softmax。$c_i$就等于这个权重值乘以隐藏层</p>
 </blockquote>
-<p><img src="/2019/01/18/论文翻译和笔记——Attention/43728D1ACE2E7CA557F066EA8570453B.jpg" width="300px" height="200px" style="margin: 0 auto"></p>
+<p><img src="/2019/01/17/论文翻译和笔记——Attention/43728D1ACE2E7CA557F066EA8570453B.jpg" width="300px" height="200px" style="margin: 0 auto"></p>
 <p>我们参数化了对齐模型$a$为一个前馈神经网络，它和其他所有的组建一起在系统中训练。需要注意的是，不同于传统的机器学习，这个对齐并不认为是一个潜在的变量。相反，这个对齐模型直接算出了一个软对齐（soft alignment）,同时允许损失函数的梯度反向传播。梯度可以同时用来训练对齐模型和整个翻译模型。<br>到现在位置，我们已经了解了加入一个加权和的方法来计算一个预期的表述（{h_i}），并且这个预期结果是在尽可能的对齐后的。让$a_{ij}$为目标词$y_i$与原词$x_j$被对齐的概率。然后，第i个context vector$c_i$就是加上了对齐概率的表述。<br>概率$ a_{ij}$或者说他对应的energy$e_{ij}$，反映了$h_j$相对于前一个隐藏层$s_{i-1}$的重要性，这被用来决定下一个状态$s_i$和生成$y_i$。直接上来说，它在解码器里面实现了一个注意力机制。解码器决定它应该注意输入序列的哪一部分。通过让解码器有这种注意力机制，编码器不再需要编码句子所有的信息到一个定长的向量中。通过这个方法，信息可以在整个序列表述中传播，使得解码器可以有选择的取回需要的信息。</p>
 <h4 id="Encoder"><a href="#Encoder" class="headerlink" title="Encoder"></a>Encoder</h4><p>一般的RNN，按顺序从第一个单词$x_1$到最后一个单词$x_{T)x}$读入输入序列x。但是，在我们提出的模型中，我们希望每个单词的表述不再仅仅包含了他的前一个单词，同时还能含括他的下一个单词。因此我们使用了一种双向的RNN（BiRNN）。这种双向RNN在之前已经被成功的运用在语音识别。<br>一个BiRNN由一个前向RNN和一个反向RNN组成。前向RNN $\overrightarrow f$ 按顺序读入输入序列同时计算出他的前向隐藏状态$(\overrightarrow h_1, …, \overrightarrow h_{T_x})$。反向RNN $\overleftarrow{f}$逆序读入输入序列（从$x_{T_x}$到$x_1$），得到一个反向的隐藏状态序列$(\overleftarrow h_1, …, \overleftarrow h_{T_x})$。<br>对于每一个单词$x_j$，我们拼接他的前向隐藏层$\overrightarrow h_j$和反向隐藏层$\overleftarrow h_j$，得到$j_i = [{\overrightarrow h}_j^\top;{\overleftarrow h}_j^\top]$。通过这种方法，$h_j$同时包含前面的单词和后面的单词的信息。由于RNN更倾向更好的表达更近的inputs，{h_j}会更多的注意在单词$x_j$附近。这将被用在之后的解码器和对齐模型中去计算context vector。</p>
 
@@ -512,6 +512,22 @@
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/18/Multi-Granularity-Hierarchical-Attention-Fusion-Networks/" rel="prev" title="Multi-Granularity Hierarchical Attention Fusion Networks">
+                Multi-Granularity Hierarchical Attention Fusion Networks <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -580,7 +596,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
