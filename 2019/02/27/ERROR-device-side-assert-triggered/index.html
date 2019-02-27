@@ -94,30 +94,25 @@
 
 
 
-  <meta name="description" content="新的一年开工啦～～～～论文题目：Attention Is All You Need论文地址：https://arxiv.org/abs/1706.03762">
-<meta name="keywords" content="NLP,深度学习">
+  <meta name="description" content="记录一下碰到的两个RuntimeError：device-side assert triggered和backward a second time">
+<meta name="keywords" content="NLP,ERROR">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Attention Is All You Need -- Transformer">
-<meta property="og:url" content="http://yoursite.com/2019/02/11/Attention-Is-All-You-Need/index.html">
+<meta property="og:title" content="ERROR-device-side-assert-triggered">
+<meta property="og:url" content="http://yoursite.com/2019/02/27/ERROR-device-side-assert-triggered/index.html">
 <meta property="og:site_name" content="Horseee">
-<meta property="og:description" content="新的一年开工啦～～～～论文题目：Attention Is All You Need论文地址：https://arxiv.org/abs/1706.03762">
+<meta property="og:description" content="记录一下碰到的两个RuntimeError：device-side assert triggered和backward a second time">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/2019/02/11/Attention-Is-All-You-Need/D3187F93758FF7AE79B938D51144F9AF.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/02/11/Attention-Is-All-You-Need/1897AE78A230FD988C6A8CEFEB06BEE4.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/02/11/Attention-Is-All-You-Need/47FD7E815D57C00F73B1506ECC9E2964.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/02/11/Attention-Is-All-You-Need/B7ECDB012CDCDA728D1C38A136F2764D.jpg">
-<meta property="og:updated_time" content="2019-02-14T06:44:02.183Z">
+<meta property="og:updated_time" content="2019-02-27T15:53:23.468Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Attention Is All You Need -- Transformer">
-<meta name="twitter:description" content="新的一年开工啦～～～～论文题目：Attention Is All You Need论文地址：https://arxiv.org/abs/1706.03762">
-<meta name="twitter:image" content="http://yoursite.com/2019/02/11/Attention-Is-All-You-Need/D3187F93758FF7AE79B938D51144F9AF.jpg">
+<meta name="twitter:title" content="ERROR-device-side-assert-triggered">
+<meta name="twitter:description" content="记录一下碰到的两个RuntimeError：device-side assert triggered和backward a second time">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/02/11/Attention-Is-All-You-Need/">
+  <link rel="canonical" href="http://yoursite.com/2019/02/27/ERROR-device-side-assert-triggered/">
 
 
 
@@ -127,7 +122,7 @@
   };
 </script>
 
-  <title>Attention Is All You Need -- Transformer | Horseee</title>
+  <title>ERROR-device-side-assert-triggered | Horseee</title>
   
 
 
@@ -343,7 +338,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/11/Attention-Is-All-You-Need/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/27/ERROR-device-side-assert-triggered/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ma Xinyin">
@@ -360,7 +355,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Attention Is All You Need -- Transformer
+          <h1 class="post-title" itemprop="name headline">ERROR-device-side-assert-triggered
 
               
             
@@ -386,24 +381,12 @@
                 
               
 
-              <time title="Created: 2019-02-11 23:34:10" itemprop="dateCreated datePublished" datetime="2019-02-11T23:34:10+08:00">2019-02-11</time>
+              <time title="Created: 2019-02-27 23:50:47 / Modified: 23:53:23" itemprop="dateCreated datePublished" datetime="2019-02-27T23:50:47+08:00">2019-02-27</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-02-14 14:44:02" itemprop="dateModified" datetime="2019-02-14T14:44:02+08:00">2019-02-14</time>
               
             
           </span>
@@ -427,7 +410,7 @@
                   , 
                 
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/NLP/论文翻译和笔记/" itemprop="url" rel="index"><span itemprop="name">论文翻译和笔记</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/NLP/PyTorch/" itemprop="url" rel="index"><span itemprop="name">PyTorch</span></a></span>
 
                 
                 
@@ -469,20 +452,14 @@
       
 
       
-        <p>新的一年开工啦～～～～<br>论文题目：Attention Is All You Need<br>论文地址：<a href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noopener">https://arxiv.org/abs/1706.03762</a><br><a id="more"></a></p>
-<h3 id="Architecture"><a href="#Architecture" class="headerlink" title="Architecture"></a>Architecture</h3><p><img src="/2019/02/11/Attention-Is-All-You-Need/D3187F93758FF7AE79B938D51144F9AF.jpg" width="300px" height="600px" style="margin: 0 auto"><br>transformer的基础仍是一个encoder-decoder模型，但是里面没有用到任何RNN的结构，取而代之的是self-attention和co-attention。</p>
-<h4 id="Encoder-和-Decoder"><a href="#Encoder-和-Decoder" class="headerlink" title="Encoder 和 Decoder"></a>Encoder 和 Decoder</h4><p>encoder里面分成两个sublayer，第一层是一个multi-head attention，第二层是一个前馈网络<br>decoder里面分成三个sublayer，第一层是一个自相关的multi-head attention，第二层是一个encode的output和decode之间的multi-head attention，最后是一个前馈网络</p>
-<h3 id="基本的几个组建"><a href="#基本的几个组建" class="headerlink" title="基本的几个组建"></a>基本的几个组建</h3><h4 id="Scaled-Dot-Product-Attention"><a href="#Scaled-Dot-Product-Attention" class="headerlink" title="Scaled Dot-Product Attention"></a>Scaled Dot-Product Attention</h4><p>Scaled Dot-Product Attention部分的计算图如下<br><img src="/2019/02/11/Attention-Is-All-You-Need/1897AE78A230FD988C6A8CEFEB06BEE4.jpg" width="150px" height="200px" style="margin: 0 auto"><br>对于输入Q,K和V，这一部分可以看作如下的公式<br>$$<br>\begin{align}<br>Attention(Q, K, V) = softmax(\frac{QK^T}{\sqrt{d_k}})V \newline<br>\end{align}<br>$$<br>如果有mask，需要在此之上，做一个masked_fill的操作。在此的基础上，继续往上搭multi-head attention。</p>
-<h4 id="Multi-Head-Attention"><a href="#Multi-Head-Attention" class="headerlink" title="Multi-Head Attention"></a>Multi-Head Attention</h4><p><img src="/2019/02/11/Attention-Is-All-You-Need/47FD7E815D57C00F73B1506ECC9E2964.jpg" width="200px" height="230px" style="margin: 0 auto"><br>$$<br>\begin{align}<br>&amp;MultiHead(Q, K, V) = Concat(head_1, …, head_h)W^o  \newline<br>&amp;head_i =  Attention(QW^Q_i, KW^K_i, VW^V_i)    \newline<br>\end{align}<br>$$<br>其中，映射的参数矩阵的维度为<br>$W^Q_i \in \mathbb{R}^{d_model \times d_k}，W^K_i \in \mathbb{R}^{d_model \times d_k}，W^V_i \in \mathbb{R}^{d_model \times d_v}，W^Q_i \in \mathbb{R}^{hd_v \times d_model} $<br>对于V，K，Q做一个映射（实际上可以理解成一个$d_model$到$d_model$维的映射，然后再去做切分）。将映射得到的矩阵做切分，得到一个batch <em> length </em> h <em> (d_model/h)的矩阵。因为这里的head是指里面的h，为方便后续做乘法，需要将矩阵的第二和第三维做一个转置，得到一个batch </em> h <em> length </em> (d_model/h)的矩阵。</p>
-<h4 id="Feed-Forward"><a href="#Feed-Forward" class="headerlink" title="Feed Forward"></a>Feed Forward</h4><p>前馈层很简单，就是一个再正常不过的全连接。<br>$$<br>\begin{align}<br>FFN(x) = max(0, xW_1 + b_1)W_2 + b_2 \newline<br>\end{align}<br>$$</p>
-<h4 id="Masked"><a href="#Masked" class="headerlink" title="Masked"></a>Masked</h4><p>mask的作用是，避免target里面的单词注意到未来位置上一些单词（在真正的预测过程中是看不到的），所以mask是一个下三角矩阵，且矩阵里面所有的数值均为1。<br>也因此，target只在decoder中用到。在encoder中不需要考虑这个问题。</p>
-<h4 id="Add-amp-Norm"><a href="#Add-amp-Norm" class="headerlink" title="Add &amp; Norm"></a>Add &amp; Norm</h4><p>不管是encoder还是decoder的每一个sub-layer中，最后都会有一个残差的步骤。在这里，标准化使用的是layer normalization，也就是下面这一个公式。<br>$$<br>\begin{align}<br>&amp;h^t = f[\frac{g}{\sigma^t}\odot(a^t - \mu^t) + b] \newline<br>&amp;\mu^t = \frac{1}{H}\sum^H_{i=1}a^t_i \newline<br>&amp;\sigma^t = \sqrt{\frac{1}{H}\sum^H_{i=1}(a^t_i - \mu^t)^2} \newline<br>\end{align}<br>$$<br>在这里，直接简化为一个<code>(x - mean) / (std + eps)</code>。这一部分可以看成以下一段伪代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">norm(x + dropout(sublayer_function(x)))</span><br></pre></td></tr></table></figure></p>
-<h4 id="Positional-Encoding"><a href="#Positional-Encoding" class="headerlink" title="Positional Encoding"></a>Positional Encoding</h4><p>positional encoding是一种根据单词所在位置和其中每一维来确定的一个编码方式，其中的变量有两个：该单词所有的位置position，该单词的向量表示的第i个维度。<br>$$<br>\begin{align}<br>$PE(pos, 2i) = sin(pos/10000^{2i / d_{model}}) \newline<br>$PE(pos, 2i+1) = cos(pos/10000^{2i / d_{model}})  \newline<br>\end{align}<br>$$<br><img src="/2019/02/11/Attention-Is-All-You-Need/B7ECDB012CDCDA728D1C38A136F2764D.jpg" width="800px" height="250px" style="margin: 0 auto"><br>这张图可以很清楚的看出，对于不同维度上的单词，根据其位置变化而产生的值的变化</p>
-<h4 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h4><p>Harvard NLP有一版pytorch的实现我觉得比我自己写的好多了，在此就直接丢上他们的链接<a href="http://nlp.seas.harvard.edu/2018/04/03/attention.html" target="_blank" rel="noopener">harvard nlp</a>。</p>
-<h3 id="pytorch中的一个函数"><a href="#pytorch中的一个函数" class="headerlink" title="pytorch中的一个函数"></a>pytorch中的一个函数</h3><ul>
-<li>torch.nn.ModuleList(modules=None)<br>Holds submodules in a list.<br>ModuleList can be indexed like a regular Python list, but modules it contains are properly registered, and will be visible by all Module methods.</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nn.ModuleList([copy.deepcopy(module) for _ in range(N)])</span><br></pre></td></tr></table></figure>
+        <p>记录一下碰到的两个RuntimeError：device-side assert triggered和backward a second time<br><a id="more"></a></p>
+<h3 id="device-side-assert-triggered"><a href="#device-side-assert-triggered" class="headerlink" title="device-side assert triggered"></a>device-side assert triggered</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;gmatch.py&quot;, line 93, in &lt;module&gt;</span><br><span class="line">    output = model(pre, hyp)</span><br><span class="line">  File &quot;/home/maxinyin/miniconda2/envs/menvs/lib/python3.6/site-packages/torch/nn/modules/module.py&quot;, line 489, in __call__</span><br><span class="line">    result = self.forward(*input, **kwargs)</span><br><span class="line">  File &quot;/home/maxinyin/document/snli/modules.py&quot;, line 161, in forward</span><br><span class="line">    pre_encode = self.encoder(pre_embed, pre_mask)</span><br><span class="line">  File &quot;/home/maxinyin/miniconda2/envs/menvs/lib/python3.6/site-packages/torch/nn/modules/module.py&quot;, line 489, in __call__</span><br><span class="line">    result = self.forward(*input, **kwargs)</span><br><span class="line">  File &quot;/home/maxinyin/document/snli/modules.py&quot;, line 65, in forward</span><br><span class="line">    inputs_packed = nn.utils.rnn.pack_padded_sequence(inputs, inputs_mask, batch_first = True)</span><br><span class="line">  File &quot;/home/maxinyin/miniconda2/envs/menvs/lib/python3.6/site-packages/torch/nn/utils/rnn.py&quot;, line 147, in pack_padded_sequence</span><br><span class="line">    lengths = torch.as_tensor(lengths, dtype=torch.int64)</span><br><span class="line">RuntimeError: CUDA error: device-side assert triggered</span><br></pre></td></tr></table></figure>
+<p>在命令前加上<code>CUDA_LAUNCH_BLOCKING=1</code>后，出来了一段新的报错信息。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/opt/conda/conda-bld/pytorch_1544174967633/work/aten/src/THC/THCTensorIndex.cu:362: void indexSelectLargeIndex(TensorInfo&lt;T, IndexType&gt;, TensorInfo&lt;T, IndexType&gt;, TensorInfo&lt;long, IndexType&gt;, int, int, IndexType, IndexType, long) [with T = float, IndexType = unsigned int, DstDim = 2, SrcDim = 2, IdxDim = -2, IndexIsMajor = true]: block: [8,0,0], thread: [22,0,0] Assertion `srcIndex &lt; srcSelectDimSize` failed.</span><br></pre></td></tr></table></figure></p>
+<p>可以看到，这是一个数组越界的问题。这里要注意的一点是，这里不一定是越了上界，也有可能是出现了<strong>负值</strong>。基本上来说，<code>device-side assert triggered</code>意味着有数组的越界问题了。<br>如果是使用jupyter notebook的话，之后所有的在cuda上的操作，无论是多么简单的操作，都会报这个错误（除非shutdown或者换一块卡）。在尝试的过程中，在jupyter notebook中加入os.environ[‘CUDA_LAUNCH_BLOCKING’]=‘1’这一条指令，可能会出不来更具体的报错信息。建议还是使用命令行。</p>
+<h3 id="backward-througn-the-graph-a-second-time"><a href="#backward-througn-the-graph-a-second-time" class="headerlink" title="backward througn the graph a second time"></a>backward througn the graph a second time</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RuntimeError: Trying to backward through the graph a second time, but the buffers have already been freed. Specify retain_graph=True when calling backward the first time.</span><br></pre></td></tr></table></figure>
+<p>这个的错误原因是，因为在backward之后，缓存中存储的数据将被释放。但是有一部分的图被反向传播了两次，导致他需要的数据已经被free掉了。如果按照错误的提示，在backward里面加一个retain_graph = True的话，这样这一部分的内存就不会被释放掉，但是一般我们在实现的时候（除了GAN），都不太会用到这种情况，直接加上这句是错误的。<br>这个问题比较常出现在RNN中，有一部分的RNN会拿隐藏层去做下一步的输入，也就是${hidden_state}_t = model({hidden_state}_{t-1}, …)$，另外一种情况就是拿最后一个隐藏层作为了下面另外一层的输入，可以看如下代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">class mLstm(torch.nn.Module):</span><br><span class="line">    def __init__(self, input_dim, hidden_dim, batch_size):</span><br><span class="line">        super(mLstm, self).__init__()</span><br><span class="line">        self.input_dim = input_dim</span><br><span class="line">        self.hidden_dim = hidden_dim</span><br><span class="line">        </span><br><span class="line">        self.m_lstm_encoder = nn.LSTMCell(self.input_dim + self.hidden_dim, self.hidden_dim)</span><br><span class="line">        self.h = torch.zeros(batch_size, hidden_dim).cuda()</span><br><span class="line">        self.c = torch.zeros(batch_size, hidden_dim).cuda()</span><br><span class="line">        </span><br><span class="line">        self.match_attention = MatchAttention(input_dim, hidden_dim)</span><br><span class="line">        </span><br><span class="line">    def forward(self, p, q, p_mask, q_mask):</span><br><span class="line">        # p, q: batch * seq_len * input_dim</span><br><span class="line">        # p_mask, q_mask: batch * seq_len</span><br><span class="line">        q_len = q.shape[1]</span><br><span class="line">        for pos in range(q_len):</span><br><span class="line">            alpha = self.match_attention(p, q.index_select(1, torch.tensor([pos]).cuda()), self.h, p_mask) # batch * seq_len * input_dim</span><br><span class="line">            concat_alpha_htk = torch.cat((alpha, self.h), 1).detach_() # batch * (input_dim + hidden_dim)</span><br><span class="line">            self.h, self.c = self.m_lstm_encoder(concat_alpha_htk, (self.h, self.c))</span><br><span class="line">        </span><br><span class="line">        return self.h</span><br></pre></td></tr></table></figure></p>
+<p>这里alpha算出来了一个与hidden同样维度的tensor，再与hidden拼接上去。这时需要对拼接完的做一个detach操作，也就是指明这时一个叶子节点，可以被看成一个常量，不参与backpropogation。如果不加这个detach_()的话就会出现上述bug</p>
+
       
     </div>
 
@@ -507,7 +484,7 @@
           
             <a href="/tags/NLP/" rel="tag"># NLP</a>
           
-            <a href="/tags/深度学习/" rel="tag"># 深度学习</a>
+            <a href="/tags/ERROR/" rel="tag"># ERROR</a>
           
         </div>
       
@@ -520,8 +497,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/18/Multi-Granularity-Hierarchical-Attention-Fusion-Networks/" rel="next" title="Multi-Granularity Hierarchical Attention Fusion Networks">
-                <i class="fa fa-chevron-left"></i> Multi-Granularity Hierarchical Attention Fusion Networks
+              <a href="/2019/02/11/Attention-Is-All-You-Need/" rel="next" title="Attention Is All You Need -- Transformer">
+                <i class="fa fa-chevron-left"></i> Attention Is All You Need -- Transformer
               </a>
             
           </div>
@@ -529,10 +506,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/02/27/ERROR-device-side-assert-triggered/" rel="prev" title="ERROR-device-side-assert-triggered">
-                ERROR-device-side-assert-triggered <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -718,7 +691,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Architecture"><span class="nav-number">1.</span> <span class="nav-text">Architecture</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Encoder-和-Decoder"><span class="nav-number">1.1.</span> <span class="nav-text">Encoder 和 Decoder</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本的几个组建"><span class="nav-number">2.</span> <span class="nav-text">基本的几个组建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Scaled-Dot-Product-Attention"><span class="nav-number">2.1.</span> <span class="nav-text">Scaled Dot-Product Attention</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Multi-Head-Attention"><span class="nav-number">2.2.</span> <span class="nav-text">Multi-Head Attention</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Feed-Forward"><span class="nav-number">2.3.</span> <span class="nav-text">Feed Forward</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Masked"><span class="nav-number">2.4.</span> <span class="nav-text">Masked</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Add-amp-Norm"><span class="nav-number">2.5.</span> <span class="nav-text">Add &amp; Norm</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Positional-Encoding"><span class="nav-number">2.6.</span> <span class="nav-text">Positional Encoding</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码实现"><span class="nav-number">2.7.</span> <span class="nav-text">代码实现</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pytorch中的一个函数"><span class="nav-number">3.</span> <span class="nav-text">pytorch中的一个函数</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#device-side-assert-triggered"><span class="nav-number">1.</span> <span class="nav-text">device-side assert triggered</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#backward-througn-the-graph-a-second-time"><span class="nav-number">2.</span> <span class="nav-text">backward througn the graph a second time</span></a></li></ol></div>
             
 
           </div>
