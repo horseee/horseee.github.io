@@ -94,25 +94,28 @@
 
 
 
-  <meta name="description" content="记录一下碰到的两个RuntimeError：device-side assert triggered和backward a second time">
-<meta name="keywords" content="NLP,ERROR">
+  <meta name="description" content="该论文为陈丹琦博士的毕业论文。对于我等小白可以算是一篇MRC领域不错的综述了，拿来膜拜和学习一下。">
+<meta name="keywords" content="NLP,深度学习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ERROR-device-side-assert-triggered">
-<meta property="og:url" content="http://yoursite.com/2019/02/27/ERROR-device-side-assert-triggered/index.html">
+<meta property="og:title" content="Neural RC and Beyond阅读笔记（更新至3.2.2）">
+<meta property="og:url" content="http://yoursite.com/2019/03/03/NEURAL-READING-COMPREHENSION-AND-BEYOND/index.html">
 <meta property="og:site_name" content="Horseee">
-<meta property="og:description" content="记录一下碰到的两个RuntimeError：device-side assert triggered和backward a second time">
+<meta property="og:description" content="该论文为陈丹琦博士的毕业论文。对于我等小白可以算是一篇MRC领域不错的综述了，拿来膜拜和学习一下。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-27T15:53:23.468Z">
+<meta property="og:image" content="http://yoursite.com/2019/03/03/NEURAL-READING-COMPREHENSION-AND-BEYOND/46A3346B206E6BCC0C8A8FF0CCB5EFDF.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/03/03/NEURAL-READING-COMPREHENSION-AND-BEYOND/96E06C167D5A70694C9D4AB5B959392C.jpg">
+<meta property="og:updated_time" content="2019-03-03T15:46:17.691Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ERROR-device-side-assert-triggered">
-<meta name="twitter:description" content="记录一下碰到的两个RuntimeError：device-side assert triggered和backward a second time">
+<meta name="twitter:title" content="Neural RC and Beyond阅读笔记（更新至3.2.2）">
+<meta name="twitter:description" content="该论文为陈丹琦博士的毕业论文。对于我等小白可以算是一篇MRC领域不错的综述了，拿来膜拜和学习一下。">
+<meta name="twitter:image" content="http://yoursite.com/2019/03/03/NEURAL-READING-COMPREHENSION-AND-BEYOND/46A3346B206E6BCC0C8A8FF0CCB5EFDF.jpg">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/02/27/ERROR-device-side-assert-triggered/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/03/NEURAL-READING-COMPREHENSION-AND-BEYOND/">
 
 
 
@@ -122,7 +125,7 @@
   };
 </script>
 
-  <title>ERROR-device-side-assert-triggered | Horseee</title>
+  <title>Neural RC and Beyond阅读笔记（更新至3.2.2） | Horseee</title>
   
 
 
@@ -338,7 +341,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/27/ERROR-device-side-assert-triggered/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/03/NEURAL-READING-COMPREHENSION-AND-BEYOND/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ma Xinyin">
@@ -355,7 +358,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">ERROR-device-side-assert-triggered
+          <h1 class="post-title" itemprop="name headline">Neural RC and Beyond阅读笔记（更新至3.2.2）
 
               
             
@@ -381,7 +384,7 @@
                 
               
 
-              <time title="Created: 2019-02-27 23:50:47 / Modified: 23:53:23" itemprop="dateCreated datePublished" datetime="2019-02-27T23:50:47+08:00">2019-02-27</time>
+              <time title="Created: 2019-03-03 23:36:56 / Modified: 23:46:17" itemprop="dateCreated datePublished" datetime="2019-03-03T23:36:56+08:00">2019-03-03</time>
             
 
             
@@ -410,7 +413,7 @@
                   , 
                 
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/NLP/PyTorch/" itemprop="url" rel="index"><span itemprop="name">PyTorch</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/NLP/论文翻译和笔记/" itemprop="url" rel="index"><span itemprop="name">论文翻译和笔记</span></a></span>
 
                 
                 
@@ -452,14 +455,31 @@
       
 
       
-        <p>记录一下碰到的两个RuntimeError：device-side assert triggered和backward a second time<br><a id="more"></a></p>
-<h3 id="device-side-assert-triggered"><a href="#device-side-assert-triggered" class="headerlink" title="device-side assert triggered"></a>device-side assert triggered</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;gmatch.py&quot;, line 93, in &lt;module&gt;</span><br><span class="line">    output = model(pre, hyp)</span><br><span class="line">  File &quot;/home/maxinyin/miniconda2/envs/menvs/lib/python3.6/site-packages/torch/nn/modules/module.py&quot;, line 489, in __call__</span><br><span class="line">    result = self.forward(*input, **kwargs)</span><br><span class="line">  File &quot;/home/maxinyin/document/snli/modules.py&quot;, line 161, in forward</span><br><span class="line">    pre_encode = self.encoder(pre_embed, pre_mask)</span><br><span class="line">  File &quot;/home/maxinyin/miniconda2/envs/menvs/lib/python3.6/site-packages/torch/nn/modules/module.py&quot;, line 489, in __call__</span><br><span class="line">    result = self.forward(*input, **kwargs)</span><br><span class="line">  File &quot;/home/maxinyin/document/snli/modules.py&quot;, line 65, in forward</span><br><span class="line">    inputs_packed = nn.utils.rnn.pack_padded_sequence(inputs, inputs_mask, batch_first = True)</span><br><span class="line">  File &quot;/home/maxinyin/miniconda2/envs/menvs/lib/python3.6/site-packages/torch/nn/utils/rnn.py&quot;, line 147, in pack_padded_sequence</span><br><span class="line">    lengths = torch.as_tensor(lengths, dtype=torch.int64)</span><br><span class="line">RuntimeError: CUDA error: device-side assert triggered</span><br></pre></td></tr></table></figure>
-<p>在命令前加上<code>CUDA_LAUNCH_BLOCKING=1</code>后，出来了一段新的报错信息。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/opt/conda/conda-bld/pytorch_1544174967633/work/aten/src/THC/THCTensorIndex.cu:362: void indexSelectLargeIndex(TensorInfo&lt;T, IndexType&gt;, TensorInfo&lt;T, IndexType&gt;, TensorInfo&lt;long, IndexType&gt;, int, int, IndexType, IndexType, long) [with T = float, IndexType = unsigned int, DstDim = 2, SrcDim = 2, IdxDim = -2, IndexIsMajor = true]: block: [8,0,0], thread: [22,0,0] Assertion `srcIndex &lt; srcSelectDimSize` failed.</span><br></pre></td></tr></table></figure></p>
-<p>可以看到，这是一个数组越界的问题。这里要注意的一点是，这里不一定是越了上界，也有可能是出现了<strong>负值</strong>。基本上来说，<code>device-side assert triggered</code>意味着有数组的越界问题了。<br>如果是使用jupyter notebook的话，之后所有的在cuda上的操作，无论是多么简单的操作，都会报这个错误（除非shutdown或者换一块卡）。在尝试的过程中，在jupyter notebook中加入os.environ[‘CUDA_LAUNCH_BLOCKING’]=‘1’这一条指令，可能会出不来更具体的报错信息。建议还是使用命令行。</p>
-<h3 id="backward-througn-the-graph-a-second-time"><a href="#backward-througn-the-graph-a-second-time" class="headerlink" title="backward througn the graph a second time"></a>backward througn the graph a second time</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RuntimeError: Trying to backward through the graph a second time, but the buffers have already been freed. Specify retain_graph=True when calling backward the first time.</span><br></pre></td></tr></table></figure>
-<p>这个的错误原因是，因为在backward之后，缓存中存储的数据将被释放。但是有一部分的图被反向传播了两次，导致他需要的数据已经被free掉了。如果按照错误的提示，在backward里面加一个retain_graph = True的话，这样这一部分的内存就不会被释放掉，但是一般我们在实现的时候（除了GAN），都不太会用到这种情况，直接加上这句是错误的。<br>这个问题比较常出现在RNN中，有一部分的RNN会拿隐藏层去做下一步的输入，也就是${hidden_state}_t = model({hidden_state}_{t-1}, …)$，另外一种情况就是拿最后一个隐藏层作为了下面另外一层的输入，可以看如下代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">class mLstm(torch.nn.Module):</span><br><span class="line">    def __init__(self, input_dim, hidden_dim, batch_size):</span><br><span class="line">        super(mLstm, self).__init__()</span><br><span class="line">        self.input_dim = input_dim</span><br><span class="line">        self.hidden_dim = hidden_dim</span><br><span class="line">        </span><br><span class="line">        self.m_lstm_encoder = nn.LSTMCell(self.input_dim + self.hidden_dim, self.hidden_dim)</span><br><span class="line">        self.h = torch.zeros(batch_size, hidden_dim).cuda()</span><br><span class="line">        self.c = torch.zeros(batch_size, hidden_dim).cuda()</span><br><span class="line">        </span><br><span class="line">        self.match_attention = MatchAttention(input_dim, hidden_dim)</span><br><span class="line">        </span><br><span class="line">    def forward(self, p, q, p_mask, q_mask):</span><br><span class="line">        # p, q: batch * seq_len * input_dim</span><br><span class="line">        # p_mask, q_mask: batch * seq_len</span><br><span class="line">        q_len = q.shape[1]</span><br><span class="line">        for pos in range(q_len):</span><br><span class="line">            alpha = self.match_attention(p, q.index_select(1, torch.tensor([pos]).cuda()), self.h, p_mask) # batch * seq_len * input_dim</span><br><span class="line">            concat_alpha_htk = torch.cat((alpha, self.h), 1).detach_() # batch * (input_dim + hidden_dim)</span><br><span class="line">            self.h, self.c = self.m_lstm_encoder(concat_alpha_htk, (self.h, self.c))</span><br><span class="line">        </span><br><span class="line">        return self.h</span><br></pre></td></tr></table></figure></p>
-<p>这里alpha算出来了一个与hidden同样维度的tensor，再与hidden拼接上去。这时需要对拼接完的做一个detach操作，也就是指明这时一个叶子节点，可以被看成一个常量，不参与backpropogation。如果不加这个detach_()的话就会出现上述bug</p>
-
+        <p>该论文为<a href="https://stacks.stanford.edu/file/druid:gd576xb1833/thesis-augmented.pdf" target="_blank" rel="noopener">陈丹琦博士</a>的毕业论文。对于我等小白可以算是一篇MRC领域不错的综述了，拿来膜拜和学习一下。</p>
+<a id="more"></a>
+<h2 id="Chapter-2-阅读理解概述"><a href="#Chapter-2-阅读理解概述" class="headerlink" title="Chapter 2 阅读理解概述"></a>Chapter 2 阅读理解概述</h2><h3 id="2-1-阅读理解的历史"><a href="#2-1-阅读理解的历史" class="headerlink" title="2.1 阅读理解的历史"></a>2.1 阅读理解的历史</h3><p> 1977：QUALM system<br> 20世纪末：基于规则的词袋模型。Deep Read(Hirschman et al.,1999) 和QUARC system (Riloff and Thelen, 2000)<br> 2013 - 2015：监督学习，意在训练一个统计模型能够找到映射$f:(passage, question) \to answer$</p>
+<ul>
+<li><p>rule-based heuristic methods：<br>方法一：问题和答案之间的单词重叠和距离加权信息<br>方法二：将问题和答案对通过一个文本蕴含系统转化成一个表述形式。</p>
+</li>
+<li><p>machine learning methods：<br>利用手工处理的语言特征（句法以来，语义框架，共指解析，语篇关系和词向量），max-margin learning framework(svm，<a href="https://people.eecs.berkeley.edu/~klein/papers/max-margin-tutorial.pdf" target="_blank" rel="noopener">课件</a>）  </p>
+</li>
+</ul>
+<p>2015年：大规模数据集的提出（CNN/Daily Mail）和attention based LSTM model – Attentive Reader。现在在SQuAD上top的方法基本采用的都是端到端神经网络或者深度学习模型。一般都会把每一个单词转换成词向量，传递给交互的模型层，最后做一个预测。神经网络的优点在于，他不需要依赖于人工建立的大量的语言的特征（同时减少人力成本），并且一般来说语言的特征十分稀疏👎难以概括，传统方法难以解决这个问题。</p>
+<h3 id="2-2-问题定义"><a href="#2-2-问题定义" class="headerlink" title="2.2 问题定义"></a>2.2 问题定义</h3><h4 id="公式表达"><a href="#公式表达" class="headerlink" title="公式表达"></a>公式表达</h4><p>对于一个训练集合${(p_i, q_i, a_i)}^n_{i=1}$，文章p和其对应的问题q作为输入，需要学习一个函数映射f满足：<br>$$<br>\begin{align}<br>f:(p, q) \rightarrow a<br>\end{align}<br>$$<br>其中，$p = (p_1, p_2, …, p_{l_p})$, $q = (q_1, q_2, …, q_{l_q})$,其中${l_p}$和${l_q}$是文章和问题的长度。根据回答的不同种类，我们可以将其分成四大类：Cloze style（CNN/Daily Mail）, multiple choice（MCTEST）, span prediction（SQuAD）, free_form answer（NarrativeQA）<br><img src="/2019/03/03/NEURAL-READING-COMPREHENSION-AND-BEYOND/46A3346B206E6BCC0C8A8FF0CCB5EFDF.jpg" width="300px" height="700px" style="margin: 0 auto"><br>上图为近几年NLP中重要的模型和数据集的时间线，蓝色为模型，黑色为数据集。</p>
+<h4 id="评价体系"><a href="#评价体系" class="headerlink" title="评价体系"></a>评价体系</h4><p>对于多选和完形填空，评价方法即为其准确率。<br>对于范围预测，我们需要将预测的答案和目标答案进行比较。一般采用两个评价体系：</p>
+<ul>
+<li>Exact Match</li>
+<li>F1 score（precision and recall）<br>自由回答：最常见的是采用自然语言生成中的BLEU，Meteor和Rouge</li>
+</ul>
+<h3 id="2-3-阅读理解-vs-QA"><a href="#2-3-阅读理解-vs-QA" class="headerlink" title="2.3 阅读理解 vs QA"></a>2.3 阅读理解 vs QA</h3><p>一般来说认为阅读理解是QA中的一种特殊的示例。他们的区别点在于：</p>
+<ul>
+<li>QA意在构架一个包括各种各样资源（结构化知识库，非结构化文本集合等）的一个能自动和人对话的计算机系统</li>
+<li>阅读理解则更多的注重于文本的理解。回答问题只是一种检验理解的程度的方法。</li>
+</ul>
+<h2 id="Chapter-3-神经阅读理解模型"><a href="#Chapter-3-神经阅读理解模型" class="headerlink" title="Chapter 3 神经阅读理解模型"></a>Chapter 3 神经阅读理解模型</h2><h3 id="3-1-特征工程模型"><a href="#3-1-特征工程模型" class="headerlink" title="3.1 特征工程模型"></a>3.1 特征工程模型</h3><p>以完形填空类型的阅读理解题目为例，目标是对于阅读的文章p和问题q，预测正确的实体$a \in \varepsilon$，$\varepsilon$是候选答案集。传统的线性特征分类器需要构建对于每一个候选答案$e \in \varepsilon$的特征向量$f_{p, q}(e) \in \mathbb{R}^d$，和一个权重向量$w \in \mathbb{R}^d$，使得正确的答案a能有最高的得分。<br>$$<br>\begin{align}<br>w^{\top}f_{p, q}(a) &gt;= w^{\top}f_{p, q}(e), \forall e \in \varepsilon<br>\end{align}<br>$$<br>之后就可以使用各种的机器学习算法（logistic回归，SVM）。在CNN/DAILY MAIL Dataset这个数据集上，<a href="https://www.aclweb.org/anthology/P16-1223" target="_blank" rel="noopener">作者的论文</a>中采用了LAMBDAMART。但是这个里面真正的问题是如果构建特征向量。下图中是作者使用的8个特征。一般来说特征需要提供足够多的信息并且是针对特定任务量身定做的，不能太过于稀疏（难以一般化）。</p>
+<p><img src="/2019/03/03/NEURAL-READING-COMPREHENSION-AND-BEYOND/96E06C167D5A70694C9D4AB5B959392C.jpg" width="600px" height="300px" style="margin: 0 auto"></p>
+<h3 id="3-2-神经网络方法：Standford-Attentive-Reader"><a href="#3-2-神经网络方法：Standford-Attentive-Reader" class="headerlink" title="3.2 神经网络方法：Standford Attentive Reader"></a>3.2 神经网络方法：Standford Attentive Reader</h3><h4 id="3-2-1-前序知识"><a href="#3-2-1-前序知识" class="headerlink" title="3.2.1 前序知识"></a>3.2.1 前序知识</h4><p>此部分包括Word Embeddings，RNN，Attention机制。不赘述。</p>
+<h4 id="3-2-2-模型"><a href="#3-2-2-模型" class="headerlink" title="3.2.2 模型"></a>3.2.2 模型</h4>
       
     </div>
 
@@ -484,7 +504,7 @@
           
             <a href="/tags/NLP/" rel="tag"># NLP</a>
           
-            <a href="/tags/ERROR/" rel="tag"># ERROR</a>
+            <a href="/tags/深度学习/" rel="tag"># 深度学习</a>
           
         </div>
       
@@ -497,8 +517,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/02/11/Attention-Is-All-You-Need/" rel="next" title="Attention Is All You Need -- Transformer">
-                <i class="fa fa-chevron-left"></i> Attention Is All You Need -- Transformer
+              <a href="/2019/02/27/ERROR-device-side-assert-triggered/" rel="next" title="ERROR-device-side-assert-triggered">
+                <i class="fa fa-chevron-left"></i> ERROR-device-side-assert-triggered
               </a>
             
           </div>
@@ -506,10 +526,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/03/03/NEURAL-READING-COMPREHENSION-AND-BEYOND/" rel="prev" title="Neural RC and Beyond阅读笔记（更新至3.2.2）">
-                Neural RC and Beyond阅读笔记（更新至3.2.2） <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -695,7 +711,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#device-side-assert-triggered"><span class="nav-number">1.</span> <span class="nav-text">device-side assert triggered</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#backward-througn-the-graph-a-second-time"><span class="nav-number">2.</span> <span class="nav-text">backward througn the graph a second time</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter-2-阅读理解概述"><span class="nav-number">1.</span> <span class="nav-text">Chapter 2 阅读理解概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-阅读理解的历史"><span class="nav-number">1.1.</span> <span class="nav-text">2.1 阅读理解的历史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-问题定义"><span class="nav-number">1.2.</span> <span class="nav-text">2.2 问题定义</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#公式表达"><span class="nav-number">1.2.1.</span> <span class="nav-text">公式表达</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#评价体系"><span class="nav-number">1.2.2.</span> <span class="nav-text">评价体系</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-阅读理解-vs-QA"><span class="nav-number">1.3.</span> <span class="nav-text">2.3 阅读理解 vs QA</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter-3-神经阅读理解模型"><span class="nav-number">2.</span> <span class="nav-text">Chapter 3 神经阅读理解模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-特征工程模型"><span class="nav-number">2.1.</span> <span class="nav-text">3.1 特征工程模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-神经网络方法：Standford-Attentive-Reader"><span class="nav-number">2.2.</span> <span class="nav-text">3.2 神经网络方法：Standford Attentive Reader</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-1-前序知识"><span class="nav-number">2.2.1.</span> <span class="nav-text">3.2.1 前序知识</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-2-模型"><span class="nav-number">2.2.2.</span> <span class="nav-text">3.2.2 模型</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
