@@ -94,22 +94,18 @@
 
 
 
-  <meta name="description" content="论文题目：Multi-Granularity Hierarchical Attention Fusion Networks for Reading Comprehension and Question Answering论文地址：http://www.aclweb.org/anthology/P18-1158论文实现结果：SQuAD2.0 EM/77.003 F1/80.209">
+  <meta name="description" content="因毕业论文开题报告需要用到这篇的内容，本篇博客暂时不显示内容。论文题目：Multi-Granularity Hierarchical Attention Fusion Networks for Reading Comprehension and Question Answering论文地址：http://www.aclweb.org/anthology/P18-1158论文实现结果：SQuAD2.">
 <meta name="keywords" content="NLP,深度学习">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Multi-Granularity Hierarchical Attention Fusion Networks">
 <meta property="og:url" content="http://yoursite.com/2019/01/18/Multi-Granularity-Hierarchical-Attention-Fusion-Networks/index.html">
 <meta property="og:site_name" content="Horseee">
-<meta property="og:description" content="论文题目：Multi-Granularity Hierarchical Attention Fusion Networks for Reading Comprehension and Question Answering论文地址：http://www.aclweb.org/anthology/P18-1158论文实现结果：SQuAD2.0 EM/77.003 F1/80.209">
+<meta property="og:description" content="因毕业论文开题报告需要用到这篇的内容，本篇博客暂时不显示内容。论文题目：Multi-Granularity Hierarchical Attention Fusion Networks for Reading Comprehension and Question Answering论文地址：http://www.aclweb.org/anthology/P18-1158论文实现结果：SQuAD2.">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/2019/01/18/Multi-Granularity-Hierarchical-Attention-Fusion-Networks/CF85AA656735D23A62969EE11A8ED358.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/01/18/Multi-Granularity-Hierarchical-Attention-Fusion-Networks/66A9A813F70662F005A41A76A254DA07.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/01/18/Multi-Granularity-Hierarchical-Attention-Fusion-Networks/F42E6A3F5B5D641AB91C042EACC07C19.jpg">
-<meta property="og:updated_time" content="2019-01-19T09:56:45.878Z">
+<meta property="og:updated_time" content="2019-03-12T10:11:57.638Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Multi-Granularity Hierarchical Attention Fusion Networks">
-<meta name="twitter:description" content="论文题目：Multi-Granularity Hierarchical Attention Fusion Networks for Reading Comprehension and Question Answering论文地址：http://www.aclweb.org/anthology/P18-1158论文实现结果：SQuAD2.0 EM/77.003 F1/80.209">
-<meta name="twitter:image" content="http://yoursite.com/2019/01/18/Multi-Granularity-Hierarchical-Attention-Fusion-Networks/CF85AA656735D23A62969EE11A8ED358.jpg">
+<meta name="twitter:description" content="因毕业论文开题报告需要用到这篇的内容，本篇博客暂时不显示内容。论文题目：Multi-Granularity Hierarchical Attention Fusion Networks for Reading Comprehension and Question Answering论文地址：http://www.aclweb.org/anthology/P18-1158论文实现结果：SQuAD2.">
 
 
 
@@ -402,7 +398,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-01-19 17:56:45" itemprop="dateModified" datetime="2019-01-19T17:56:45+08:00">2019-01-19</time>
+                <time title="Modified: 2019-03-12 18:11:57" itemprop="dateModified" datetime="2019-03-12T18:11:57+08:00">2019-03-12</time>
               
             
           </span>
@@ -468,47 +464,7 @@
       
 
       
-        <p>论文题目：Multi-Granularity Hierarchical Attention Fusion Networks for Reading Comprehension and Question Answering<br>论文地址：<a href="http://www.aclweb.org/anthology/P18-1158" target="_blank" rel="noopener">http://www.aclweb.org/anthology/P18-1158</a><br>论文实现结果：SQuAD2.0 EM/77.003 F1/80.209<br><a id="more"></a></p>
-<h3 id="Task-Description"><a href="#Task-Description" class="headerlink" title="Task Description"></a>Task Description</h3><p>经典的MRC问题会拿到一段文本和一个问题作为输入，并且从文本中预测出一个范围作为问题的答案。基于这个定义，对于给定的文章和问题，机器需要首先阅读和理解这篇文章，然后找出这个问题的答案。这篇文章描述为单词序列$P = ^n_{t=1}$，答案为$Q = ^m_{t=1}$，n为文本中的单词数，m为问题中的单词数。在一般情况下 $n \gg m$。答案会有很多不同的类型。在SQuAD中，答案A保证是在文本P中连续的一段。在MRC中，目标函数为学习一个$f(q, p) = \arg \max_{a \in A(p)}P(a|q, p)$。训练的数据为问题，文本和答案的集合。</p>
-<blockquote>
-<p>$f(q, p) = \arg \max_{a \in A(p)}P(a|q, p)$： 在q，p下，概率最大的范围a</p>
-</blockquote>
-<h3 id="Encode-Interaction-Pointer-Framework"><a href="#Encode-Interaction-Pointer-Framework" class="headerlink" title="Encode-Interaction-Pointer Framework"></a>Encode-Interaction-Pointer Framework</h3><p>我们现在从框架的底部开始向上描述这个模型。如下图所示，这个模型有四个基本的layer组成，学习不同的语义表达信息。<br><img src="/2019/01/18/Multi-Granularity-Hierarchical-Attention-Fusion-Networks/CF85AA656735D23A62969EE11A8ED358.jpg" width="400px" height="600px" style="margin: 0 auto"></p>
-<ul>
-<li>Encode Layer<br>作为一个语言模型，利用上下文提供的线索，使每个词的词向量更加精准。在这一层中，文章和问题转化成了语义表示。</li>
-<li>Attention Layer<br>注意力层尝试捕捉问题和文章之间的关系。除了将文本对齐，上下文的词嵌入也一起通过一个融合函数整合了进去。另外，多层的attention形成了一个“working memory”</li>
-<li>Match Layer<br>匹配层使用了一个双向的线性匹配函数来计算在span level上问题和文章表示之间的相关度。</li>
-<li>Output Layer<br>输出层使用了一个pointer network来搜索在问题上的回答范围</li>
-</ul>
-<p>本篇论文最大的贡献是注意力层，它捕捉到了问题和文章之间的关系。分层策略通过改善的注意机制使答案的边界更加清晰。通过加入细粒度融合函数，上下文表示能够更好的对齐。模型的具体细节下面会详细介绍。</p>
-<h3 id="Hierarchical-Attention-Fusion-Network"><a href="#Hierarchical-Attention-Fusion-Network" class="headerlink" title="Hierarchical Attention Fusion Network"></a>Hierarchical Attention Fusion Network</h3><p>我们的设计是基于一个简单但是非常自然的意图：使用细粒度的机制需要能够先看到了有可能答案的范围，然后在更加精准的定位答案的范围。<br>整体的分层注意力融合网络在之前的框架图中已经展示了。它由很多的部分组成：一个基本的联合注意力模块（包含浅层语义融合），一个自注意力层（包含深层语义融合模块和基于记忆力的双线性对齐函数）。这样子的模型有两个显著的特征：(i) 细粒度融合方法，用于混合记忆力向量来更好的理解问题和文章之间的关系 (ii)使用在单词和句子级别上的多粒度注意力机制，使其能够在构建问题和文章向量的时候，准确的关注那些最重要的内容。在SQuAD和对抗性数据集上证明了这个框架能够远远超过之前的方法。这一部分的细节会在下面的章节中详细描述。</p>
-<h3 id="Language-Model-amp-Encode-Layer"><a href="#Language-Model-amp-Encode-Layer" class="headerlink" title="Language Model &amp; Encode Layer"></a>Language Model &amp; Encode Layer</h3><p>模型的编码层把离散的词输入转换为连续的向量表述。我们用了一个预训练词向量和char嵌入组成我们的模型的底层。对于词向量，我们使用了glove。对于char向量，我们使用了ELMo语言模型。我们得到了两种编码的想来那个：word embeddings $^m_{t=1}$， $^n_{t=1}$和char embedding$^m_{t=1}$， $^n_{t=1}$<br>为了更好的利用上下文信息，我们在embedding层上使用了一个共享的BiLSTM来表达单词在时间序列上的互动信息。在进入BiLSTM计算之前，我们把词嵌入和char嵌入拼接起来。编码层最后的输出如下，<br>$$<br>\begin{align}<br>&amp;u^Q_t = [BiLSTM_Q([e^Q_t, c^Q_t]), c^Q_t] \newline<br>&amp;u^P_t = [BiLSTM_P([e^P_t, c^P_t]), c^P_t] \newline<br>\end{align}<br>$$<br>其中我们再一次把LSTM的结果和char embedding拼接了起来。这个可以被看成一个在单词表示上的残差连接。</p>
-<h3 id="Hierarchical-Attention-amp-Fusion-Layer"><a href="#Hierarchical-Attention-amp-Fusion-Layer" class="headerlink" title="Hierarchical Attention &amp; Fusion Layer"></a>Hierarchical Attention &amp; Fusion Layer</h3><p>注意力层负责链接和融合问题和文章里面的信息，也是在MRC问题中最重要的一部分。他的目的是对齐问题和文章，以达到更好的定位问题相关部分的文本位置。我们提出了一种分层注意力结构，结合了联合注意力和自我注意力机制。另外，我们认为最初的表示和通过注意力得到的对齐的表示在不同的粒度上同样可以反应文本语义信息，所以我们在每个注意力函数后应用了一种特殊的融合函数，使得不同层的语义信息可以被更好的包含，从而得到一个更好的理解。</p>
-<h4 id="Co-attention-amp-Fusion"><a href="#Co-attention-amp-Fusion" class="headerlink" title="Co-attention &amp; Fusion"></a>Co-attention &amp; Fusion</h4><p>对于给出的问题和文章表示$u^Q_t$和$u^P_t$，一种软对齐的矩阵S通过问题和文章之间的浅层语义相似计算得到，计算公式如下：<br>$$<br>\begin{align}<br>S_{ij} = Att(u^Q_t, u^P_t) = ReLU(W_{lin}^\top u^Q_t)^\top \cdot ReLU(W_{lin}^\top u^P_t)^\top \newline<br>\end{align}<br>$$<br>其中，$W_{lin}$是一个训练得到的权重矩阵<br>这个分解避免了二次方的复杂度的并行化问题（见论文A decomposable attention model for natural language inference）。现在我们可以使用一个未归一化的注意力权重矩阵$s_{ij}$来计算问题和文章之间的注意力，这也将被用于得到基于问题的文本注意力向量和基于文本的问题注意力向量。</p>
-<blockquote>
-<p>此处，i对应着问题，j对应着文章，所以是一个m*n的矩阵</p>
-</blockquote>
-<ul>
-<li>P2Q Attention<br>这一部分意在找出哪一部分的问题内的词是和文章的单词最相关的，可以表示未如下：<br>$$<br>\begin{align}<br>\alpha_j = softmax(s_{:j}) \newline<br>\end{align}$$<br>其中，$a_j$代表在第j句文本上，问题中的每个词的注意力权重<br>基于问题$Q = { u_t^Q}^m_{t=1}$对齐的文本表示可以如下推导：<br>$$<br>\begin{align}<br>\tilde{Q}_{:t} = \sum_j{\alpha_{tj} \cdot Q_{:j}}, \forall j \in [1, …, m] \newline<br>\end{align}$$</li>
-<li>Q2P Attention<br>Q2P代表哪一个部分的文章的单词与问题<br>的相似度最大，也因此是回答问题的关键词。<br>我们使用了同上的方法来算P2Q注意力，除了方向反了一下：<br>$$<br>\begin{align}<br>\beta_i &amp;= softmax(s_{i:})  \newline<br>\tilde{P}_{:k} &amp;= \sum_i{\beta_{ik} \cdot P_{i:}}, \forall i \in [1, …, n]  \newline<br>\end{align}<br>$$<br>其中$\tilde{P}$代表对于问题最重要的词的加权和。</li>
-</ul>
-<blockquote>
-<p>这一部分需要理解的地方比较多。首先，需要注意的是，根据这里可以发现，虽然怎么理解浅前面s_{ij}的公式都觉得i应该是question，j应该是文本，但是在这里其实很明确的表明了，i是文本，j是问题。以Q2P为例，对于每一个passage中的词，计算了他对于所有问题的词的softmax，也就是这个词关于所有问题词的相关度。所以$\beta_i$是一个$1 \times m$的向量。之后计算$\tilde{P}$，对于每一个question中的词k（共有m个），计算它对于所有文本中词$p_i$的概率加权和。所以，$\tilde{P}$是一个$encode_size \times m $的矩阵（每一个question词的文本相关向量）。</p>
-</blockquote>
-<p>对于文章和问题的对齐向量$\tilde{P}$和$\tilde{Q}$，一个特别的融合被用来融合原来的表示和对应的注意力向量：<br>$$<br>\begin{align}<br>&amp;P^\prime = Fuse(P, \tilde{Q}) \\<br>&amp;Q^\prime = Fuse(Q, \tilde{P}) \\<br>\end{align}<br>$$<br>最简单的一个融合的方法是拼接或者把两个向量表示相加，再使用一次线性或者非线性的转换。最近，一个启发式的匹配技巧被发现在组合不同表示方面是很有效的。<br>$$<br>\begin{align}<br>m(p, \tilde{Q}) = tanh(W_f[P; \tilde{Q}; p \circ\tilde{Q}; P - \tilde{Q}] + b_f) \newline<br>\end{align}<br>$$<br>其中$\circ$是逐元素相乘，$W_f$和$b_f$是可以训练的参数。通过W_f最后输出的维度被映射回了与最开始的P或者Q一样的维度。</p>
-<blockquote>
-<p>这一部分我觉得论文里面的图存在一定的问题。可以看到，对于$P^\prime = Fuse(P, \tilde{Q})$来说，因为要做element-wise，那么这里面的P和Q的维度是要完全一样的，根据我们之前的理解，$\tilde{Q}$是一个$n \times encode_size$的矩阵，P也是$n \times encode_size$。那么P2Q的应该传到passage里面（里面的存放是对于passage对于question注意力加权和）</p>
-</blockquote>
-<p><img src="/2019/01/18/Multi-Granularity-Hierarchical-Attention-Fusion-Networks/66A9A813F70662F005A41A76A254DA07.jpg" width="600px" height="200px" style="margin: 0 auto"></p>
-<p>因为我们发现最初的上下文文本表示对于全局反映语义信息是非常重要的，我们在模型中加入了门机制来将映射出来的表示$m(\cdot,\cdot)$和原始的上下文表示融合在一起。最后，最终的问题和文本的融合表示可以用如下公式表示：<br>$$<br>\begin{align}<br>P^\prime = g(P, \tilde{Q}) \cdot m(P, \tilde{Q}) + (1 - g(P, \tilde{Q})) \cdot P \\<br>Q^\prime = g(Q, \tilde{P}) \cdot m(Q, \tilde{P}) + (1 - g(Q, \tilde{P})) \cdot Q \\<br>\end{align}<br>$$<br>其中，g(\cdot, \cdot)是一个门函数。为了捕捉到不同粒度的表示之间的关系，我们设计了基于标量、基于向量和基于矩阵的sigmoid门机制。</p>
-<ul>
-<li>Scalar-based Fusion<br>门函数是一个可以训练的标量参数（粗融合级别）<br>$$<br>\begin{align}<br>g(P, \tilde{Q}) = g_p \newline<br>\end{align}<br>$$</li>
-<li>Vector-based Fusion<br>门函数包含了一个需要学习的权重向量，形成一个一维的sigmoid门。<br>$$<br>\begin{align}<br>g(P, \tilde{Q}) = \sigma(w_g^{\top} \cdot [P; \tilde{Q}; p \circ\tilde{Q}; P - \tilde{Q}] + b_g) \newline<br>\end{align}<br>$$<br>其中，$w_g$是一个需要训练的权重向量，$b_g$是一个需要训练的偏移量，$\sigma$是一个sigmoid函数</li>
-<li>Matrix-based Fusion<br>门机制包含一个权重矩阵需要学习，形成一个而为的sigmoid门。<br>$$<br>\begin{align}<br>g(P, \tilde{Q}) = \sigma(w_g^{\top} \cdot [P; \tilde{Q}; p \circ\tilde{Q}; P - \tilde{Q}] + b_g) \newline<br>\end{align}<br>$$<br>其中，$w_g$是一个需要训练的权重矩阵<br>这三种方法的比较结果如下图。<br><img src="/2019/01/18/Multi-Granularity-Hierarchical-Attention-Fusion-Networks/F42E6A3F5B5D641AB91C042EACC07C19.jpg" width="600px" height="240px" style="margin: 0 auto"></li>
-</ul>
-<h4 id="self-attention-amp-Fusion"><a href="#self-attention-amp-Fusion" class="headerlink" title="self-attention &amp; Fusion"></a>self-attention &amp; Fusion</h4><p>借鉴了这篇论文的手工特征提取方法（Wide &amp; deep learning for recommender systems），手工的一些特征也被加入到了里面，和之前的层的输出结果共同形成了一个更加全面的向量表示。在我们的模型中，这些特征和调整过的question-aware passage representation一起拼接了起来。<br>$$<br>\begin{align}<br>D = BiLSTM([P^\prime, feat_{man}]) \newline<br>\end{align}<br>$$<br>其中$feat_{man}$代表了单词层面的手工文章特征。<br>在这层中，我们分开来考虑文本和问题的语义表示，并且进一步调整通过联合注意力层获得的语义表示。 因为上下文的融合的信息允许上下文的信息更加靠近正确答案，自注意层被用来进一步对齐问题和文本表示，并且在记忆中保存了全局的序列信息。在解决常记录依赖的问题上，我们借鉴了自对齐注意力机制，使用了自对齐融合方法。为了允许在对齐过程中更大的自由度。在文章的表示上，我们引入了一种双向线性自对齐注意力函数：<br>$$<br>\begin{align}<br>L = softmax(D \cdot W_1 \cdot D^\top) \\<br>\tilde{D} = L \cdot D \\<br>\end{align}<br>$$<br>另外一个融合函数$Fuse(\cdot, \cdot)$用来组合question-aware的文章的表示和self-aware表示D：<br>$$<br>\begin{align}<br>D^\prime = Fuse(D, \tilde{D}) \newline<br>\end{align}<br>$$<br>最终，一个双向的LSTM被来获得最终的passage表示：<br>$$<br>\begin{align}<br>D^{\prime \prime} = BiLSTM(D^{\prime}) \newline<br>\end{align}<br>$$</p>
-<p>对于问题那一边，因为他比文章要短很多，并且可以用更少信息但更充分的表示，所以我们采用了和论文（Reading wikipedia to answer open-domain questions.）一样的方法，并采用了一个线性变换来编码问题成单一的向量。<br>首先，另一个上下文相关的双向LSTM网络被用在了问题表示的顶部：$Q^{\prime \prime} = BiLSTM(Q^{\prime})$。之后，我们通过一个线性的自对齐机制，将得到的隐藏单元聚合成一个单一的问题向量：<br>$$<br>\begin{align}<br>\gamma &amp;= softmax(w^\top_q \cdot Q^{\prime \prime}) \newline<br>q &amp;= \sum_j{\gamma_j \cdot Q^{\prime \prime}_{:j}}, \forall j \in [1, …, m] \newline<br>\end{align}<br>$$<br>其中，$w_q$是一个需要学习的权重向量，我们自对齐了问题表示，将其转换成一个单独的向量。这个向量将被用来计算和文本单词的匹配情况。</p>
-<h3 id="Model-amp-Output-Layer"><a href="#Model-amp-Output-Layer" class="headerlink" title="Model &amp; Output Layer"></a>Model &amp; Output Layer</h3><p>我们没有采用仅通过$D^{\prime \prime}$的方法来预测开始和结束的位置，而是采用了一个双向线性匹配函数来捕捉在问题q和文章$D^{\prime \prime}$之间的语义联系。他最终以一种multi-hop的匹配机制。<br>不同于联合注意力层生成粗糙的候选答案和自注意层专注于问题某一意图的相关文本，模型最顶层的层使用了一个双向的线性匹配函数来捕捉前一层输出结果之间的联系，并且最后定位正确答案的范围。<br>文章的开始和结束未知的分布通过下面的双向线性匹配方法计算：<br>$$<br>\begin{align}<br>P_{start} &amp;= softmax(q \cdot w_s^{\top} \cdot D^{\prime \prime}) \newline<br>P_{end} &amp;= softmax(q \cdot w_e^{\top} \cdot D^{\prime \prime}) \newline<br>\end{align}<br>$$<br>其中，$w_s$和$w_e$是两个需要训练的矩阵。<br>输出层是根据应用的不同可以更改的，在MRC任务中，我们使用了pointer netword来预测答案开始和结尾的位置，因为这要求模型找到文章段落的一段子段落来回答问题。<br>在训练过程中，以交叉熵为度量，损失为真实的开始和结束位置与预测分布的的负对数概率总和，并最后取平均值：<br>$$<br>\begin{align}<br>L(\theta) = -\frac{1}{N}\sum_i^N{\log p_i^s(y_i^s) + \log p_i^e(y_i^e)} \newline<br>\end{align}<br>$$<br>其中$\theta$是当前所有需要训练的参数集，$p_i^s$是开始位置的概率，$p_i^e$是结束位置的概率。$y_i^s$和$y_i^e$是真正的开始和结束的位置<br>在预测过程中，我们选择$p_s \cdot p_e$值最大的作为答案区别并且要求$s \leq e \leq s+15$。该部分使用一个动态规划算法在线性时间内实现的。</p>
+        <p>因毕业论文开题报告需要用到这篇的内容，本篇博客暂时不显示内容。<br>论文题目：Multi-Granularity Hierarchical Attention Fusion Networks for Reading Comprehension and Question Answering<br>论文地址：<a href="http://www.aclweb.org/anthology/P18-1158" target="_blank" rel="noopener">http://www.aclweb.org/anthology/P18-1158</a><br>论文实现结果：SQuAD2.0 EM/77.003 F1/80.209<br><a id="more"></a></p>
 
       
     </div>
@@ -604,17 +560,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -734,23 +681,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Task-Description"><span class="nav-number">1.</span> <span class="nav-text">Task Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Encode-Interaction-Pointer-Framework"><span class="nav-number">2.</span> <span class="nav-text">Encode-Interaction-Pointer Framework</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hierarchical-Attention-Fusion-Network"><span class="nav-number">3.</span> <span class="nav-text">Hierarchical Attention Fusion Network</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Language-Model-amp-Encode-Layer"><span class="nav-number">4.</span> <span class="nav-text">Language Model &amp; Encode Layer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hierarchical-Attention-amp-Fusion-Layer"><span class="nav-number">5.</span> <span class="nav-text">Hierarchical Attention &amp; Fusion Layer</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Co-attention-amp-Fusion"><span class="nav-number">5.1.</span> <span class="nav-text">Co-attention &amp; Fusion</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#self-attention-amp-Fusion"><span class="nav-number">5.2.</span> <span class="nav-text">self-attention &amp; Fusion</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Model-amp-Output-Layer"><span class="nav-number">6.</span> <span class="nav-text">Model &amp; Output Layer</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
