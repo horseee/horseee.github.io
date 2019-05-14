@@ -94,18 +94,21 @@
 
 
 
-  <meta name="description" content="BackgroundKnoledge graph based question-answering problem：  the massive size of the knowledge graph the variability of the questions in natrual language所以普通的end-TO-end和encoding-decoding方法无法达到预期的效果。  S">
+  <meta name="description" content="论文题目：Simple Question Answering with Subgraph Ranking and Joint-Scoring论文地址：https://arxiv.org/pdf/1904.04049.pdf接收会议：NAACL2019">
 <meta name="keywords" content="NLP,External Knowledge,Knowledge Graph">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Simple Question Answering with Subgraph Ranking and Joint-Scoring">
 <meta property="og:url" content="http://yoursite.com/2019/05/15/Simple-Question-Answering-With-Subgraph-Ranking-and-JointScoring/index.html">
 <meta property="og:site_name" content="Horseee">
-<meta property="og:description" content="BackgroundKnoledge graph based question-answering problem：  the massive size of the knowledge graph the variability of the questions in natrual language所以普通的end-TO-end和encoding-decoding方法无法达到预期的效果。  S">
+<meta property="og:description" content="论文题目：Simple Question Answering with Subgraph Ranking and Joint-Scoring论文地址：https://arxiv.org/pdf/1904.04049.pdf接收会议：NAACL2019">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-14T16:53:45.327Z">
+<meta property="og:image" content="http://yoursite.com/2019/05/15/Simple-Question-Answering-With-Subgraph-Ranking-and-JointScoring/js.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/15/Simple-Question-Answering-With-Subgraph-Ranking-and-JointScoring/result.png">
+<meta property="og:updated_time" content="2019-05-14T18:21:27.692Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Simple Question Answering with Subgraph Ranking and Joint-Scoring">
-<meta name="twitter:description" content="BackgroundKnoledge graph based question-answering problem：  the massive size of the knowledge graph the variability of the questions in natrual language所以普通的end-TO-end和encoding-decoding方法无法达到预期的效果。  S">
+<meta name="twitter:description" content="论文题目：Simple Question Answering with Subgraph Ranking and Joint-Scoring论文地址：https://arxiv.org/pdf/1904.04049.pdf接收会议：NAACL2019">
+<meta name="twitter:image" content="http://yoursite.com/2019/05/15/Simple-Question-Answering-With-Subgraph-Ranking-and-JointScoring/js.png">
 
 
 
@@ -381,7 +384,7 @@
                 
               
 
-              <time title="Created: 2019-05-15 00:30:00 / Modified: 00:53:45" itemprop="dateCreated datePublished" datetime="2019-05-15T00:30:00+08:00">2019-05-15</time>
+              <time title="Created: 2019-05-15 00:30:00 / Modified: 02:21:27" itemprop="dateCreated datePublished" datetime="2019-05-15T00:30:00+08:00">2019-05-15</time>
             
 
             
@@ -411,6 +414,13 @@
                 
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/NLP/论文笔记/" itemprop="url" rel="index"><span itemprop="name">论文笔记</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/NLP/论文笔记/NAACL/" itemprop="url" rel="index"><span itemprop="name">NAACL</span></a></span>
 
                 
                 
@@ -452,7 +462,8 @@
       
 
       
-        <h3 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h3><p><strong>Knoledge graph based question-answering problem</strong>：</p>
+        <p>论文题目：Simple Question Answering with Subgraph Ranking and Joint-Scoring<br>论文地址：<a href="https://arxiv.org/pdf/1904.04049.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1904.04049.pdf</a><br>接收会议：NAACL2019<br><a id="more"></a></p>
+<h3 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h3><p><strong>Knoledge graph based question-answering problem</strong>：</p>
 <ul>
 <li>the massive size of the knowledge graph</li>
 <li>the variability of the questions in natrual language<br>所以普通的end-TO-end和encoding-decoding方法无法达到预期的效果。</li>
@@ -470,11 +481,11 @@
 <p><strong>step 2</strong>: 构建模型判断候选subjects之间和候选relations之间的匹配程度。 </p>
 <p>这一部分作者总结为<br>(1) Subgraph Selection:</p>
 <p>$$<br>\text{question} \longrightarrow{\text { mention, pattern }}, \quad \text{ mention} \longrightarrow subgraph<br>$$</p>
-<p>(2) Fact Selection:<br>$$<br>\text{match} \left{\begin{array}{l}{\text { mention } \leftrightarrow \text { subject }} \ {\text { pattern } \leftrightarrow \text { relation }}\end{array}\right. \forall(\text{ subject, relation }) \in \text{subgraph} \<br>\Rightarrow\left(\text { subject }^{<em>}, \text { relation }^{</em>}\right) \longrightarrow \text { object }^{<em>}\left(\text { answer }^{</em>}\right)<br>$$</p>
+<p>(2) Fact Selection:<br>$$<br>\text{match}<br>\begin{cases}<br>\text { mention } \leftrightarrow \text { subject }\\<br>\text { pattern } \leftrightarrow \text { relation }<br>\end{cases}<br>\forall(\text{ subject, relation }) \in \text{subgraph} \\<br>\Rightarrow \left(\text {subject}^{*}, \text {relation}^{*}\right) \longrightarrow \text { object }^{*}\left(\text { answer }^{*}\right)<br>$$</p>
 <p><strong>Problem</strong>：  </p>
 <ul>
 <li>无法解决不精确匹配的问题</li>
-<li>没有处理subjects和relation之间的关系（论文中称为mention-subjects和pattern-relations）</li>
+<li>没有处理subjects和relation之间的依赖关系，也就是如果mention-subject之间不匹配，那么即使pattern-relation之间匹配，得出的结果也是错的。</li>
 <li>ranking loss不够优秀</li>
 </ul>
 <p><strong>Contributions</strong>:  </p>
@@ -482,22 +493,26 @@
 <li>subgraph ranking method</li>
 <li>a low complexity joint-scoring model and a well-order loss</li>
 </ul>
-<h3 id="Approach"><a href="#Approach" class="headerlink" title="Approach"></a>Approach</h3><h4 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h4><p>定义可回答问题集<br>$$<br>\mathcal{Q} :={q | q \text { is anwerable }} =\mathcal{M} \cup \mathcal{P}<br>$$<br>利用sequence tagging的方法（BILSTM+CRF）的方法，可以将每个问题中的单词分为subject（mention, m_{q}）和pattern（not mention, p_{q}）两类。有<br>$$<br>m_{q}=\left{w_{1}, \ldots, w_{n}\right}, \quad p_{q}=q \backslash m_{q}<br>$$<br>定义knowledge graph<br>$$<br>\mathcal{G} := {(s, r, o) | s \in \mathcal{S}, r \in \mathcal{R}, o \in \mathcal{O} } \subseteq \mathcal{S} \times \mathcal{R} \times \mathcal{O}<br>$$</p>
-<p>假设对于m_{q}的n-grams为$\mathcal{W}<em>{n}\left(m</em>{q}\right)$，利用这个$\mathcal{W}<em>{n}\left(m</em>{q}\right)$在知识图谱中检索出子图<br>$$<br>\mathcal{S}<em>{q} \times \mathcal{R}</em>{q} \times \mathcal{O}<em>{q} \supseteq \mathcal{G}</em>{q} :={(s, r, o) \in \mathcal{G}\left|\mathcal{W}<em>{n}(s) \cap \mathcal{W}</em>{n}\left(m_{q}\right) \neq \varnothing, n=1, \ldots,\right| m_{q} | }<br>$$</p>
+<h3 id="Approach"><a href="#Approach" class="headerlink" title="Approach"></a>Approach</h3><h4 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h4><p>定义可回答问题集<br>$$<br>\mathcal{Q} :={q | q \text { is anwerable }} =\mathcal{M} \cup \mathcal{P}<br>$$<br>利用sequence tagging的方法（BILSTM+CRF）的方法，可以将每个问题中的单词分为subject(mention, $m_{q}$)和pattern(not mention, $p_{q}$)两类。有<br>$$<br>m_{q}={w_{1}, \ldots, w_{n}}, \quad p_{q}=q \backslash m_{q}<br>$$</p>
+<p>定义knowledge graph<br>$$<br>\mathcal{G} := {(s, r, o) | s \in \mathcal{S}, r \in \mathcal{R}, o \in \mathcal{O} } \subseteq \mathcal{S} \times \mathcal{R} \times \mathcal{O}<br>$$</p>
+<p>假设对于$m_{q}$的n-grams为$\mathcal{W}_{n}\left(m_{q}\right)$，利用这个$\mathcal{W}_{n}\left(m_{q}\right)$在知识图谱中检索出子图<br>$$<br>\mathcal{S}_{q} \times \mathcal{R}_{q} \times \mathcal{O}_{q} \supseteq \mathcal{G}_{q} :={(s, r, o) \in \mathcal{G}\left|\mathcal{W}_{n}(s) \cap \mathcal{W}_{n}\left(m_{q}\right) \neq \varnothing, n=1, \ldots,\right| m_{q} | }<br>$$<br>对于subject-mention或者relation-pattern，使得<br>$$<br>\begin{cases}<br>\max _{s \in \mathcal{S}_{q}} \log \mathbb{P}\left(s | m_{q}\right)\\<br>\max _{r \in \mathcal{R}_{q}} \log \mathbb{P}\left(r | p_{q}\right)<br>\end{cases}<br>$$<br>Ranking Loss部分如下<br>$$<br>\begin{aligned}<br>\mathcal{L}_{\mathrm{rank}}=&amp;\sum_{q \in \mathcal{Q}}\left(\sum_{s \in \mathcal{S}_{q}}\left[h_{f}\left(m_{q}, s^{-}\right)-h_{f}\left(m_{q}, s^{+}\right)+\lambda\right]_{+}\right. \newline<br>&amp;+\sum_{r \in \mathcal{R}_{q}}\left[h_{g}\left(p_{q}, r^{-}\right)-h_{g}\left(p_{q}, r^{+}\right)+\lambda\right]_{+} )<br>\end{aligned}<br>$$</p>
 <h4 id="Subgraph-Ranking"><a href="#Subgraph-Ranking" class="headerlink" title="Subgraph Ranking"></a>Subgraph Ranking</h4><p>作者觉得，按照前人的方法得到的子图的排序，只考虑完全匹配的情况（exact-match），但是有一些近义词、一词多义这些情况就没有办法顾及到。所以作者采用了一种新的方法来做这里的子图排序。<br>作者认为，字面上的相关性（literal relevance）当然重要，但是语义上的相关性同样（semantic relevance）也很重要。</p>
 <ul>
 <li><p>literal relevance<br>字面上的相关度通过subhject和mention之间最长公共子序列的长度来衡量。</p>
 </li>
-<li><p>semantic relevance<br>语义上的相关性通过共现概率来体现，整个的推导公式如下：<br>$$<br>\begin{aligned} \mathbb{P}(s, m) &amp;=\mathbb{P}(s | m) \mathbb{P}(m) \ &amp;=\mathbb{P}\left(w_{1}, \ldots w_{n} | \widetilde{w}<em>{1}, \ldots \widetilde{w}</em>{m}\right) \mathbb{P}\left(\widetilde{w}<em>{1}, \ldots \widetilde{w}</em>{m}\right) \ &amp;= \prod_{i=1}^{n} \mathbb{P}\left(w_{i} | \widetilde{w}<em>{1}, \ldots \widetilde{w}</em>{m}\right) \mathbb{P}\left(\widetilde{w}<em>{1}, \ldots \widetilde{w}</em>{m}\right) \ &amp;=\prod_{i=1}^{n}\left(\prod_{k=1}^{m} \mathbb{P}\left(w_{i} | \widetilde{w}<em>{k}\right)\right) \mathbb{P}\left(\widetilde{w}</em>{1}, \ldots \widetilde{w}<em>{m}\right) \ &amp;=\prod</em>{i=1}^{n}\left(\prod_{k=1}^{m} \mathbb{P}\left(w_{i} | \widetilde{w}<em>{k}\right)\right) \prod</em>{j=1}^{m-1} \mathbb{P}\left(\widetilde{w}<em>{j+1} | \widetilde{w}</em>{j}\right) \mathbb{P}\left(\widetilde{w}<em>{1}\right)<br>\end{aligned}<br>$$<br>其中，最后一项可以直接通过计算得到，其他的可以通过Glove Embedding来计算共现概率，公式如下：<br>$$<br>\mathbb{P}\left(w</em>{i} | w_{j}\right) \approx \exp \left{\hat{w}<em>{i}^{T} \hat{w}</em>{j}\right}<br>$$<br>最后，子图的相关性通过如下公式得到<br>$$<br>\operatorname{score}(s, m)=\tau|\sigma|(s, m)+(1-\tau) \log \mathbb{P}(s, m)<br>$$<br>根据每一个子图的得分，选取分数最高的top-n个，选出最后的候选subject集合$S_{q \downarrow}^{n}$和relations集合R_{q \downarrow}^{n}$</p>
+<li><p>semantic relevance<br>语义上的相关性通过共现概率来体现，整个的推导公式如下：  </p>
 </li>
 </ul>
-<h4 id="Joint-Scoring-model-with-Well-order-Loss"><a href="#Joint-Scoring-model-with-Well-order-Loss" class="headerlink" title="Joint-Scoring model with Well-order Loss"></a>Joint-Scoring model with Well-order Loss</h4><p>根据之前的LOSS计算方法，一个问题是，如果当两个的数量大小差距非常大的时候，他完全没有消除由于relation的关系对和subject的关系对数量之间差异大导致的差异。另外，ranking loss在自身的过程中，很容易导致所有的数值最后无限变小（接近0），从而导致他无法按照预期工作。可以理解成，由于负例很多很多，而正例很少，按照之前的ranking loss的计算方法，他可以直接把所有负例的loss值都无限缩放让他变小既可以让整体的loss变小了。<br>作者提出的方法主要解决了这个问题，他提出了一种well-order loss。  </p>
+<p>$$<br>\begin{aligned}<br>\mathbb{P}(s, m) &amp;=\mathbb{P}(s | m) \mathbb{P}(m) \newline<br>&amp;=\mathbb{P}\left(w_{1}, \ldots w_{n} | \widetilde{w}_{1}, \ldots \widetilde{w}_{m}\right) \mathbb{P}\left(\widetilde{w}_{1}, \ldots \widetilde{w}_{m}\right) \newline<br>&amp;=\prod_{i=1}^{n} \mathbb{P}\left(w_{i} | \widetilde{w}_{1}, \ldots \widetilde{w}_{m}\right) \mathbb{P}\left(\widetilde{w}_{1}, \ldots \widetilde{w}_{m}\right) \newline<br>&amp;=\prod_{i=1}^{n}\left(\prod_{k=1}^{m} \mathbb{P}\left(w_{i} | \widetilde{w}_{k}\right)\right) \mathbb{P}\left(\widetilde{w}_{1}, \ldots \widetilde{w}_{m}\right) \newline<br>&amp;=\prod_{i=1}^{n}\left(\prod_{k=1}^{m} \mathbb{P}\left(w_{i} | \widetilde{w}_{k}\right)\right) \prod_{j=1}^{m-1} \mathbb{P}\left(\widetilde{w}_{j+1} | \widetilde{w}_{j}\right) \mathbb{P}\left(\widetilde{w}_{1}\right)<br>\end{aligned}<br>$$<br>其中，最后一项可以直接通过计算得到，其他的可以通过Glove Embedding来计算共现概率，公式如下：<br>$$<br>\mathbb{P}\left(w_{i} | w_{j}\right) \approx \exp{(\hat{w}_{i}^{T} \hat{w}_{j})}<br>$$<br>最后，子图的相关性通过如下公式得到<br>$$<br>\operatorname{score}(s, m)=\tau|\sigma|(s, m)+(1-\tau) \log \mathbb{P}(s, m)<br>$$<br>根据每一个子图的得分，选取分数最高的top-n个，选出最后的候选subject集合$S_{q \downarrow}^{n}$和relations集合$R_{q \downarrow}^{n}$</p>
+<h4 id="Joint-Scoring-model-with-Well-order-Loss"><a href="#Joint-Scoring-model-with-Well-order-Loss" class="headerlink" title="Joint-Scoring model with Well-order Loss"></a>Joint-Scoring model with Well-order Loss</h4><h5 id="Joint-Scoring-model"><a href="#Joint-Scoring-model" class="headerlink" title="Joint-Scoring model"></a>Joint-Scoring model</h5><p><img src="/2019/05/15/Simple-Question-Answering-With-Subgraph-Ranking-and-JointScoring/js.png" width="750px" height="330px" style="margin: 0 auto"></p>
+<h5 id="Well-order-Loss"><a href="#Well-order-Loss" class="headerlink" title="Well-order Loss"></a>Well-order Loss</h5><p>根据之前的LOSS计算方法，一个问题是，如果当两个的数量大小差距非常大的时候，他完全没有消除由于relation的关系对和subject的关系对数量之间差异大导致的差异。另外，ranking loss在自身的过程中，很容易导致所有的数值最后无限变小（接近0），从而导致他无法按照预期工作。可以理解成，由于负例很多很多，而正例很少，按照之前的ranking loss的计算方法，他可以直接把所有负例的loss值都无限缩放让他变小既可以让整体的loss变小了。<br>作者提出的方法主要解决了这个问题，他提出了一种well-order loss。  </p>
 <ul>
-<li>定义如下：<br>$$<br>S=\left{S_{1}, \ldots, S_{n}\right}=S^{+} \cup S^{-}, \<br>I=I^{+} \cup I^{-} \quad I为S的对应序号集合<br>$$</li>
-<li>推导：<br>考虑到well-order的定义，有正例集合的下确界大于负例集合的上确界。<br>$$<br>\begin{aligned} &amp; \inf S^{+} \geq \sup S^{-} \ \Leftrightarrow &amp; \forall i^{+} \in I^{+} : \forall i^{-} \in I^{-} : S_{i^{+}}^{+}-S_{i-}^{-} \geq 0 \ \Leftrightarrow &amp; \sum_{i^{+} \in I^{+}} \sum_{i^{-} \in I^{-}}\left(S_{i^{+}}^{+}-S_{i^{-}}^{-}\right) \geq 0 \ \Leftrightarrow &amp; n_{2} \sum_{i^{+} \in I^{+}} S_{i^{+}}^{+}-n_{1} \sum_{i^{-} \in I^{-}} S_{i^{-}}^{-} \geq 0 \end{aligned}<br>$$<br>所以对应的更改ranking loss（也就是在每一个集合前加上反向集合的个数）<br>$$<br>\begin{aligned}<br>&amp; \mathcal{L}<em>{\text { well-order }}\left(S</em>{m s}, S_{pr}\right)= \<br>&amp; \left[\left|I^{+}\right| \sum_{i^{-}} S_{m s}^{i}-\left|I^{-}\right| \sum_{i^{+}} S_{m s}^{i}+\left|I^{+}\right|\left|I^{-}\right| \lambda\right]<em>{+}+ \ &amp; \left[\left|J^{+}\right| \sum</em>{j^{-}} S_{p r}^{j^{-}}-\left|J^{-}\right| \sum_{j^{+}} S_{p r}^{j^{+}}+\left|J^{+}\right|\left|J^{-}\right| \lambda\right]_{+}<br>\end{aligned}<br>$$</li>
+<li>定义如下：<br>$$<br>\begin{aligned}<br>&amp;S= {S_{1}, \ldots, S_{n}}=S^{+} \cup S^{-}, \newline<br>&amp;I=I^{+} \cup I^{-} \quad I为S的对应序号集合<br>\end{aligned}<br>$$</li>
+<li>推导：<br>考虑到well-order的定义，有正例集合的下确界大于负例集合的上确界。<br>$$<br>\begin{aligned}<br>&amp; \inf S^{+} \geq \sup S^{-} \newline<br>\Leftrightarrow &amp; \forall i^{+} \in I^{+} : \forall i^{-} \in I^{-} : S_{i^{+}}^{+}-S_{i-}^{-} \geq 0 \newline<br>\Leftrightarrow &amp; \sum_{i^{+} \in I^{+}} \sum_{i^{-} \in I^{-}}\left(S_{i^{+}}^{+}-S_{i^{-}}^{-}\right) \geq 0 \newline<br>\Leftrightarrow &amp; n_{2} \sum_{i^{+} \in I^{+}} S_{i^{+}}^{+}-n_{1} \sum_{i^{-} \in I^{-}} S_{i^{-}}^{-} \geq 0<br>\end{aligned}<br>$$<br>所以对应的更改ranking loss（也就是在每一个集合前加上反向集合的个数）。最后在里面代入之前得到的两个候选subject集合$S_{q \downarrow}^{n}$和relations集合$R_{q \downarrow}^{n}$即可<br>$$<br>\begin{aligned}<br>&amp; \mathcal{L}_{\text { well-order }}\left(S_{m s}, S_{pr}\right)= \newline<br>&amp; \left[\left|I^{+}\right| \sum_{i^{-}} S_{m s}^{i^{-}}-\left|I^{-}\right| \sum_{i^{+}} S_{m s}^{i^{+}}+\left|I^{+}\right|\left|I^{-}\right| \lambda\right]_{+}+ \newline &amp; \left[\left|J^{+}\right| \sum_{j^{-}} S_{p r}^{j^{-}}-\left|J^{-}\right| \sum_{j^{+}} S_{p r}^{j^{+}}+\left|J^{+}\right|\left|J^{-}\right| \lambda\right]_{+}<br>\end{aligned}<br>$$<br>但其实，把这个公式稍稍转换一下，就会发现，这个公式其实表达的是以下内容，也就是，所有负例的平均值减去正例的平均值</li>
 </ul>
-<p>$$<br>\begin{aligned}<br>&amp; \mathcal{L}<em>{\text { well-order }}\left(S</em>{m s}, S_{pr}\right)= \<br>&amp; \left[\frac{\sum_{i^{-}}S_{m s}^{i}}{\left|I^{-}\right|} -\frac{\sum_{i^{+}} S_{m s}^{i}}{\left|I^{+}\right|}+ \lambda\right]<em>{+}+ \ &amp; \left[\frac{\sum</em>{j^{-}} S_{p r}^{j^{-}}}{\left|J^{-}\right| }- \frac{\sum_{j^{+}} S_{p r}^{j^{+}}}{\left|J^{+}\right|}+ \lambda\right]<em>{+}<br>\end{aligned}<br>$$<br>在里面代入之前得到的两个候选subject集合$S</em>{q \downarrow}^{n}$和relations集合R_{q \downarrow}^{n}$即可</p>
-<h3 id="实验结果"><a href="#实验结果" class="headerlink" title="实验结果"></a>实验结果</h3>
+<p>$$<br>\begin{aligned}<br>&amp; \mathcal{L}_{\text { well-order }}\left(S_{m s}, S_{pr}\right)= \newline<br>&amp; \left[\frac{\sum_{i^{-}}S_{m s}^{i^{-}}}{\left|I^{-}\right|} -\frac{\sum_{i^{+}} S_{m s}^{i^{+}}}{\left|I^{+}\right|}+ \lambda\right]_{+}+ \newline<br>&amp; \left[\frac{\sum_{j^{-}}S_{p r}^{j^{-}}}{\left|J^{-}\right|} -\frac{\sum_{j^{+}} S_{p r}^{j^{+}}}{\left|J^{+}\right|}+ \lambda\right]_{+}<br>\end{aligned}<br>$$</p>
+<h3 id="实验结果"><a href="#实验结果" class="headerlink" title="实验结果"></a>实验结果</h3><p>下图显示了本次实验的实验结果。可以看到，对比baseline(AMPCNN)，该方法提升了8个多点。其中，对这部分提升影响最小的是Well-order Loss，仅提升了1.3%，从算法上来说这部分的创新确实不算太多。而加入Joint-Scoring和subgraph raning对最终的性能提升的效果更为显著。<br><img src="/2019/05/15/Simple-Question-Answering-With-Subgraph-Ranking-and-JointScoring/result.png" width="500px" height="530px" style="margin: 0 auto"></p>
+
       
     </div>
 
@@ -638,7 +653,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -737,7 +754,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Background"><span class="nav-number">1.</span> <span class="nav-text">Background</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Approach"><span class="nav-number">2.</span> <span class="nav-text">Approach</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Definition"><span class="nav-number">2.1.</span> <span class="nav-text">Definition</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Subgraph-Ranking"><span class="nav-number">2.2.</span> <span class="nav-text">Subgraph Ranking</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Joint-Scoring-model-with-Well-order-Loss"><span class="nav-number">2.3.</span> <span class="nav-text">Joint-Scoring model with Well-order Loss</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实验结果"><span class="nav-number">3.</span> <span class="nav-text">实验结果</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Background"><span class="nav-number">1.</span> <span class="nav-text">Background</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Approach"><span class="nav-number">2.</span> <span class="nav-text">Approach</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Definition"><span class="nav-number">2.1.</span> <span class="nav-text">Definition</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Subgraph-Ranking"><span class="nav-number">2.2.</span> <span class="nav-text">Subgraph Ranking</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Joint-Scoring-model-with-Well-order-Loss"><span class="nav-number">2.3.</span> <span class="nav-text">Joint-Scoring model with Well-order Loss</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Joint-Scoring-model"><span class="nav-number">2.3.1.</span> <span class="nav-text">Joint-Scoring model</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Well-order-Loss"><span class="nav-number">2.3.2.</span> <span class="nav-text">Well-order Loss</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实验结果"><span class="nav-number">3.</span> <span class="nav-text">实验结果</span></a></li></ol></div>
             
 
           </div>
