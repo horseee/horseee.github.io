@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="google-site-verification" content="o7cEB2KpKUeRqZ7YYt7VLYhG6bTXNODcqcrDzCRlXdI">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=6.7.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/avatar.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar.png?v=6.7.0">
+
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.7.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="这两天跑去北京参加了百度的自然语言处理前沿论坛。第一次参与了学术论坛，心情还是比较激动的。总的来说，整体能学到的东西还是很多的，但是就前沿两个字来说，还是和心里的预期有一定的差距。">
+<meta name="keywords" content="NLP,学术论坛">
+<meta property="og:type" content="article">
+<meta property="og:title" content="参会笔记——百度NLP学术前沿论坛">
+<meta property="og:url" content="https://horseee.github.io/2019/05/28/参会笔记——百度NLP学术前沿论坛/index.html">
+<meta property="og:site_name" content="Horseee">
+<meta property="og:description" content="这两天跑去北京参加了百度的自然语言处理前沿论坛。第一次参与了学术论坛，心情还是比较激动的。总的来说，整体能学到的东西还是很多的，但是就前沿两个字来说，还是和心里的预期有一定的差距。">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://horseee.github.io/2019/05/28/参会笔记——百度NLP学术前沿论坛/C7A5703182728E2B9DF6DA0798238FEA.jpg">
+<meta property="og:image" content="https://horseee.github.io/2019/05/28/参会笔记——百度NLP学术前沿论坛/098E0B9C43C06200FC27A964810DDFBA.jpg">
+<meta property="og:image" content="https://horseee.github.io/2019/05/28/参会笔记——百度NLP学术前沿论坛/9EE488B995A26966A9A06F8B88D15F42.jpg">
+<meta property="og:image" content="https://horseee.github.io/2019/05/28/参会笔记——百度NLP学术前沿论坛/8F41D034316BF486FE5F34F8832B38EE.jpg">
+<meta property="og:updated_time" content="2019-05-27T16:31:18.124Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="参会笔记——百度NLP学术前沿论坛">
+<meta name="twitter:description" content="这两天跑去北京参加了百度的自然语言处理前沿论坛。第一次参与了学术论坛，心情还是比较激动的。总的来说，整体能学到的东西还是很多的，但是就前沿两个字来说，还是和心里的预期有一定的差距。">
+<meta name="twitter:image" content="https://horseee.github.io/2019/05/28/参会笔记——百度NLP学术前沿论坛/C7A5703182728E2B9DF6DA0798238FEA.jpg">
+
+
+
+
+
+
+  <link rel="canonical" href="https://horseee.github.io/2019/05/28/参会笔记——百度NLP学术前沿论坛/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>参会笔记——百度NLP学术前沿论坛 | Horseee</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Horseee</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://horseee.github.io/2019/05/28/参会笔记——百度NLP学术前沿论坛/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Ma Xinyin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Horseee">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">参会笔记——百度NLP学术前沿论坛
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-05-28 12:30:00 / Modified: 00:31:18" itemprop="dateCreated datePublished" datetime="2019-05-28T12:30:00+08:00">2019-05-28</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/NLP/" itemprop="url" rel="index"><span itemprop="name">NLP</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/NLP/学术论坛/" itemprop="url" rel="index"><span itemprop="name">学术论坛</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             Views:  
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>这两天跑去北京参加了百度的自然语言处理前沿论坛。第一次参与了学术论坛，心情还是比较激动的。总的来说，整体能学到的东西还是很多的，但是就前沿两个字来说，还是和心里的预期有一定的差距。<br><a id="more"></a></p>
+<h2 id="整体感受"><a href="#整体感受" class="headerlink" title="整体感受"></a>整体感受</h2><p>首先先讲一下我听完下来对于技术方面的整体一些新的认知。</p>
+<ul>
+<li><p>关于模型压缩<br>很神奇的是，这次会议上，几位学者非常高频次的提及了模型压缩这个方向。在这次会议前，我以为这个方向NLP领域做的人比较少，相关论文也不是很多。孙栩教授在2017年已经做了这个方向的研究，并且现在已经在往模型压缩的可解释性方向做了。后面的一些教授也谈到了未来要做（正在做）模型压缩相关的工作。</p>
+</li>
+<li><p>关于Bert<br>另外在这次会议上，Bert也是一个超级无敌高频词出现的词。很多学者表示了在bert出来了之后，很多搞模型的人都感觉，Bert太牛逼了，再改模型很难再有很大的提升。对于工业界来说是一件非常好的事情，因为很多企业落地AI应用的技术难度直线下降（无论什么任务都只要用Bert就行了），但是对于学术界来说就真的很惨了。现在看起来还唯一没有受到Bert影响的就是机器翻译领域了（因为整体的架构不是端到端的模型并且Bert是一种单语言的架构，和翻译恰恰完全相反）。</p>
+</li>
+<li><p>未来方向<br>阅读理解方向来说，第一个可以做的方向是在知识引入（如何融合知识图谱的信息），第二个是如何做多步的推理。<br>整体的NLP领域，其实现在的整体的发展状况还完全不能称之为智能。比如机器阅读理解来说，现在使用的方法本质上还是个相似度计算，所以很容易在小数据集上出现过拟合的问题，机器其实并没有做到能够真正的理解文本。<br>另外，NLP现在的主要的方法还是集中于Data-Driven，但是对于人类来说，实际上学习过程是一个无监督学习，只有在考试的时候才会出现有label（答案）的检验。大佬们认为，NLP的下一个阶段，需要着眼于zero-shot或者few-shot的方法，Data-Driven的方法基本上不可能完全解决NLP的问题。<br>最后一个也就是可解释性了。这个问题普遍存在于所有的人工智能领域。由于他的不可解释，很多时候我们会把写模型的过程称之为炼丹。<br><img src="/2019/05/28/参会笔记——百度NLP学术前沿论坛/C7A5703182728E2B9DF6DA0798238FEA.jpg" width="250px" height="300px" style="margin: 0 auto"><br>下图是最后的panel一群大佬们坐在台上畅想未来。<br><img src="/2019/05/28/参会笔记——百度NLP学术前沿论坛/098E0B9C43C06200FC27A964810DDFBA.jpg" width="500px" height="250px" style="margin: 0 auto"></p>
+</li>
+</ul>
+<h2 id="语义计算"><a href="#语义计算" class="headerlink" title="语义计算"></a>语义计算</h2><h3 id="从静态到动态的词向量"><a href="#从静态到动态的词向量" class="headerlink" title="从静态到动态的词向量"></a>从静态到动态的词向量</h3><p>嘉宾：哈工大 - 车万翔</p>
+<p>词向量表示的发展历程</p>
+<ul>
+<li>one-hot：高维稀疏离散</li>
+<li>加权(TF-IDF, PMI)/降维(SVD/LDA): 低维稠密连续</li>
+<li>Word Embedding</li>
+<li>基于上下文的word embedding表示</li>
+</ul>
+<p>关于Bert Finetune的论文：To tune or not to tune? adapting pretrained representations to diverse tasks</p>
+<p>教授认为，现在一个模型主要是由模型+数据+硬件三个部分组成，可以有以下的几个方向来改善：</p>
+<ol>
+<li>生成伪数据：修改，删除（完形填空），增加（文本顺滑）</li>
+<li>多任务学习</li>
+</ol>
+<p>底层表示和顶层模型的关系：<br>在底层表示足够优秀的情况下，顶层的模型设计更加偏向于完成特定的任务。</p>
+<p>车万翔教授的实验室目前研究方向：</p>
+<ol>
+<li>跨语言自然语言处理</li>
+<li>基于Bert的Few-shot</li>
+<li>轻量级的动态词向量    </li>
+</ol>
+<h3 id="Sparse-Deep-Learning"><a href="#Sparse-Deep-Learning" class="headerlink" title="Sparse Deep Learning"></a>Sparse Deep Learning</h3><p>嘉宾：北大-孙栩</p>
+<p>任务概述：<br>人类在思考的时候是一种sparse的机制，而现在的神经网络是一种dense的模型，也就是说一旦更新一个batch，需要更新所有的神经元。并且现在神经网络学习所有的特征，偏向于全部表示性，很容易导致过拟合（出租车颜色）</p>
+<ul>
+<li><p>meProp<br>减少反向传递的时间，部分节点不反向传递。<br>论文：meProp: Sparsified Back Propagation for Accelerated Deep Learning with Reduced Overfitting<br><img src="/2019/05/28/参会笔记——百度NLP学术前沿论坛/9EE488B995A26966A9A06F8B88D15F42.jpg" width="500px" height="300px" style="margin: 0 auto"></p>
+</li>
+<li><p>meSimp<br>自动化裁剪。</p>
+</li>
+</ul>
+<h3 id="自然语言处理中的表示学习进展"><a href="#自然语言处理中的表示学习进展" class="headerlink" title="自然语言处理中的表示学习进展"></a>自然语言处理中的表示学习进展</h3><p>嘉宾：复旦大学-邱锡鹏</p>
+<p>Transformer：非常容易overfitting，适合数据量大的任务。<br>star-transformer：间接连接。在transformer上再额外加上一部分的信息。</p>
+<p>论文：<br>引入先验：<a href="https://arxiv.org/abs/1611.03949" target="_blank" rel="noopener">https://arxiv.org/abs/1611.03949</a><br>How to finetune Bert: <a href="https://arxiv.org/abs/1905.05583" target="_blank" rel="noopener">https://arxiv.org/abs/1905.05583</a></p>
+<p>XLM: <a href="https://github.com/facebookresearch/XLM" target="_blank" rel="noopener">https://github.com/facebookresearch/XLM</a><br>MASS: <a href="https://arxiv.org/pdf/1905.02450.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1905.02450.pdf</a></p>
+<p>教授说他在Bert出来之后，很多优化Bert和Transformer的论文都被拒了。<br>觉得还可行的方向：</p>
+<ol>
+<li>模型压缩/模型加速</li>
+<li>语句生成（对话）。</li>
+<li>Attention其实是动态全连接，是否有可能改进？</li>
+</ol>
+<h3 id="百度语义计算技术及其应用"><a href="#百度语义计算技术及其应用" class="headerlink" title="百度语义计算技术及其应用"></a>百度语义计算技术及其应用</h3><p>嘉宾：百度-孙宇</p>
+<p>语义表示部分百度的发展：</p>
+<ul>
+<li>基于term去做word similarity的拓展</li>
+<li>Topic Model</li>
+<li>分布式计算和大规模计算（1T预料，100w超大规模中文词覆盖，RNNLM + hierarchical softmax）</li>
+<li>ERNIE 知识增强的语义建模。mask实体、短语。</li>
+</ul>
+<p>语义匹配百度的发展：</p>
+<ul>
+<li>SimNet：最初步的匹配框架</li>
+<li>SimNet2.0：针对各个pairwise做匹配。interaction-based model/Attention-based model</li>
+<li>IJCAI的一篇论文：主要解决长文本匹配问题，</li>
+</ul>
+<h2 id="问答与阅读理解"><a href="#问答与阅读理解" class="headerlink" title="问答与阅读理解"></a>问答与阅读理解</h2><h3 id="文本阅读理解的研究进展和挑战"><a href="#文本阅读理解的研究进展和挑战" class="headerlink" title="文本阅读理解的研究进展和挑战"></a>文本阅读理解的研究进展和挑战</h3><p>中科院-刘康</p>
+<ol>
+<li>bigger seems better。数据集的大小对性能影响很大。</li>
+<li>still relevance rather than real understanding。其实很多模型还是在做相似度匹配的工作。</li>
+<li>Some questions are too simple</li>
+<li>difficult questions need multiple clues</li>
+<li>finding clues/evidence is not simple</li>
+</ol>
+<h3 id="百度阅读理解技术研究及应用"><a href="#百度阅读理解技术研究及应用" class="headerlink" title="百度阅读理解技术研究及应用"></a>百度阅读理解技术研究及应用</h3><p>百度-刘璟</p>
+<p>现在NLP的发展，得益于：数据规模变大，人工智能技术的应用。</p>
+<p>百度提出的两个模型：<br><strong>V-NET2018ACL</strong>：面向搜索场景的多文档阅读理解任务<br>思路：每个段落做一个预测答案。在答案之间做对比</p>
+<p><strong>KT-NET2019ACL</strong>：引入外部知识的阅读理解<br>引入的知识：知识图谱。<br>论文：Enhancing Pre-trained Language Representations with Rich Knowledgefor Machine Reading Comprehension（还未公开）</p>
+<p>工业角度：</p>
+<ol>
+<li>模型鲁棒性不够：过稳定问题（问题语义改变，但是预测答案不变），过敏感问题（加一个问号就改变答案）</li>
+<li>泛化能力：在A数据集上的模型，能不能很快很好的迁移到其他的数据集上</li>
+</ol>
+<p>下午的一些主题都不太了解，我主要以听为主了，这里记得非常简略。</p>
+<h2 id="机器翻译-amp-人机对话"><a href="#机器翻译-amp-人机对话" class="headerlink" title="机器翻译&amp;人机对话"></a>机器翻译&amp;人机对话</h2><h3 id="机器翻译"><a href="#机器翻译" class="headerlink" title="机器翻译"></a>机器翻译</h3><p>这一趴的学术界邀请的是刘洋教授。不愧是ACL的领域主席，确实很多东西看的角度就很高。他们组的工作虽然想法看上去都很容易实现，但是确实我觉得创新性非常的大。<br>刘洋教授组的可视化神经网络分析的方法（判断每一个输入/每一个神经元在网络中起到的对结果的影响大小），这一个想法感觉可以用来做神经网络的debug，后续打算把这部分的内容仔细看一下，看看能不能对修改网络结构有所帮助。<br>工业界部分，何中军老师展示了一下最新的百度同传，我们现场体验了一把，感受只能用牛逼两个字来形容。<br><img src="/2019/05/28/参会笔记——百度NLP学术前沿论坛/8F41D034316BF486FE5F34F8832B38EE.jpg" width="350px" height="500px" style="margin: 0 auto"></p>
+<h3 id="人机对话"><a href="#人机对话" class="headerlink" title="人机对话"></a>人机对话</h3><p>这一部分百度的UNIT负责人孙珂的介绍简直颠覆了我对现在的智能对话系统的认知。孙博士表示，现在百度的对话系统，实际上背后是一种rule-based的机制，而非深度学习的model。原因主要是深度学习的model非常的不经济。原因有以下一些：</p>
+<ol>
+<li>训练的时间成本和性能问题<br>孙博士表示，他们尝试了用增强学习的方法来做这个，但是需要训练2000轮才能达到一个还不错的效果。但这个效果仅仅只需要几条rule就能完成</li>
+<li>GPU耗费问题<br>后来一位教授在panel时提到，有一家公司为了做这个对话系统（深度学习方法），每天的GPU的电费就要上百万。</li>
+<li>稳定<br>这里的稳定是指输出结果的稳定。产品最怕的就是对结果的不可控，如果采用深度学习的模型，模型基本是处在一种失控的状态，工程师没法知道产品什么时候会出来什么不太好的东西。</li>
+</ol>
+<p>另外，百度的UNIT是一个集成了NLP很多很多很多小的NLP任务的大系统，而非单单仅是靠一个单一的结构就能完成的。</p>
+<h2 id="Panel"><a href="#Panel" class="headerlink" title="Panel"></a>Panel</h2><ol>
+<li>近五年突破</li>
+</ol>
+<ul>
+<li>模型上的突破：rnn，cnn-&gt;transformer </li>
+<li>data size ,  data-driven：机器自己去学习特征比人设计有效。</li>
+<li>经典模型的产生：Transformer，Attention</li>
+<li>Bert：证明了自然语言任务有共性。开创了利用数据的弱标记来训练NLP任务的篇章。</li>
+</ul>
+<ol start="2">
+<li><p>未来发展<br>有标记和无标记：人的学习是一种无标/弱标的过程，只有考试才有标。<br>现在的工作是overfitting的。few-shot。</p>
+</li>
+<li><p>与国际上的差距</p>
+</li>
+</ol>
+<ul>
+<li>定义问题和任务 占坑式、前瞻性研究不足</li>
+<li>缺乏引领性的工作</li>
+</ul>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/NLP/" rel="tag"># NLP</a>
+          
+            <a href="/tags/学术论坛/" rel="tag"># 学术论坛</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/21/Ordered-Neurons-Integrating-Tree-Structures-into-Recurrent-Neural-Networks/" rel="next" title="Ordered Neurons - Integrating Tree Structures into Recurrent Neural Networks">
+                <i class="fa fa-chevron-left"></i> Ordered Neurons - Integrating Tree Structures into Recurrent Neural Networks
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="Ma Xinyin">
+            
+              <p class="site-author-name" itemprop="name">Ma Xinyin</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/horseee" title="GitHub &rarr; https://github.com/horseee" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="/maxinyin@zju.edu.cn" title="E-Mail &rarr; maxinyin@zju.edu.cn"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://vainf.github.io" title="http://vainf.github.io" rel="noopener" target="_blank">vainf</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#整体感受"><span class="nav-number">1.</span> <span class="nav-text">整体感受</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#语义计算"><span class="nav-number">2.</span> <span class="nav-text">语义计算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#从静态到动态的词向量"><span class="nav-number">2.1.</span> <span class="nav-text">从静态到动态的词向量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sparse-Deep-Learning"><span class="nav-number">2.2.</span> <span class="nav-text">Sparse Deep Learning</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自然语言处理中的表示学习进展"><span class="nav-number">2.3.</span> <span class="nav-text">自然语言处理中的表示学习进展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#百度语义计算技术及其应用"><span class="nav-number">2.4.</span> <span class="nav-text">百度语义计算技术及其应用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问答与阅读理解"><span class="nav-number">3.</span> <span class="nav-text">问答与阅读理解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#文本阅读理解的研究进展和挑战"><span class="nav-number">3.1.</span> <span class="nav-text">文本阅读理解的研究进展和挑战</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#百度阅读理解技术研究及应用"><span class="nav-number">3.2.</span> <span class="nav-text">百度阅读理解技术研究及应用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#机器翻译-amp-人机对话"><span class="nav-number">4.</span> <span class="nav-text">机器翻译&amp;人机对话</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#机器翻译"><span class="nav-number">4.1.</span> <span class="nav-text">机器翻译</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#人机对话"><span class="nav-number">4.2.</span> <span class="nav-text">人机对话</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Panel"><span class="nav-number">5.</span> <span class="nav-text">Panel</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ma Xinyin</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v6.7.0</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="Total Visitors">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="Total Views">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.7.0"></script>
+
+  <script src="/js/src/motion.js?v=6.7.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/schemes/muse.js?v=6.7.0"></script>
+
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/js/src/post-details.js?v=6.7.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.7.0"></script>
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
