@@ -102,19 +102,6 @@ I have published several papers in NeurIPS, EMNLP, IJCAI and CVPR. You can find 
         </div>
     </div>
   </li>
-
-  
-  <li>
-    <a href="https://arxiv.org/abs/2305.10924"> Structural Pruning for Diffusion Models</a>. Gongfan Fang, <strong>Xinyin Ma</strong>, Xinchao Wang. <strong>NeurIPS 2023</strong>. 
-    <div style="display: inline">
-        <a href="https://arxiv.org/abs/2305.10924"> [paper]</a>
-        <a href="https://github.com/VainF/Diff-Pruning"> [code]</a>
-        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
-        <div class="abstract"  style="overflow: hidden; display: none;">  
-            <p> Generative modeling has recently undergone remarkable advancements, primarily propelled by the transformative implications of Diffusion Probabilistic Models (DPMs). The impressive capability of these models, however, often entails significant computational overhead during both training and inference. To tackle this challenge, we present Diff-Pruning, an efficient compression method tailored for learning lightweight diffusion models from pre-existing ones, without the need for extensive re-training. The essence of Diff-Pruning is encapsulated in a Taylor expansion over pruned timesteps, a process that disregards non-contributory diffusion steps and ensembles informative gradients to identify important weights. Our empirical assessment, undertaken across four diverse datasets highlights two primary benefits of our proposed method: 1) Efficiency: it enables approximately a 50% reduction in FLOPs at a mere 10% to 20% of the original training expenditure; 2) Consistency: the pruned diffusion models inherently preserve generative behavior congruent with their pre-trained progenitors. </p>
-        </div>
-    </div>
-  </li>
   
   <li>
    <a href="https://www.ijcai.org/proceedings/2022/0596.pdf"> Prompting to distill: Boosting Data-Free Knowledge Distillation via Reinforced Prompt</a>. <strong>Xinyin Ma</strong>, Xinchao Wang, Gongfan Fang, Yongliang Shen, Weiming Lu. <strong>IJCAI 2022</strong>. 
@@ -147,6 +134,18 @@ I have published several papers in NeurIPS, EMNLP, IJCAI and CVPR. You can find 
         <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
         <div class="abstract"  style="overflow: hidden; display: none;">  
             <p> Large pre-trained transformer-based language models have achieved impressive results on a wide range of NLP tasks. In the past few years, Knowledge Distillation(KD) has become a popular paradigm to compress a computationally expensive model to a resource-efficient lightweight model. However, most KD algorithms, especially in NLP, rely on the accessibility of the original training dataset, which may be unavailable due to privacy issues. To tackle this problem, we propose a novel two-stage data-free distillation method, named Adversarial self-Supervised Data-Free Distillation (AS-DFD), which is designed for compressing large-scale transformer-based models (e.g., BERT). To avoid text generation in discrete space, we introduce a Plug & Play Embedding Guessing method to craft pseudo embeddings from the teacher’s hidden knowledge. Meanwhile, with a self-supervised module to quantify the student’s ability, we adapt the difficulty of pseudo embeddings in an adversarial training manner. To the best of our knowledge, our framework is the first data-free distillation framework designed for NLP tasks. We verify the effectiveness of our method on several text classification datasets. </p>
+        </div>
+    </div>
+  </li>
+
+  <li>
+    <a href="https://arxiv.org/abs/2305.10924"> Structural Pruning for Diffusion Models</a>. Gongfan Fang, <strong>Xinyin Ma</strong>, Xinchao Wang. <strong>NeurIPS 2023</strong>. 
+    <div style="display: inline">
+        <a href="https://arxiv.org/abs/2305.10924"> [paper]</a>
+        <a href="https://github.com/VainF/Diff-Pruning"> [code]</a>
+        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
+        <div class="abstract"  style="overflow: hidden; display: none;">  
+            <p> Generative modeling has recently undergone remarkable advancements, primarily propelled by the transformative implications of Diffusion Probabilistic Models (DPMs). The impressive capability of these models, however, often entails significant computational overhead during both training and inference. To tackle this challenge, we present Diff-Pruning, an efficient compression method tailored for learning lightweight diffusion models from pre-existing ones, without the need for extensive re-training. The essence of Diff-Pruning is encapsulated in a Taylor expansion over pruned timesteps, a process that disregards non-contributory diffusion steps and ensembles informative gradients to identify important weights. Our empirical assessment, undertaken across four diverse datasets highlights two primary benefits of our proposed method: 1) Efficiency: it enables approximately a 50% reduction in FLOPs at a mere 10% to 20% of the original training expenditure; 2) Consistency: the pruned diffusion models inherently preserve generative behavior congruent with their pre-trained progenitors. </p>
         </div>
     </div>
   </li>
