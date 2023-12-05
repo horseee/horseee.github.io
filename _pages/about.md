@@ -31,7 +31,7 @@ I have published several papers in NeurIPS, EMNLP, IJCAI and CVPR. You can find 
 
 
 # 🔥 News
-- *2023.12*: &nbsp;🌟Our new work, DeepCache, which accelerated Diffusion Models for FREE! Check our [paper](https://arxiv.org/abs/2312.00858) and [code](https://github.com/horseee/DeepCache)! 
+- *2023.12*: &nbsp;🌟Our new work, DeepCache, accelerates Diffusion Models for FREE! Check our [paper](https://arxiv.org/abs/2312.00858) and [code](https://github.com/horseee/DeepCache)! 
 - *2023.09*: &nbsp;Two papers accepted by NeurIPS'23. 
 - *2023.06*: &nbsp;🎉🎉 Release LLM-Pruner🐏, the first structural pruning work of LLM. See our [paper](https://arxiv.org/abs/2305.11627) and [code](https://github.com/horseee/LLM-Pruner)! 
 - *2023.02*: &nbsp;One paper 'DepGraph: Towards Any Structural Pruning' accepted by CVPR’23.
