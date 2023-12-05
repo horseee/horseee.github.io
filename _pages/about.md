@@ -27,12 +27,13 @@ I’m currently conducting some research in efficient learning, including:
 🌱 The acceleration of training: dataset distillation and coreset  
 🌿 Compression under low-resource setting, e.g., data-free distillation. 
 
-I have published several papers in NeurIPS, EMNLP, IJCAI and CVPR. You can find more information about my publication in [Google Scholar](https://scholar.google.com/citations?user=jFUKS0oAAAAJ&hl=en)
+I have published several papers in NeurIPS, EMNLP, IJCAI and CVPR. You can find more information about my publications in [Google Scholar](https://scholar.google.com/citations?user=jFUKS0oAAAAJ&hl=en)
 
 
 # 🔥 News
+- *2023.12*: &nbsp;🌟Our new work, DeepCache, which accelerated Diffusion Models for FREE! Check our [paper](https://arxiv.org/abs/2312.00858) and [code](https://github.com/horseee/DeepCache)! 
 - *2023.09*: &nbsp;Two papers accepted by NeurIPS'23. 
-- *2023.08*: &nbsp;🎉🎉 Release LLM-Pruner🐏, the first structural pruning work of LLM. See our [paper](https://arxiv.org/abs/2305.11627) and [code](https://github.com/horseee/LLM-Pruner)! 
+- *2023.06*: &nbsp;🎉🎉 Release LLM-Pruner🐏, the first structural pruning work of LLM. See our [paper](https://arxiv.org/abs/2305.11627) and [code](https://github.com/horseee/LLM-Pruner)! 
 - *2023.02*: &nbsp;One paper 'DepGraph: Towards Any Structural Pruning' accepted by CVPR’23.
 - *2022.08*: &nbsp;⛵Start my Ph.D. journey in NUS!
 - *2022.04*: &nbsp; One paper ‘Prompting to distill: Boosting Data-Free Knowledge Distillation via Reinforced Prompt’ accepted by IJCAI’22.
@@ -58,6 +59,30 @@ I have published several papers in NeurIPS, EMNLP, IJCAI and CVPR. You can find 
     <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" ><strong>[abstract]</strong></a>
     <div class="abstract"  style="overflow: hidden; display: none;">  
         <p> Large language models (LLMs) have shown remarkable capabilities in language understanding and generation. However, such impressive capability typically comes with a substantial model size, which presents significant challenges in both the deployment, inference, and training stages. With LLM being a general-purpose task solver, we explore its compression in a task-agnostic manner, which aims to preserve the multi-task solving and language generation ability of the original LLM. One challenge to achieving this is the enormous size of the training corpus of LLM, which makes both data transfer and model post-training over-burdensome. Thus, we tackle the compression of LLMs within the bound of two constraints: being task-agnostic and minimizing the reliance on the original training dataset. Our method, named LLM-Pruner, adopts structural pruning that selectively removes non-critical coupled structures based on gradient information, maximally preserving the majority of the LLM's functionality. To this end, the performance of pruned models can be efficiently recovered through tuning techniques, LoRA, in merely 3 hours, requiring only 50K data. We validate the LLM-Pruner on three LLMs, including LLaMA, Vicuna, and ChatGLM, and demonstrate that the compressed models still exhibit satisfactory capabilities in zero-shot classification and generation. </p>
+    </div>
+</div>
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='https://github.com/horseee/DeepCache/blob/master/assets/intro.png?raw=true' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[(🎈NEW)**DeepCache: Accelerating Diffusion Models for Free**](https://arxiv.org/abs/2312.00858) <img src='https://img.shields.io/github/stars/horseee/DeepCache.svg?style=social&label=Star' alt="sym" height="100%">
+
+**Xinyin Ma**, Gongfan Fang, Xinchao Wang
+
+- A training-free paradigm that accelerates diffusion models
+- Utilizes the U-Net's properties to efficiently reuse high-level features and update low-level features
+- 2.3× speedup for Stable Diffusion v1.5 and a 4.1× speedup for LDM-4-G, based upon DDIM/PLMS
+
+<div style="display: inline">
+    <a href="https://arxiv.org/abs/2305.11627"> <strong>[paper]</strong></a>
+    <a href="https://github.com/horseee/DeepCache"> <strong>[code]</strong></a>
+    <a href="https://horseee.github.io/Diffusion_DeepCache/"> <strong>[Project Page]</strong></a>
+    <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" ><strong>[abstract]</strong></a>
+    <div class="abstract"  style="overflow: hidden; display: none;">  
+        <p> Diffusion models have recently gained unprecedented attention in the field of image synthesis due to their remarkable generative capabilities. Notwithstanding their prowess, these models often incur substantial computational costs, primarily attributed to the sequential denoising process and cumbersome model size. Traditional methods for compressing diffusion models typically involve extensive retraining, presenting cost and feasibility challenges. In this paper, we introduce DeepCache, a novel training-free paradigm that accelerates diffusion models from the perspective of model architecture. DeepCache capitalizes on the inherent temporal redundancy observed in the sequential denoising steps of diffusion models, which caches and retrieves features across adjacent denoising stages, thereby curtailing redundant computations. Utilizing the property of the U-Net, we reuse the high-level features while updating the low-level features in a very cheap way. This innovative strategy, in turn, enables a speedup factor of 2.3× for Stable Diffusion v1.5 with only a 0.05 decline in CLIP Score, and 4.1× for LDM-4-G with a slight decrease of 0.22 in FID on ImageNet. Our experiments also demonstrate DeepCache's superiority over existing pruning and distillation methods that necessitate retraining and its compatibility with current sampling techniques. Furthermore, we find that under the same throughput, DeepCache effectively achieves comparable or even marginally improved results with DDIM or PLMS. </p>
     </div>
 </div>
 
