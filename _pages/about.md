@@ -35,7 +35,6 @@ I have published several papers in NeurIPS, EMNLP, IJCAI and CVPR. You can find 
 
 
 # 🔥 News
-- *2023.12* &nbsp;📌 I'll be in New Orleans for NeurIPS 2023! Feel free to email me if you'd like to have a coffee chat with me😉. Warm welcome! And my poster session for LLM-Pruner is on Wed 13 Dec 10:45 a.m. CST — 12:45 p.m. CST at Great Hall & Hall B1+B2 (level 1) #315! Can't wait to see you there.
 - *2023.12*: &nbsp;🌟Our new work, DeepCache, accelerates Diffusion Models for FREE! Check our [paper](https://arxiv.org/abs/2312.00858) and [code](https://github.com/horseee/DeepCache)! 
 - *2023.09*: &nbsp;Two papers accepted by NeurIPS'23. 
 - *2023.06*: &nbsp;🎉🎉 Release LLM-Pruner🐏, the first structural pruning work of LLM. See our [paper](https://arxiv.org/abs/2305.11627) and [code](https://github.com/horseee/LLM-Pruner)! 
