@@ -196,7 +196,7 @@ I have published several papers in NeurIPS, EMNLP, IJCAI and CVPR. You can find 
 - *2015.09 - 2019.06*, B.Eng. in Software Engineering, Chu Kochen Honors College, Zhejiang University
 
 # 📋 Academic Service
-NeurIPS’23, EMNLP'23, ICML’23, ACL’23, ACL’22, EMNLP’22, ACL’21, EMNLP’21 and several ARRs
+ICLR'24, NAACL'24(ARR 2023 Dec), NeurIPS’23, EMNLP'23, ICML’23, ACL’23, ACL’22, EMNLP’22, ACL’21, EMNLP’21 and several ARRs
 
 
 # 💻 Internships
