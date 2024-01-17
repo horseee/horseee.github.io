@@ -23,7 +23,7 @@ Welcome to Xinyin Ma(马欣尹)’s website :laughing:!
 I am currently a Ph.D student in [Learning and Vision Lab @ NUS](http://www.lv-nus.org/) from August 2022, advised by [Prof.Xinchao Wang](https://sites.google.com/site/sitexinchaowang/). Previously I obtained my master in computer science from Zhejiang University where I was advised by [Prof.Weiming Lu](https://person.zju.edu.cn/en/lwm). I obtained my bachelor degree in software engineering also in Zhejiang University and got the honor degree from Chu Kochen Honors College.
 
 I’m currently conducting some research in efficient learning, including:  
-🌲 The efficiency of the Large Lanaguage Model, Pre-trained Language Model and Diffusion Model.  
+🌲 The efficiency of the Large Language Model, Pre-trained Language Model and Diffusion Model.  
 🌱 The acceleration of training: dataset distillation and coreset  
 🌿 Compression under low-resource setting, e.g., data-free distillation. 
 
