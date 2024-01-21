@@ -57,7 +57,7 @@ I have published several papers in NeurIPS, EMNLP, IJCAI and CVPR. You can find 
 - 2.3× speedup for Stable Diffusion v1.5 and a 4.1× speedup for LDM-4-G, based upon DDIM/PLMS
 
 <div style="display: inline">
-    <a href="https://arxiv.org/abs/2305.11627"> <strong>[paper]</strong></a>
+    <a href="https://arxiv.org/abs/2312.00858"> <strong>[paper]</strong></a>
     <a href="https://github.com/horseee/DeepCache"> <strong>[code]</strong></a>
     <a href="https://horseee.github.io/Diffusion_DeepCache/"> <strong>[Project Page]</strong></a>
     <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" ><strong>[abstract]</strong></a>
