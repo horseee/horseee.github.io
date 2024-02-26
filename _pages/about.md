@@ -35,6 +35,7 @@ I have published several papers in NeurIPS, EMNLP, IJCAI and CVPR. You can find 
 
 
 # 🔥 News
+- *2024.02*：&nbsp;DeepCache is accepted by CVPR'24! 
 - *2023.12*: &nbsp;🌟Our new work, DeepCache, accelerates Diffusion Models for FREE! Check our [paper](https://arxiv.org/abs/2312.00858) and [code](https://github.com/horseee/DeepCache)! 
 - *2023.09*: &nbsp;Two papers accepted by NeurIPS'23. 
 - *2023.06*: &nbsp;🎉🎉 Release LLM-Pruner🐏, the first structural pruning work of LLM. See our [paper](https://arxiv.org/abs/2305.11627) and [code](https://github.com/horseee/LLM-Pruner)! 
@@ -45,7 +46,7 @@ I have published several papers in NeurIPS, EMNLP, IJCAI and CVPR. You can find 
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='https://github.com/horseee/DeepCache/blob/master/assets/intro.png?raw=true' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR'24</div><img src='https://github.com/horseee/DeepCache/blob/master/assets/intro.png?raw=true' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [(🎈NEW)**DeepCache: Accelerating Diffusion Models for Free**](https://arxiv.org/abs/2312.00858) <img src='https://img.shields.io/github/stars/horseee/DeepCache.svg?style=social&label=Star' alt="sym" height="100%">
