@@ -27,14 +27,12 @@ I’m currently conducting some research in efficient learning, including:
 🌱 The acceleration of training: dataset distillation and coreset  
 🌿 Compression under low-resource setting, e.g., data-free distillation. 
 
-I have published several papers in NeurIPS, EMNLP, IJCAI and CVPR. You can find more information about my publications in [Google Scholar](https://scholar.google.com/citations?user=jFUKS0oAAAAJ&hl=en)
-
-
-
-
+I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find more information about my publications in [Google Scholar](https://scholar.google.com/citations?user=jFUKS0oAAAAJ&hl=en)
 
 
 # 🔥 News
+- *2024.06*: &nbsp;We announce our new work, Learning-to-Cache, an improved version of DeepCache on the diffusion transformers. Check our [oaoer](https://arxiv.org/abs/2406.01733) and [code](https://github.com/horseee/learning-to-cache)!
+- *2024.06*: &nbsp;One co-authored paper accepted by Interspeech'24! 
 - *2024.02*：&nbsp;DeepCache is accepted by CVPR'24! 
 - *2023.12*: &nbsp;🌟Our new work, DeepCache, accelerates Diffusion Models for FREE! Check our [paper](https://arxiv.org/abs/2312.00858) and [code](https://github.com/horseee/DeepCache)! 
 - *2023.09*: &nbsp;Two papers are accepted by NeurIPS'23. 
@@ -46,10 +44,35 @@ I have published several papers in NeurIPS, EMNLP, IJCAI and CVPR. You can find 
 
 # 📝 Publications 
 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='https://github.com/horseee/learning-to-cache/raw/main/assets/teaser.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[(🎈NEW)**Learning-to-Cache: Accelerating Diffusion Transformer via Layer Caching**](- A training-free paradigm that accelerates diffusion models
+) <img src='https://img.shields.io/github/stars/horseee/Learning-to-Cache.svg?style=social&label=Star' alt="sym" height="100%">
+
+**Xinyin Ma**, Gongfan Fang, Michael Bi Mi, Xinchao Wang
+
+- A novel scheme that learns to conduct caching in a dynamic manner for diffusion transformers.
+- A large proportion of layers in the diffusion transformer can be removed, without updating the model parameters.
+- Learning-to-Cache largely outperforms samplers such as DDIM and DPM-Solver.
+
+<div style="display: inline">
+    <a href="https://arxiv.org/abs/2406.01733"> <strong>[paper]</strong></a>
+    <a href="https://github.com/horseee/learning-to-cache"> <strong>[code]</strong></a>
+    <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" ><strong>[abstract]</strong></a>
+    <div class="abstract"  style="overflow: hidden; display: none;">  
+        <p> Diffusion Transformers have recently demonstrated unprecedented generative capabilities for various tasks. The encouraging results, however, come with the cost of slow inference, since each denoising step requires inference on a transformer model with a large scale of parameters. In this study, we make an interesting and somehow surprising observation: the computation of a large proportion of layers in the diffusion transformer, through introducing a caching mechanism, can be readily removed even without updating the model parameters. In the case of U-ViT-H/2, for example, we may remove up to 93.68% of the computation in the cache steps (46.84% for all steps), with less than 0.01 drop in FID. To achieve this, we introduce a novel scheme, named Learning-to-Cache (L2C), that learns to conduct caching in a dynamic manner for diffusion transformers. Specifically, by leveraging the identical structure of layers in transformers and the sequential nature of diffusion, we explore redundant computations between timesteps by treating each layer as the fundamental unit for caching. To address the challenge of the exponential search space in deep models for identifying layers to cache and remove, we propose a novel differentiable optimization objective. An input-invariant yet timestep-variant router is then optimized, which can finally produce a static computation graph. Experimental results show that L2C largely outperforms samplers such as DDIM and DPM-Solver, alongside prior cache-based methods at the same inference speed. </p>
+    </div>
+</div>
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2024</div><img src='https://github.com/horseee/DeepCache/blob/master/assets/intro.png?raw=true' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[(🎈NEW)**DeepCache: Accelerating Diffusion Models for Free**](https://arxiv.org/abs/2312.00858) <img src='https://img.shields.io/github/stars/horseee/DeepCache.svg?style=social&label=Star' alt="sym" height="100%">
+[**DeepCache: Accelerating Diffusion Models for Free**](https://arxiv.org/abs/2312.00858) <img src='https://img.shields.io/github/stars/horseee/DeepCache.svg?style=social&label=Star' alt="sym" height="100%">
 
 **Xinyin Ma**, Gongfan Fang, Xinchao Wang
 
