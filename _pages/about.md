@@ -31,7 +31,7 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
 
 
 # 🔥 News
-- *2024.06*: &nbsp;We announce our new work, Learning-to-Cache, an improved version of DeepCache on the diffusion transformers. Check our [oaoer](https://arxiv.org/abs/2406.01733) and [code](https://github.com/horseee/learning-to-cache)!
+- *2024.06*: &nbsp;We announce our new work, Learning-to-Cache, an improved version of DeepCache on the diffusion transformers. Check our [paper](https://arxiv.org/abs/2406.01733) and [code](https://github.com/horseee/learning-to-cache)!
 - *2024.06*: &nbsp;One co-authored paper accepted by Interspeech'24! 
 - *2024.02*：&nbsp;DeepCache is accepted by CVPR'24! 
 - *2023.12*: &nbsp;🌟Our new work, DeepCache, accelerates Diffusion Models for FREE! Check our [paper](https://arxiv.org/abs/2312.00858) and [code](https://github.com/horseee/DeepCache)! 
