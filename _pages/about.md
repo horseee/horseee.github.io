@@ -19,8 +19,8 @@ redirect_from:
 
 Hi there! 
 
-Welcome to Xinyin Ma(马欣尹)’s website :laughing:!
-I am currently a Ph.D student in [Learning and Vision Lab @ NUS](http://www.lv-nus.org/) from August 2022, advised by [Prof.Xinchao Wang](https://sites.google.com/site/sitexinchaowang/). Previously I obtained my master in computer science from Zhejiang University where I was advised by [Prof.Weiming Lu](https://person.zju.edu.cn/en/lwm). I obtained my bachelor degree in software engineering also in Zhejiang University and got the honor degree from Chu Kochen Honors College.
+Welcome to Xinyin Ma(马欣尹)’s website!
+I am currently a Ph.D candidate in [Learning and Vision Lab @ NUS](http://www.lv-nus.org/) from August 2022, advised by [Prof.Xinchao Wang](https://sites.google.com/site/sitexinchaowang/). Previously I obtained my master in computer science from Zhejiang University where I was advised by [Prof.Weiming Lu](https://person.zju.edu.cn/en/lwm). I obtained my bachelor degree in software engineering also in Zhejiang University and got the honor degree from Chu Kochen Honors College.
 
 I’m currently conducting some research in efficient learning, including:  
 🌲 The efficiency of the Large Language Model, Pre-trained Language Model and Diffusion Model.  
@@ -31,6 +31,7 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
 
 
 # 🔥 News
+- *2024.07*: &nbsp; ⛵ Passed my qualifying exam! 
 - *2024.06*: &nbsp;We announce our new work, Learning-to-Cache, an improved version of DeepCache on the diffusion transformers. Check our [paper](https://arxiv.org/abs/2406.01733) and [code](https://github.com/horseee/learning-to-cache)! Also another new work AsyncDiff, which seperates diffusion models into different devices to enable parallel computing. [Paper](https://arxiv.org/abs/2406.06911) and [code](https://github.com/czg1225/AsyncDiff) is available!
 - *2024.06*: &nbsp;One co-authored paper accepted by Interspeech'24! 
 - *2024.02*：&nbsp;DeepCache is accepted by CVPR'24! 
@@ -220,7 +221,7 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
 - *2015.09 - 2019.06*, B.Eng. in Software Engineering, Chu Kochen Honors College, Zhejiang University
 
 # 📋 Academic Service
-ICML'24, IJCAI'24, ICLR'24, NAACL'24(ARR 2023 Dec), NeurIPS’23, EMNLP'23, ICML’23, ACL’23, ACL’22, EMNLP’22, ACL’21, EMNLP’21 and several ARRs
+NeurIPS'24, ECCV'24, ACL'24(ARR 2024 Feb), ICML'24, IJCAI'24, ICLR'24, NAACL'24(ARR 2023 Dec), NeurIPS’23, EMNLP'23, ICML’23, ACL’23, ACL’22, EMNLP’22, ACL’21, EMNLP’21 and several ARRs
 
 
 # 💻 Internships
