@@ -31,8 +31,9 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
 
 
 # 🔥 News
+- *2024.07*: &nbsp;One co-authored paper accepted by ECCV'24! 
 - *2024.07*: &nbsp;⛵Passed my qualifying exam! 
-- *2024.06*: &nbsp;We announce our new work, Learning-to-Cache, an improved version of DeepCache on the diffusion transformers. Check our [paper](https://arxiv.org/abs/2406.01733) and [code](https://github.com/horseee/learning-to-cache)! Also another new work AsyncDiff, which seperates diffusion models into different devices to enable parallel computing. [Paper](https://arxiv.org/abs/2406.06911) and [code](https://github.com/czg1225/AsyncDiff) is available!
+- *2024.06*: &nbsp;We announce our new work, Learning-to-Cache, an improved version of DeepCache on the diffusion transformers. Check our [paper](https://arxiv.org/abs/2406.01733) and [code](https://github.com/horseee/learning-to-cache)! Also introduce another new work AsyncDiff, which seperates diffusion models into different devices to enable parallel computing. [Paper](https://arxiv.org/abs/2406.06911) and [code](https://github.com/czg1225/AsyncDiff) is available!
 - *2024.06*: &nbsp;One co-authored paper accepted by Interspeech'24! 
 - *2024.02*：&nbsp;DeepCache is accepted by CVPR'24! 
 - *2023.12*: &nbsp;🌟Our new work, DeepCache, accelerates Diffusion Models for FREE! Check our [paper](https://arxiv.org/abs/2312.00858) and [code](https://github.com/horseee/DeepCache)! 
@@ -201,6 +202,18 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
         <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
         <div class="abstract"  style="overflow: hidden; display: none;">  
             <p> Joint entity and relation extraction framework constructs a unified model to perform entity recognition and relation extraction simultaneously, which can exploit the dependency between the two tasks to mitigate the error propagation problem suffered by the pipeline model. Current efforts on joint entity and relation extraction focus on enhancing the interaction between entity recognition and relation extraction through parameter sharing, joint decoding, or other ad-hoc tricks (e.g., modeled as a semi-Markov decision process, cast as a multi-round reading comprehension task). However, there are still two issues on the table. First, the interaction utilized by most methods is still weak and uni-directional, which is unable to model the mutual dependency between the two tasks. Second, relation triggers are ignored by most methods, which can help explain why humans would extract a relation in the sentence. They’re essential for relation extraction but overlooked. To this end, we present a Trigger-Sense Memory Flow Framework (TriMF) for joint entity and relation extraction. We build a memory module to remember category representations learned in entity recognition and relation extraction tasks. And based on it, we design a multi-level memory flow attention mechanism to enhance the bi-directional interaction between entity recognition and relation extraction. Moreover, without any human annotations, our model can enhance relation trigger information in a sentence through a trigger sensor module, which improves the model performance and makes model predictions with better interpretation. Experiment results show that our proposed framework achieves state-of-the-art results by improves the relation F1 to 52.44% (+3.2%) on SciERC, 66.49% (+4.9%) on ACE05, 72.35% (+0.6%) on CoNLL04 and 80.66% (+2.3%) on ADE. </p>
+        </div>
+    </div>
+  </li>
+
+  <li>
+    <a href="https://arxiv.org/abs/2406.06911"> AsyncDiff: Parallelizing Diffusion Models by Asynchronous Denoising</a>. Zigeng Chen, <strong>Xinyin Ma</strong>, Gongfan Fang, Zhenxiong Tan, Xinchao Wang. <strong>Preprint</strong>. 
+    <div style="display: inline">
+        <a href="https://arxiv.org/abs/2406.06911"> [paper]</a>
+        <a href="https://github.com/czg1225/AsyncDiff"> [code]</a>
+        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
+        <div class="abstract"  style="overflow: hidden; display: none;">  
+            <p> Diffusion models have garnered significant interest from the community for their great generative ability across various applications. However, their typical multi-step sequential-denoising nature gives rise to high cumulative latency, thereby precluding the possibilities of parallel computation. To address this, we introduce AsyncDiff, a universal and plug-and-play acceleration scheme that enables model parallelism across multiple devices. Our approach divides the cumbersome noise prediction model into multiple components, assigning each to a different device. To break the dependency chain between these components, it transforms the conventional sequential denoising into an asynchronous process by exploiting the high similarity between hidden states in consecutive diffusion steps. Consequently, each component is facilitated to compute in parallel on separate devices. The proposed strategy significantly reduces inference latency while minimally impacting the generative quality. Specifically, for the Stable Diffusion v2.1, AsyncDiff achieves a 2.7x speedup with negligible degradation and a 4.0x speedup with only a slight reduction of 0.38 in CLIP Score, on four NVIDIA A5000 GPUs. Our experiments also demonstrate that AsyncDiff can be readily applied to video diffusion models with encouraging performances. </p>
         </div>
     </div>
   </li>
