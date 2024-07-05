@@ -29,6 +29,8 @@ I’m currently conducting some research in efficient learning, including:
 
 I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find more information about my publications in [Google Scholar](https://scholar.google.com/citations?user=jFUKS0oAAAAJ&hl=en)
 
+**I‘m actively seeking internship and visiting opportunities. If you have any opportunities available, I would greatly appreciate it if you could reach out to me. Thank you😎!**
+
 
 # 🔥 News
 - *2024.07*: &nbsp;One co-authored paper accepted by ECCV'24! 
