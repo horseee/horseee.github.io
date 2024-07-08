@@ -151,8 +151,8 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
   <li>
    <a href="https://aclanthology.org/2021.emnlp-main.205.pdf"> MuVER: Improving First-Stage Entity Retrieval with Multi-View Entity Representations</a>. <strong>Xinyin Ma</strong>, Yong Jiang, Nguyen Bach, Tao Wang, Zhongqiang Huang, Fei Huang, Weiming Lu. <strong>EMNLP 2021(short)</strong>. 
     <div style="display: inline">
-        <a href="https://github.com/alibaba-nlp/muver"> [code]</a>
         <a href="https://aclanthology.org/2021.emnlp-main.205.pdf"> [paper]</a>
+        <a href="https://github.com/alibaba-nlp/muver"> [code]</a>
         <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
         <div class="abstract"  style="overflow: hidden; display: none;">  
             <p> Entity retrieval, which aims at disambiguating mentions to canonical entities from massive KBs, is essential for many tasks in natural language processing. Recent progress in entity retrieval shows that the dual-encoder structure is a powerful and efficient framework to nominate candidates if entities are only identified by descriptions. However, they ignore the property that meanings of entity mentions diverge in different contexts and are related to various portions of descriptions, which are treated equally in previous works. In this work, we propose Multi-View Entity Representations (MuVER), a novel approach for entity retrieval that constructs multi-view representations for entity descriptions and approximates the optimal view for mentions via a heuristic searching method. Our method achieves the state-of-the-art performance on ZESHEL and improves the quality of candidates on three standard Entity Linking datasets. </p>
@@ -168,6 +168,18 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
         <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
         <div class="abstract"  style="overflow: hidden; display: none;">  
             <p> Large pre-trained transformer-based language models have achieved impressive results on a wide range of NLP tasks. In the past few years, Knowledge Distillation(KD) has become a popular paradigm to compress a computationally expensive model to a resource-efficient lightweight model. However, most KD algorithms, especially in NLP, rely on the accessibility of the original training dataset, which may be unavailable due to privacy issues. To tackle this problem, we propose a novel two-stage data-free distillation method, named Adversarial self-Supervised Data-Free Distillation (AS-DFD), which is designed for compressing large-scale transformer-based models (e.g., BERT). To avoid text generation in discrete space, we introduce a Plug & Play Embedding Guessing method to craft pseudo embeddings from the teacher’s hidden knowledge. Meanwhile, with a self-supervised module to quantify the student’s ability, we adapt the difficulty of pseudo embeddings in an adversarial training manner. To the best of our knowledge, our framework is the first data-free distillation framework designed for NLP tasks. We verify the effectiveness of our method on several text classification datasets. </p>
+        </div>
+    </div>
+  </li>
+
+ <li>
+    <a href="https://arxiv.org/abs/2407.04616"> Isomorphic Pruning for Vision Models</a>. Gongfan Fang, <strong>Xinyin Ma</strong>, Michael Bi Mi, Xinchao Wang. <strong>ECCV 2024</strong>. 
+    <div style="display: inline">
+        <a href="https://arxiv.org/abs/2407.04616"> [paper]</a>
+        <a href="https://github.com/VainF/Isomorphic-Pruning"> [code]</a>
+        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
+        <div class="abstract"  style="overflow: hidden; display: none;">  
+            <p> Structured pruning reduces the computational overhead of deep neural networks by removing redundant sub-structures. However, assessing the relative importance of different sub-structures remains a significant challenge, particularly in advanced vision models featuring novel mechanisms and architectures like self-attention, depth-wise convolutions, or residual connections. These heterogeneous substructures usually exhibit diverged parameter scales, weight distributions, and computational topology, introducing considerable difficulty to importance comparison. To overcome this, we present Isomorphic Pruning, a simple approach that demonstrates effectiveness across a range of network architectures such as Vision Transformers and CNNs, and delivers competitive performance across different model sizes. Isomorphic Pruning originates from an observation that, when evaluated under a pre-defined importance criterion, heterogeneous sub-structures demonstrate significant divergence in their importance distribution, as opposed to isomorphic structures that present similar importance patterns. This inspires us to perform isolated ranking and comparison on different types of sub-structures for more reliable pruning. Our empirical results on ImageNet-1K demonstrate that Isomorphic Pruning surpasses several pruning baselines dedicatedly designed for Transformers or CNNs. For instance, we improve the accuracy of DeiT-Tiny from 74.52% to 77.50% by pruning an off-the-shelf DeiT-Base model. And for ConvNext-Tiny, we enhanced performance from 82.06% to 82.18%, while reducing the number of parameters and memory usage.  </p>
         </div>
     </div>
   </li>
@@ -236,7 +248,7 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
 - *2015.09 - 2019.06*, B.Eng. in Software Engineering, Chu Kochen Honors College, Zhejiang University
 
 # 📋 Academic Service
-NeurIPS'24, ECCV'24, ACL'24(ARR 2024 Feb), ICML'24, IJCAI'24, ICLR'24, NAACL'24(ARR 2023 Dec), NeurIPS’23, EMNLP'23, ICML’23, ACL’23, ACL’22, EMNLP’22, ACL’21, EMNLP’21 and several ARRs
+NeurIPS'24, EMNLP'24(ARR 2024 June), ECCV'24, ACL'24(ARR 2024 Feb), ICML'24, IJCAI'24, ICLR'24, NAACL'24(ARR 2023 Dec), NeurIPS’23, EMNLP'23, ICML’23, ACL’23, ACL’22, EMNLP’22, ACL’21, EMNLP’21 and several ARRs
 
 
 # 💻 Internships
