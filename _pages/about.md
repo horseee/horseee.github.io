@@ -20,10 +20,10 @@ redirect_from:
 Hi there! 
 
 Welcome to Xinyin Ma(马欣尹)’s website!
-I am currently a Ph.D candidate in [Learning and Vision Lab @ NUS](http://www.lv-nus.org/) from August 2022, advised by [Prof.Xinchao Wang](https://sites.google.com/site/sitexinchaowang/). Previously I obtained my master in computer science from Zhejiang University where I was advised by [Prof.Weiming Lu](https://person.zju.edu.cn/en/lwm). I obtained my bachelor degree in software engineering also in Zhejiang University and got the honor degree from Chu Kochen Honors College.
+I am currently a Ph.D candidate in [Learning and Vision Lab @ NUS](http://www.lv-nus.org/) from August 2022, advised by [Prof.Xinchao Wang](https://sites.google.com/site/sitexinchaowang/). Previously I obtained my master degree in computer science from Zhejiang University where I was advised by [Prof.Weiming Lu](https://person.zju.edu.cn/en/lwm). I obtained my bachelor degree in software engineering also in Zhejiang University and got the honor degree from Chu Kochen Honors College.
 
 I’m currently conducting some research in efficient learning, including:  
-🌲 The efficiency of the Large Language Model, Pre-trained Language Model and Diffusion Model.  
+🌲 The efficiency of the Language Model and Diffusion Model.  
 🌱 The acceleration of training: dataset distillation and coreset  
 🌿 Compression under low-resource setting, e.g., data-free distillation. 
 
@@ -249,6 +249,9 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
 
 # 📋 Academic Service
 NeurIPS'24, EMNLP'24(ARR 2024 June), ECCV'24, ACL'24(ARR 2024 Feb), ICML'24, IJCAI'24, ICLR'24, NAACL'24(ARR 2023 Dec), NeurIPS’23, EMNLP'23, ICML’23, ACL’23, ACL’22, EMNLP’22, ACL’21, EMNLP’21 and several ARRs
+
+# 🔭 Teaching Experience
+- Fall 2023, Spring 2023. TA for EE2211, Introduction to Machine Learning, NUS.
 
 
 # 💻 Internships
