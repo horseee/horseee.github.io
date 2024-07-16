@@ -185,6 +185,18 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
   </li>
 
   <li>
+    <a href="https://arxiv.org/abs/2407.10468"> LiteFocus: Accelerated Diffusion Inference for Long Audio Synthesis</a>. Zhenxiong Tan, <strong>Xinyin Ma</strong>, Gongfan Fang, Xinchao Wang. <strong>Interspeech 2024</strong>. 
+    <div style="display: inline">
+        <a href="https://arxiv.org/abs/2407.10468"> [paper]</a>
+        <a href="https://github.com/Yuanshi9815/LiteFocus"> [code]</a>
+        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
+        <div class="abstract"  style="overflow: hidden; display: none;">  
+            <p> Latent diffusion models have shown promising results in audio generation, making notable advancements over traditional methods. However, their performance, while impressive with short audio clips, faces challenges when extended to longer audio sequences. These challenges are due to model's self-attention mechanism and training predominantly on 10-second clips, which complicates the extension to longer audio without adaptation. In response to these issues, we introduce a novel approach, LiteFocus that enhances the inference of existing audio latent diffusion models in long audio synthesis. Observed the attention pattern in self-attention, we employ a dual sparse form for attention calculation, designated as same-frequency focus and cross-frequency compensation, which curtails the attention computation under same-frequency constraints, while enhancing audio quality through cross-frequency refillment. LiteFocus demonstrates substantial reduction on inference time with diffusion-based TTA model by 1.99x in synthesizing 80-second audio clips while also obtaining improved audio quality. </p>
+        </div>
+    </div>
+  </li>
+
+  <li>
     <a href="https://arxiv.org/abs/2305.10924"> Structural Pruning for Diffusion Models</a>. Gongfan Fang, <strong>Xinyin Ma</strong>, Xinchao Wang. <strong>NeurIPS 2023</strong>. 
     <div style="display: inline">
         <a href="https://arxiv.org/abs/2305.10924"> [paper]</a>
