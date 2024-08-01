@@ -161,7 +161,7 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
   </li>
 
   <li>
-   <a href="https://aclanthology.org/2020.emnlp-main.499.pdf"> Adversarial Self-Supervised Data-Free Distillation for Text Classification</a>. <strong>Xinyin Ma</strong>, Xinchao Wang, Gongfan Fang, Yongliang Shen, Weiming Lu. <strong>EMNLP 2020</strong>. 
+   <a href="https://aclanthology.org/2020.emnlp-main.499.pdf"> Adversarial Self-Supervised Data-Free Distillation for Text Classification</a>. <strong>Xinyin Ma</strong>, Yongliang Shen, Gongfan Fang, Chen Chen, Chenghao Jia, Weiming Lu. <strong>EMNLP 2020</strong>. 
     <div style="display: inline">
         <a href="https://aclanthology.org/2020.emnlp-main.499.pdf"> [paper]</a>
         <a href="https://slideslive.com/38938706/adversarial-selfsupervised-datafree-distillation-for-text-classification"> [video]</a>
