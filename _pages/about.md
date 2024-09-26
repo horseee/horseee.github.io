@@ -33,6 +33,7 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
 
 
 # 🔥 News
+- *2024.09*: &nbsp;Four papers ([learning-to-cache](https://arxiv.org/abs/2406.01733), [AsyncDiff](https://arxiv.org/abs/2406.06911), [SlimSAM](https://arxiv.org/abs/2312.05284) and RemixDiT) accepted by NeurIPS'24!
 - *2024.07*: &nbsp;One co-authored paper accepted by ECCV'24! 
 - *2024.07*: &nbsp;⛵Passed my qualifying exam! 
 - *2024.06*: &nbsp;We announce our new work, Learning-to-Cache, an improved version of DeepCache on the diffusion transformers. Check our [paper](https://arxiv.org/abs/2406.01733) and [code](https://github.com/horseee/learning-to-cache)! Also introduce another new work AsyncDiff, which seperates diffusion models into different devices to enable parallel computing. [Paper](https://arxiv.org/abs/2406.06911) and [code](https://github.com/czg1225/AsyncDiff) is available!
@@ -49,10 +50,10 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
 # 📝 Publications 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='https://github.com/horseee/learning-to-cache/raw/main/assets/teaser.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='https://github.com/horseee/learning-to-cache/raw/main/assets/teaser.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[(🎈NEW)**Learning-to-Cache: Accelerating Diffusion Transformer via Layer Caching**](- A training-free paradigm that accelerates diffusion models
+[**Learning-to-Cache: Accelerating Diffusion Transformer via Layer Caching**](- A training-free paradigm that accelerates diffusion models
 ) <img src='https://img.shields.io/github/stars/horseee/Learning-to-Cache.svg?style=social&label=Star' alt="sym" height="100%">
 
 **Xinyin Ma**, Gongfan Fang, Michael Bi Mi, Xinchao Wang
@@ -125,19 +126,6 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
 
 <ul>
   <li>
-    <img src='https://img.shields.io/github/stars/VainF/Torch-Pruning.svg?style=social&label=Star' alt="sym" height="100%">
-    <a href="https://arxiv.org/abs/2301.12900"> DepGraph: Towards Any Structural Pruning</a>. Gongfan Fang, <strong>Xinyin Ma</strong>, Mingli Song, Michael Bi Mi, Xinchao Wang. <strong>CVPR 2023</strong>. 
-    <div style="display: inline">
-        <a href="https://arxiv.org/abs/2301.12900"> [paper]</a>
-        <a href="https://github.com/VainF/Torch-Pruning"> [code]</a>
-        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
-        <div class="abstract"  style="overflow: hidden; display: none;">  
-            <p> Structural pruning enables model acceleration by removing structurally-grouped parameters from neural networks. However, the parameter-grouping patterns vary widely across different models, making architecture-specific pruners, which rely on manually-designed grouping schemes, non-generalizable to new architectures. In this work, we study a highly-challenging yet barely-explored task, any structural pruning, to tackle general structural pruning of arbitrary architecture like CNNs, RNNs, GNNs and Transformers. The most prominent obstacle towards this goal lies in the structural coupling, which not only forces different layers to be pruned simultaneously, but also expects all removed parameters to be consistently unimportant, thereby avoiding structural issues and significant performance degradation after pruning. To address this problem, we propose a general and fully automatic method, Dependency Graph(DepGraph), to explicitly model the dependency between layers and comprehensively group coupled parameters for pruning. In this work, we extensively evaluate our method on several architectures and tasks, including ResNe(X)t, DenseNet, MobileNet and Vision transformer for images, GAT for graph, DGCNN for 3D point cloud, alongside LSTM for language, and demonstrate that, even with a simple norm-based criterion, the proposed method consistently yields gratifying performances. </p>
-        </div>
-    </div>
-  </li>
-  
-  <li>
    <a href="https://www.ijcai.org/proceedings/2022/0596.pdf"> Prompting to distill: Boosting Data-Free Knowledge Distillation via Reinforced Prompt</a>. <strong>Xinyin Ma</strong>, Xinchao Wang, Gongfan Fang, Yongliang Shen, Weiming Lu. <strong>IJCAI 2022</strong>. 
     <div style="display: inline">
         <a href="https://www.ijcai.org/proceedings/2022/0596.pdf"> [paper]</a>
@@ -172,7 +160,35 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
     </div>
   </li>
 
- <li>
+  <li>
+    <a href="https://arxiv.org/abs/2406.06911"> AsyncDiff: Parallelizing Diffusion Models by Asynchronous Denoising</a>. Zigeng Chen, <strong>Xinyin Ma</strong>, Gongfan Fang, Zhenxiong Tan, Xinchao Wang. <strong>NeurIPS 2024</strong>. 
+    <div style="display: inline">
+        <a href="https://arxiv.org/abs/2406.06911"> [paper]</a>
+        <a href="https://github.com/czg1225/AsyncDiff"> [code]</a>
+        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
+        <div class="abstract"  style="overflow: hidden; display: none;">  
+            <p> Diffusion models have garnered significant interest from the community for their great generative ability across various applications. However, their typical multi-step sequential-denoising nature gives rise to high cumulative latency, thereby precluding the possibilities of parallel computation. To address this, we introduce AsyncDiff, a universal and plug-and-play acceleration scheme that enables model parallelism across multiple devices. Our approach divides the cumbersome noise prediction model into multiple components, assigning each to a different device. To break the dependency chain between these components, it transforms the conventional sequential denoising into an asynchronous process by exploiting the high similarity between hidden states in consecutive diffusion steps. Consequently, each component is facilitated to compute in parallel on separate devices. The proposed strategy significantly reduces inference latency while minimally impacting the generative quality. Specifically, for the Stable Diffusion v2.1, AsyncDiff achieves a 2.7x speedup with negligible degradation and a 4.0x speedup with only a slight reduction of 0.38 in CLIP Score, on four NVIDIA A5000 GPUs. Our experiments also demonstrate that AsyncDiff can be readily applied to video diffusion models with encouraging performances. </p>
+        </div>
+    </div>
+  </li>
+
+  <li>
+    <a href="https://arxiv.org/abs/2312.05284"> SlimSAM: 0.1% Data Makes Segment Anything Slim</a>. Zigeng Chen, Gongfan Fang, <strong>Xinyin Ma</strong>, Xinchao Wang. <strong>NeurIPS 2024</strong>. 
+    <div style="display: inline">
+        <a href="https://arxiv.org/abs/2312.05284"> [paper]</a>
+        <a href="https://github.com/czg1225/SlimSAM"> [code]</a>
+        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
+        <div class="abstract"  style="overflow: hidden; display: none;">  
+            <p> Current approaches for compressing the Segment Anything Model (SAM) yield commendable results, yet necessitate extensive data to train a new network from scratch. Employing conventional pruning techniques can remarkably reduce data requirements but would suffer from a degradation in performance. To address this challenging trade-off, we introduce SlimSAM, a novel data-efficient SAM compression method that achieves superior performance with extremely less training data. The essence of SlimSAM is encapsulated in the alternate slimming framework which effectively enhances knowledge inheritance under severely limited training data availability and exceptional pruning ratio. Diverging from prior techniques, our framework progressively compresses the model by alternately pruning and distilling distinct, decoupled sub-structures. Disturbed Taylor pruning is also proposed to address the misalignment between the pruning objective and training target, thereby boosting the post-distillation after pruning. SlimSAM yields significant performance improvements while demanding over 10 times less training data than any other existing compression methods. Even when compared to the original SAM, SlimSAM achieves approaching performance while reducing parameter counts to merely 1.4% (9.1M), MACs to 0.8% (23G), and requiring only 0.1% (10k) of the SAM training data. </p>
+        </div>
+    </div>
+  </li>
+
+  <li>
+    Remix-DiT: Mixing Diffusion Transformers for Multi-Expert Denoising. Gongfan Fang, <strong>Xinyin Ma</strong>,  Xinchao Wang. <strong>NeurIPS 2024</strong>. 
+  </li>
+
+  <li>
     <a href="https://arxiv.org/abs/2407.04616"> Isomorphic Pruning for Vision Models</a>. Gongfan Fang, <strong>Xinyin Ma</strong>, Michael Bi Mi, Xinchao Wang. <strong>ECCV 2024</strong>. 
     <div style="display: inline">
         <a href="https://arxiv.org/abs/2407.04616"> [paper]</a>
@@ -192,6 +208,19 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
         <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
         <div class="abstract"  style="overflow: hidden; display: none;">  
             <p> Latent diffusion models have shown promising results in audio generation, making notable advancements over traditional methods. However, their performance, while impressive with short audio clips, faces challenges when extended to longer audio sequences. These challenges are due to model's self-attention mechanism and training predominantly on 10-second clips, which complicates the extension to longer audio without adaptation. In response to these issues, we introduce a novel approach, LiteFocus that enhances the inference of existing audio latent diffusion models in long audio synthesis. Observed the attention pattern in self-attention, we employ a dual sparse form for attention calculation, designated as same-frequency focus and cross-frequency compensation, which curtails the attention computation under same-frequency constraints, while enhancing audio quality through cross-frequency refillment. LiteFocus demonstrates substantial reduction on inference time with diffusion-based TTA model by 1.99x in synthesizing 80-second audio clips while also obtaining improved audio quality. </p>
+        </div>
+    </div>
+  </li>
+
+  <li>
+    <img src='https://img.shields.io/github/stars/VainF/Torch-Pruning.svg?style=social&label=Star' alt="sym" height="100%">
+    <a href="https://arxiv.org/abs/2301.12900"> DepGraph: Towards Any Structural Pruning</a>. Gongfan Fang, <strong>Xinyin Ma</strong>, Mingli Song, Michael Bi Mi, Xinchao Wang. <strong>CVPR 2023</strong>. 
+    <div style="display: inline">
+        <a href="https://arxiv.org/abs/2301.12900"> [paper]</a>
+        <a href="https://github.com/VainF/Torch-Pruning"> [code]</a>
+        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
+        <div class="abstract"  style="overflow: hidden; display: none;">  
+            <p> Structural pruning enables model acceleration by removing structurally-grouped parameters from neural networks. However, the parameter-grouping patterns vary widely across different models, making architecture-specific pruners, which rely on manually-designed grouping schemes, non-generalizable to new architectures. In this work, we study a highly-challenging yet barely-explored task, any structural pruning, to tackle general structural pruning of arbitrary architecture like CNNs, RNNs, GNNs and Transformers. The most prominent obstacle towards this goal lies in the structural coupling, which not only forces different layers to be pruned simultaneously, but also expects all removed parameters to be consistently unimportant, thereby avoiding structural issues and significant performance degradation after pruning. To address this problem, we propose a general and fully automatic method, Dependency Graph(DepGraph), to explicitly model the dependency between layers and comprehensively group coupled parameters for pruning. In this work, we extensively evaluate our method on several architectures and tasks, including ResNe(X)t, DenseNet, MobileNet and Vision transformer for images, GAT for graph, DGCNN for 3D point cloud, alongside LSTM for language, and demonstrate that, even with a simple norm-based criterion, the proposed method consistently yields gratifying performances. </p>
         </div>
     </div>
   </li>
@@ -230,20 +259,7 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
             <p> Joint entity and relation extraction framework constructs a unified model to perform entity recognition and relation extraction simultaneously, which can exploit the dependency between the two tasks to mitigate the error propagation problem suffered by the pipeline model. Current efforts on joint entity and relation extraction focus on enhancing the interaction between entity recognition and relation extraction through parameter sharing, joint decoding, or other ad-hoc tricks (e.g., modeled as a semi-Markov decision process, cast as a multi-round reading comprehension task). However, there are still two issues on the table. First, the interaction utilized by most methods is still weak and uni-directional, which is unable to model the mutual dependency between the two tasks. Second, relation triggers are ignored by most methods, which can help explain why humans would extract a relation in the sentence. They’re essential for relation extraction but overlooked. To this end, we present a Trigger-Sense Memory Flow Framework (TriMF) for joint entity and relation extraction. We build a memory module to remember category representations learned in entity recognition and relation extraction tasks. And based on it, we design a multi-level memory flow attention mechanism to enhance the bi-directional interaction between entity recognition and relation extraction. Moreover, without any human annotations, our model can enhance relation trigger information in a sentence through a trigger sensor module, which improves the model performance and makes model predictions with better interpretation. Experiment results show that our proposed framework achieves state-of-the-art results by improves the relation F1 to 52.44% (+3.2%) on SciERC, 66.49% (+4.9%) on ACE05, 72.35% (+0.6%) on CoNLL04 and 80.66% (+2.3%) on ADE. </p>
         </div>
     </div>
-  </li>
-
-  <li>
-    <a href="https://arxiv.org/abs/2406.06911"> AsyncDiff: Parallelizing Diffusion Models by Asynchronous Denoising</a>. Zigeng Chen, <strong>Xinyin Ma</strong>, Gongfan Fang, Zhenxiong Tan, Xinchao Wang. <strong>Preprint</strong>. 
-    <div style="display: inline">
-        <a href="https://arxiv.org/abs/2406.06911"> [paper]</a>
-        <a href="https://github.com/czg1225/AsyncDiff"> [code]</a>
-        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
-        <div class="abstract"  style="overflow: hidden; display: none;">  
-            <p> Diffusion models have garnered significant interest from the community for their great generative ability across various applications. However, their typical multi-step sequential-denoising nature gives rise to high cumulative latency, thereby precluding the possibilities of parallel computation. To address this, we introduce AsyncDiff, a universal and plug-and-play acceleration scheme that enables model parallelism across multiple devices. Our approach divides the cumbersome noise prediction model into multiple components, assigning each to a different device. To break the dependency chain between these components, it transforms the conventional sequential denoising into an asynchronous process by exploiting the high similarity between hidden states in consecutive diffusion steps. Consequently, each component is facilitated to compute in parallel on separate devices. The proposed strategy significantly reduces inference latency while minimally impacting the generative quality. Specifically, for the Stable Diffusion v2.1, AsyncDiff achieves a 2.7x speedup with negligible degradation and a 4.0x speedup with only a slight reduction of 0.38 in CLIP Score, on four NVIDIA A5000 GPUs. Our experiments also demonstrate that AsyncDiff can be readily applied to video diffusion models with encouraging performances. </p>
-        </div>
-    </div>
-  </li>
-  
+  </li>  
   
 </ul>
 
