@@ -33,10 +33,9 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
 
 
 # 🔥 News
-- *2024.09*: &nbsp;Four papers ([learning-to-cache](https://arxiv.org/abs/2406.01733), [AsyncDiff](https://arxiv.org/abs/2406.06911), [SlimSAM](https://arxiv.org/abs/2312.05284) and RemixDiT) accepted by NeurIPS'24!
+- *2024.09*: &nbsp;Four papers ([Learning-to-Cache](https://arxiv.org/abs/2406.01733), [AsyncDiff](https://arxiv.org/abs/2406.06911), [SlimSAM](https://arxiv.org/abs/2312.05284) and RemixDiT) accepted by NeurIPS'24!
 - *2024.07*: &nbsp;One co-authored paper accepted by ECCV'24! 
 - *2024.07*: &nbsp;⛵Passed my qualifying exam! 
-- *2024.06*: &nbsp;We announce our new work, Learning-to-Cache, an improved version of DeepCache on the diffusion transformers. Check our [paper](https://arxiv.org/abs/2406.01733) and [code](https://github.com/horseee/learning-to-cache)! Also introduce another new work AsyncDiff, which seperates diffusion models into different devices to enable parallel computing. [Paper](https://arxiv.org/abs/2406.06911) and [code](https://github.com/czg1225/AsyncDiff) is available!
 - *2024.06*: &nbsp;One co-authored paper accepted by Interspeech'24! 
 - *2024.02*：&nbsp;DeepCache is accepted by CVPR'24! 
 - *2023.12*: &nbsp;🌟Our new work, DeepCache, accelerates Diffusion Models for FREE! Check our [paper](https://arxiv.org/abs/2312.00858) and [code](https://github.com/horseee/DeepCache)! 
