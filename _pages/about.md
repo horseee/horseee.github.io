@@ -275,11 +275,11 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
 - *2015.09 - 2019.06*, B.Eng. in Software Engineering, Chu Kochen Honors College, Zhejiang University
 
 # 📋 Academic Service
-- Conference: NeurIPS'24, EMNLP'24(ARR'24 June), ECCV'24, ACL'24(ARR'24 Feb), ICML'24, IJCAI'24, ICLR'24, NAACL'24(ARR'23 Dec), NeurIPS’23, EMNLP'23, ICML’23, ACL’23, EMNLP’22, ACL’22, EMNLP’21, ACL’21 and several ARRs
+- Conference: AAAI'24, NeurIPS'24, EMNLP'24(ARR'24 June), ECCV'24, ACL'24(ARR'24 Feb), ICML'24, IJCAI'24, ICLR'24, NAACL'24(ARR'23 Dec), NeurIPS’23, EMNLP'23, ICML’23, ACL’23, EMNLP’22, ACL’22, EMNLP’21, ACL’21 and several ARRs
 - Journal: JVCI
 
 # 🔭 Teaching Experience
-- Fall 2023, Spring 2023. TA for EE2211, Introduction to Machine Learning, NUS.
+- Fall 2024, Fall 2023, Spring 2023. TA for EE2211, Introduction to Machine Learning, NUS.
 
 
 # 💻 Internships
