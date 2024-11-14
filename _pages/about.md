@@ -33,7 +33,7 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
 
 
 # 🔥 News
-- *2024.09*: &nbsp;Four papers ([Learning-to-Cache](https://arxiv.org/abs/2406.01733), [AsyncDiff](https://arxiv.org/abs/2406.06911), [SlimSAM](https://arxiv.org/abs/2312.05284) and RemixDiT) accepted by NeurIPS'24!
+- *2024.09*: &nbsp;Four papers ([Learning-to-Cache](https://arxiv.org/abs/2406.01733), [AsyncDiff](https://arxiv.org/abs/2406.06911), [SlimSAM](https://arxiv.org/abs/2312.05284) and RemixDiT) accepted by NeurIPS'24! See you in Vancouver!
 - *2024.07*: &nbsp;One co-authored paper accepted by ECCV'24! 
 - *2024.07*: &nbsp;⛵Passed my qualifying exam! 
 - *2024.06*: &nbsp;One co-authored paper accepted by Interspeech'24! 
@@ -275,7 +275,7 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
 - *2015.09 - 2019.06*, B.Eng. in Software Engineering, Chu Kochen Honors College, Zhejiang University
 
 # 📋 Academic Service
-- Conference: AAAI'24, NeurIPS'24, EMNLP'24(ARR'24 June), ECCV'24, ACL'24(ARR'24 Feb), ICML'24, IJCAI'24, ICLR'24, NAACL'24(ARR'23 Dec), NeurIPS’23, EMNLP'23, ICML’23, ACL’23, EMNLP’22, ACL’22, EMNLP’21, ACL’21 and several ARRs
+- Conference: ICLR'24, AAAI'24, NeurIPS'24, EMNLP'24(ARR'24 June), ECCV'24, ACL'24(ARR'24 Feb), ICML'24, IJCAI'24, ICLR'24, NAACL'24(ARR'23 Dec), NeurIPS’23, EMNLP'23, ICML’23, ACL’23, EMNLP’22, ACL’22, EMNLP’21, ACL’21 and several ARRs
 - Journal: JVCI
 
 # 🔭 Teaching Experience
