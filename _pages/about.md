@@ -21,17 +21,19 @@ Hi there!
 
 Welcome to Xinyin Ma(马欣尹)'s website!
 I am currently a Ph.D candidate in [Learning and Vision Lab @ NUS](http://www.lv-nus.org/) from August 2022, advised by [Prof.Xinchao Wang](https://sites.google.com/site/sitexinchaowang/). Previously I obtained my master degree in computer science from Zhejiang University where I was advised by [Prof.Weiming Lu](https://person.zju.edu.cn/en/lwm). I obtained my bachelor degree in software engineering also in Zhejiang University and got the honor degree from Chu Kochen College. 
-I'm so honored to receive the [Google PhD Fellowship](https://research.google/programs-and-events/phd-fellowship/recipients/) in 2024.
-
-I’m currently conducting some research in efficient learning, including:  
+Currently, I'm conducting research in efficient learning, including:  
 🌲 The efficiency of the Language Model and Diffusion Model.  
 🌱 The acceleration of training: dataset distillation and coreset  
 🌿 Compression with synthetic data, e.g., data-free distillation. 
 
-I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find more information about my publications in [Google Scholar](https://scholar.google.com/citations?user=jFUKS0oAAAAJ&hl=en)
+I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. More information about my publications can be found in [Google Scholar](https://scholar.google.com/citations?user=jFUKS0oAAAAJ&hl=en)
 
-**I‘m actively seeking internship and visiting opportunities. If you have any opportunities available, I would greatly appreciate it if you could reach out to me. Thank you😎!**
+I'm so honored to receive the [***Google PhD Fellowship***](https://research.google/programs-and-events/phd-fellowship/recipients/) in 2024.
 
+## Updates
+- I'm actively seeking internship and visiting opportunities. If you have any opportunities available, I would greatly appreciate it if you could reach out to me. Thank you😎!
+
+- <span style="color:blue"> I would attend NeurIPS'24 in Vancouver from Dec 10-15, 2024! Always happy to connect—let's grab a coffee. Feel free to drop me an email!</span>
 
 # 🔥 News
 - *2024.11*: &nbsp;Awarded Google PhD Fellowship🥳🥳 
@@ -269,6 +271,7 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
 
 # 🎖 Honors and Awards 
 - *2024.11*: Google PhD Fellowship
+- *2024.10*: NeurIPS'24 Ourstanding Reviewer
 - *2019-2022(M.Eng.)*: Outstanding Graduate(2022), Tecent Scholarship(2021), CETC28 Scholarship(2021), Huawei Elite Scholarship(2020), Shenzhen Stock Exchange Scholarship(2020), Award of Honor for Graduate(2021, 2020)
 - *2015-2019(B.Eng.)*: Outstanding Engineer Scholarship (2018), Outstanding Student of Zhejiang University (2018, 2017, 2016), Second-Class Academic Scholarship of Zhejiang University (2017, 2016), Second Class Scholarship of National Talent Training Base (2017), CASC Second Class Scholarship (2016)
 
@@ -279,7 +282,7 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. You can find mor
 
 # 📋 Academic Service
 - Conference: ICLR'24, AAAI'24, NeurIPS'24, EMNLP'24(ARR'24 June), ECCV'24, ACL'24(ARR'24 Feb), ICML'24, IJCAI'24, ICLR'24, NAACL'24(ARR'23 Dec), NeurIPS’23, EMNLP'23, ICML’23, ACL’23, EMNLP’22, ACL’22, EMNLP’21, ACL’21 and several ARRs
-- Journal: JVCI
+- Journal: JVCI, ICASSP, TIP
 
 # 🔭 Teaching Experience
 - Fall 2024, Fall 2023, Spring 2023. TA for EE2211, Introduction to Machine Learning, NUS.
