@@ -33,7 +33,7 @@ I'm so honored to receive the [***Google PhD Fellowship***](https://research.goo
 ## Updates
 - I'm actively seeking internship and visiting opportunities. If you have any opportunities available, I would greatly appreciate it if you could reach out to me. Thank you😎!
 
-- <span style="color:blue"> I would attend NeurIPS'24 in Vancouver from Dec 10-15, 2024! Always happy to connect—let's grab a coffee. Feel free to drop me an email!</span>
+- <span style="color:blue"> I would attend NeurIPS'24 in Vancouver from Dec 10-15, 2024! Always happy to connect. Feel free to drop me an email!</span>
 
 # 🔥 News
 - *2024.11*: &nbsp;Awarded Google PhD Fellowship🥳🥳 
@@ -162,7 +162,6 @@ I'm so honored to receive the [***Google PhD Fellowship***](https://research.goo
         </div>
     </div>
   </li>
-
   <li>
     <a href="https://arxiv.org/abs/2406.06911"> AsyncDiff: Parallelizing Diffusion Models by Asynchronous Denoising</a>. Zigeng Chen, <strong>Xinyin Ma</strong>, Gongfan Fang, Zhenxiong Tan, Xinchao Wang. <strong>NeurIPS 2024</strong>. 
     <div style="display: inline">
@@ -266,6 +265,33 @@ I'm so honored to receive the [***Google PhD Fellowship***](https://research.goo
   
 </ul>
 
+
+### Preprint
+<ul>
+<li>
+    <a href="https://arxiv.org/abs/2411.17787"> Collaborative Decoding Makes Visual Auto-Regressive Modeling Efficient</a>. Zigeng Chen, <strong>Xinyin Ma</strong>, Gongfan Fang, Xinchao Wang. <strong>Arxiv Preprint</strong>. 
+    <div style="display: inline">
+        <a href="https://arxiv.org/abs/2411.17787"> [paper]</a>
+        <a href="https://github.com/czg1225/CoDe"> [code]</a>
+        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
+        <div class="abstract"  style="overflow: hidden; display: none;">  
+            <p> In the rapidly advancing field of image generation, Visual Auto-Regressive (VAR) modeling has garnered considerable attention for its innovative next-scale prediction approach. This paradigm offers substantial improvements in efficiency, scalability, and zero-shot generalization. Yet, the inherently coarse-to-fine nature of VAR introduces a prolonged token sequence, leading to prohibitive memory consumption and computational redundancies. To address these bottlenecks, we propose Collaborative Decoding (CoDe), a novel efficient decoding strategy tailored for the VAR framework. CoDe capitalizes on two critical observations: the substantially reduced parameter demands at larger scales and the exclusive generation patterns across different scales. Based on these insights, we partition the multi-scale inference process into a seamless collaboration between a large model and a small model. The large model serves as the 'drafter', specializing in generating low-frequency content at smaller scales, while the smaller model serves as the 'refiner', solely focusing on predicting high-frequency details at larger scales. This collaboration yields remarkable efficiency with minimal impact on quality: CoDe achieves a 1.7x speedup, slashes memory usage by around 50%, and preserves image quality with only a negligible FID increase from 1.95 to 1.98. When drafting steps are further decreased, CoDe can achieve an impressive 2.9x acceleration ratio, reaching 41 images/s at 256x256 resolution on a single NVIDIA 4090 GPU, while preserving a commendable FID of 2.27 </p>
+        </div>
+    </div>
+  </li>
+
+  <li>
+    <a href="https://arxiv.org/abs/2412.01199"> TinyFusion: Diffusion Transformers Learned Shallow</a>. Gongfan Fang, Kunjun Li, <strong>Xinyin Ma</strong>, Xinchao Wang. <strong>Arxiv Preprint</strong>. 
+    <div style="display: inline">
+        <a href="https://arxiv.org/abs/2412.01199"> [paper]</a>
+        <a href="https://github.com/VainF/TinyFusion"> [code]</a>
+        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
+        <div class="abstract"  style="overflow: hidden; display: none;">  
+            <p> Diffusion Transformers have demonstrated remarkable capabilities in image generation but often come with excessive parameterization, resulting in considerable inference overhead in real-world applications. In this work, we present TinyFusion, a depth pruning method designed to remove redundant layers from diffusion transformers via end-to-end learning. The core principle of our approach is to create a pruned model with high recoverability, allowing it to regain strong performance after fine-tuning. To accomplish this, we introduce a differentiable sampling technique to make pruning learnable, paired with a co-optimized parameter to simulate future fine-tuning. While prior works focus on minimizing loss or error after pruning, our method explicitly models and optimizes the post-fine-tuning performance of pruned models. Experimental results indicate that this learnable paradigm offers substantial benefits for layer pruning of diffusion transformers, surpassing existing importance-based and error-based methods. Additionally, TinyFusion exhibits strong generalization across diverse architectures, such as DiTs, MARs, and SiTs. Experiments with DiT-XL show that TinyFusion can craft a shallow diffusion transformer at less than 7% of the pre-training cost, achieving a 2× speedup with an FID score of 2.86, outperforming competitors with comparable efficiency </p>
+        </div>
+    </div>
+  </li>
+</ul>
 
 
 
