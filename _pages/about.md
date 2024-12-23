@@ -30,10 +30,8 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. More information
 
 I'm so honored to receive the [***Google PhD Fellowship***](https://research.google/programs-and-events/phd-fellowship/recipients/) in 2024.
 
-## Updates
-- I'm actively seeking internship and visiting opportunities. If you have any opportunities available, I would greatly appreciate it if you could reach out to me. Thank you😎!
+<span style="color:blue"> I'm actively seeking internship and visiting opportunities. If you have any opportunities available, I would greatly appreciate it if you could reach out to me. Thank you😎! </span>
 
-- <span style="color:blue"> I would attend NeurIPS'24 in Vancouver from Dec 10-15, 2024! Always happy to connect. Feel free to drop me an email!</span>
 
 # 🔥 News
 - *2024.11*: &nbsp;Awarded Google PhD Fellowship🥳🥳 
@@ -329,8 +327,8 @@ I'm so honored to receive the [***Google PhD Fellowship***](https://research.goo
 - *2015.09 - 2019.06*, B.Eng. in Software Engineering, Chu Kochen Honors College, Zhejiang University
 
 # 📋 Academic Service
-- Conference: ICLR'24, AAAI'24, NeurIPS'24, EMNLP'24(ARR'24 June), ECCV'24, ACL'24(ARR'24 Feb), ICML'24, IJCAI'24, ICLR'24, NAACL'24(ARR'23 Dec), NeurIPS’23, EMNLP'23, ICML’23, ACL’23, EMNLP’22, ACL’22, EMNLP’21, ACL’21 and several ARRs
-- Journal: JVCI, ICASSP, TIP
+- Conference: CVPR'24, ICLR'24, AAAI'24, NeurIPS'24, EMNLP'24(ARR'24 June), ECCV'24, ACL'24(ARR'24 Feb), ICML'24, IJCAI'24, ICLR'24, NAACL'24(ARR'23 Dec), NeurIPS’23, EMNLP'23, ICML’23, ACL’23, EMNLP’22, ACL’22, EMNLP’21, ACL’21 and several ARRs
+- Journal: TPAMI, JVCI, ICASSP, TIP
 
 # 🔭 Teaching Experience
 - Fall 2024, Fall 2023, Spring 2023. TA for EE2211, Introduction to Machine Learning, NUS.
