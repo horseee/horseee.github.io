@@ -30,7 +30,7 @@ I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. More information
 
 I'm so honored to receive the [***Google PhD Fellowship***](https://research.google/programs-and-events/phd-fellowship/recipients/) in 2024.
 
-<span style="color:blue"> I'm actively seeking internship and visiting opportunities. If you have any opportunities available, I would greatly appreciate it if you could reach out to me. Thank you😎! </span>
+[//]: <> <span style="color:blue"> I'm actively seeking internship and visiting opportunities. If you have any opportunities available, I would greatly appreciate it if you could reach out to me. Thank you😎! </span>
 
 
 # 🔥 News
@@ -50,12 +50,10 @@ I'm so honored to receive the [***Google PhD Fellowship***](https://research.goo
 
 # 📝 Publications 
 
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='https://github.com/horseee/learning-to-cache/raw/main/assets/teaser.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[**Learning-to-Cache: Accelerating Diffusion Transformer via Layer Caching**](- A training-free paradigm that accelerates diffusion models
-) <img src='https://img.shields.io/github/stars/horseee/Learning-to-Cache.svg?style=social&label=Star' alt="sym" height="100%">
+[**Learning-to-Cache: Accelerating Diffusion Transformer via Layer Caching**](https://arxiv.org/abs/2406.01733) <img src='https://img.shields.io/github/stars/horseee/Learning-to-Cache.svg?style=social&label=Star' alt="sym" height="100%">
 
 **Xinyin Ma**, Gongfan Fang, Michael Bi Mi, Xinchao Wang
 
@@ -117,6 +115,28 @@ I'm so honored to receive the [***Google PhD Fellowship***](https://research.goo
     <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" ><strong>[abstract]</strong></a>
     <div class="abstract"  style="overflow: hidden; display: none;">  
         <p> Large language models (LLMs) have shown remarkable capabilities in language understanding and generation. However, such impressive capability typically comes with a substantial model size, which presents significant challenges in both the deployment, inference, and training stages. With LLM being a general-purpose task solver, we explore its compression in a task-agnostic manner, which aims to preserve the multi-task solving and language generation ability of the original LLM. One challenge to achieving this is the enormous size of the training corpus of LLM, which makes both data transfer and model post-training over-burdensome. Thus, we tackle the compression of LLMs within the bound of two constraints: being task-agnostic and minimizing the reliance on the original training dataset. Our method, named LLM-Pruner, adopts structural pruning that selectively removes non-critical coupled structures based on gradient information, maximally preserving the majority of the LLM's functionality. To this end, the performance of pruned models can be efficiently recovered through tuning techniques, LoRA, in merely 3 hours, requiring only 50K data. We validate the LLM-Pruner on three LLMs, including LLaMA, Vicuna, and ChatGLM, and demonstrate that the compressed models still exhibit satisfactory capabilities in zero-shot classification and generation. </p>
+    </div>
+</div>
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/papers/cot-valve.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**CoT-Valve: Length-Compressible Chain-of-Thought Tuning**](https://arxiv.org/abs/2502.09601) <img src='https://img.shields.io/github/stars/horseee/CoT-Valve.svg?style=social&label=Star' alt="sym" height="100%">
+
+**Xinyin Ma\***, Guangnian Wan\*, Runpeng Yu, Gongfan Fang, Xinchao Wang
+
+- A tuning and inference strategy that elastically controls CoT length within a single model
+- GSM8K: 741 → 225 tokens with only 0.15% accuracy drop. AIME: 6827 → 4629 tokens (32% reduction) while preserving accuracy
+
+<div style="display: inline">
+    <a href="https://arxiv.org/abs/2502.09601"> <strong>[paper]</strong></a>
+    <a href="https://github.com/horseee/CoT-Valve"> <strong>[code]</strong></a>
+    <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" ><strong>[abstract]</strong></a>
+    <div class="abstract"  style="overflow: hidden; display: none;">  
+        <p> Chain-of-Thought significantly enhances a model's reasoning capability, but it also comes with a considerable increase in inference costs due to long chains. With the observation that the reasoning path can be easily compressed under easy tasks but struggle on hard tasks, we explore the feasibility of elastically controlling the length of reasoning paths with only one model, thereby reducing the inference overhead of reasoning models dynamically based on task difficulty. We introduce a new tuning and inference strategy named CoT-Valve, designed to allow models to generate reasoning chains of varying lengths. To achieve this, we propose to identify a direction in the parameter space that, when manipulated, can effectively control the length of generated CoT. Moreover, we show that this property is valuable for compressing the reasoning chain. We construct datasets with chains from long to short for the same questions and explore two enhanced strategies for CoT-Valve: (1) a precise length-compressible CoT tuning method, and (2) a progressive chain length compression approach. Our experiments show that CoT-Valve successfully enables controllability and compressibility of the chain and shows better performance than the prompt-based control. We applied this method to QwQ-32B-Preview, reducing reasoning chains on GSM8K from 741 to 225 tokens with a minor performance drop (95.07% to 94.92%) and on AIME from 6827 to 4629 tokens, with only one additional incorrect answer. </p>
     </div>
 </div>
 
