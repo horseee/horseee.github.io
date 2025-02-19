@@ -36,17 +36,17 @@ I'm so honored to receive the [***Google PhD Fellowship***](https://research.goo
 # 🔥 News
 - *2025.02*: &nbsp;Co-organize the [2nd workshop on Efficient Large Vision Models](https://sites.google.com/view/elvm/home), CVPR 2025.
 - *2025.01*: &nbsp;Invited talk at KAUST Rising Stars in AI Symposium 2025, April 7 - 10. 
-- *2024.11*: &nbsp;Awarded Google PhD Fellowship🥳🥳 
+- *2024.11*: &nbsp;🥳 Awarded Google PhD Fellowship
 - *2024.09*: &nbsp;Four papers ([Learning-to-Cache](https://arxiv.org/abs/2406.01733), [AsyncDiff](https://arxiv.org/abs/2406.06911), [SlimSAM](https://arxiv.org/abs/2312.05284) and [RemixDiT](https://openreview.net/forum?id=vo5LONGAdo)) accepted by NeurIPS'24! See you in Vancouver!
 - *2024.07*: &nbsp;One co-authored paper accepted by ECCV'24! 
-- *2024.07*: &nbsp;⛵Passed my qualifying exam! 
+- *2024.07*: &nbsp;⛵ Passed my qualifying exam! 
 - *2024.06*: &nbsp;One co-authored paper accepted by Interspeech'24! 
 - *2024.02*: &nbsp;DeepCache is accepted by CVPR'24! 
-- *2023.12*: &nbsp;🌟Our new work, DeepCache, accelerates Diffusion Models for FREE! Check our [paper](https://arxiv.org/abs/2312.00858) and [code](https://github.com/horseee/DeepCache)! 
+- *2023.12*: &nbsp;🌟 Our new work, DeepCache, accelerates Diffusion Models for FREE! Check our [paper](https://arxiv.org/abs/2312.00858) and [code](https://github.com/horseee/DeepCache)! 
 - *2023.09*: &nbsp;Two papers are accepted by NeurIPS'23. 
-- *2023.06*: &nbsp;🎉🎉 Release LLM-Pruner🐏, the first structural pruning work of LLM. See our [paper](https://arxiv.org/abs/2305.11627) and [code](https://github.com/horseee/LLM-Pruner)! 
+- *2023.06*: &nbsp;🎉 Release LLM-Pruner🐏, the first structural pruning work of LLM. See our [paper](https://arxiv.org/abs/2305.11627) and [code](https://github.com/horseee/LLM-Pruner)! 
 - *2023.02*: &nbsp;One paper 'DepGraph: Towards Any Structural Pruning' accepted by CVPR’23.
-- *2022.08*: &nbsp;⛵Start my Ph.D. journey in NUS!
+- *2022.08*: &nbsp;⛵ Start my Ph.D. journey in NUS!
 - *2022.04*: &nbsp; One paper ‘Prompting to distill: Boosting Data-Free Knowledge Distillation via Reinforced Prompt’ accepted by IJCAI’22.
 - *2022.04*: &nbsp; Got my master degree from ZJU! Thanks to my supervisor and all my friends in ZJU!
 
@@ -343,20 +343,20 @@ I'm so honored to receive the [***Google PhD Fellowship***](https://research.goo
 - *2019-2022(M.Eng.)*: Outstanding Graduate(2022), Tecent Scholarship(2021), CETC28 Scholarship(2021), Huawei Elite Scholarship(2020), Shenzhen Stock Exchange Scholarship(2020), Award of Honor for Graduate(2021, 2020)
 - *2015-2019(B.Eng.)*: Outstanding Engineer Scholarship (2018), Outstanding Student of Zhejiang University (2018, 2017, 2016), Second-Class Academic Scholarship of Zhejiang University (2017, 2016), Second Class Scholarship of National Talent Training Base (2017), CASC Second Class Scholarship (2016)
 
-# 📖 Educations
+# 🎩 Educations
 - *2022.08 - (now)*, Ph.D. Student in Electrical and Computer Engineering, College of Design and Engineering, National University of Singapore
 - *2019.08 - 2022.04*, M.Eng. in Computer Science, College of Computer Science and Technology, Zhejiang University
 - *2015.09 - 2019.06*, B.Eng. in Software Engineering, Chu Kochen Honors College, Zhejiang University
 
 # 📋 Academic Service
-- Conference: CVPR'24, ICLR'24, AAAI'24, NeurIPS'24, EMNLP'24(ARR'24 June), ECCV'24, ACL'24(ARR'24 Feb), ICML'24, IJCAI'24, ICLR'24, NAACL'24(ARR'23 Dec), NeurIPS’23, EMNLP'23, ICML’23, ACL’23, EMNLP’22, ACL’22, EMNLP’21, ACL’21 and several ARRs
-- Journal: TPAMI, JVCI, ICASSP, TIP
+- Workshop: 2nd workshop on Efficient Large Vision Models (organizing committee)
+- Conference: ACL (24, 23, 22, 21), NeurIPS (24, 23), ICML (25, 24, 23), CVPR (25), ICLR (25, 24), EMNLP (24, 23, 22, 21), ECCV (24), IJCAI (24), NAACL (24), AAAI (25), ICASSP (25)
+- Journal: TPAMI, JVCI, TIP
 
-# 🔭 Teaching Experience
+# 🍞 Teaching Experience
 - Fall 2024, Fall 2023, Spring 2023. TA for EE2211, Introduction to Machine Learning, NUS.
 
-
-# 💻 Internships
+# ☃️ Internships
 - *2020.12 - 2021.6*, Alibaba DAMO Academy, Research Intern. Mentor: [Yong Jiang](https://jiangyong.site).
 - *2018.07 - 2018.11*, Netease Thunderfire UX, Data Analyst Intern. Mentor: Lei Xia.
 
