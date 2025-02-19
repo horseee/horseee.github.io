@@ -34,6 +34,8 @@ I'm so honored to receive the [***Google PhD Fellowship***](https://research.goo
 
 
 # 🔥 News
+- *2025.02*: &nbsp;Co-organize the [2nd workshop on Efficient Large Vision Models](https://sites.google.com/view/elvm/home), CVPR 2025.
+- *2025.01*: &nbsp;Invited talk at KAUST Rising Stars in AI Symposium 2025, April 7 - 10. 
 - *2024.11*: &nbsp;Awarded Google PhD Fellowship🥳🥳 
 - *2024.09*: &nbsp;Four papers ([Learning-to-Cache](https://arxiv.org/abs/2406.01733), [AsyncDiff](https://arxiv.org/abs/2406.06911), [SlimSAM](https://arxiv.org/abs/2312.05284) and [RemixDiT](https://openreview.net/forum?id=vo5LONGAdo)) accepted by NeurIPS'24! See you in Vancouver!
 - *2024.07*: &nbsp;One co-authored paper accepted by ECCV'24! 
