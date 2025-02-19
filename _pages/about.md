@@ -20,7 +20,7 @@ redirect_from:
 Hi there! 
 
 Welcome to Xinyin Ma(马欣尹)'s website!
-I am currently a Ph.D candidate in [Learning and Vision Lab @ NUS](http://www.lv-nus.org/) from August 2022, advised by [Prof.Xinchao Wang](https://sites.google.com/site/sitexinchaowang/). Previously I obtained my master degree in computer science from Zhejiang University where I was advised by [Prof.Weiming Lu](https://person.zju.edu.cn/en/lwm). I obtained my bachelor degree in software engineering also in Zhejiang University and got the honor degree from Chu Kochen College. 
+I am currently a Ph.D candidate @ National University of Singapore from August 2022, advised by [Prof.Xinchao Wang](https://sites.google.com/site/sitexinchaowang/). Previously I obtained my master degree in computer science from Zhejiang University where I was advised by [Prof.Weiming Lu](https://person.zju.edu.cn/en/lwm). I obtained my bachelor degree in software engineering also in Zhejiang University and got the honor degree from Chu Kochen College. 
 Currently, I'm conducting research in efficient learning, including:  
 🌲 The efficiency of the Language Model and Diffusion Model.  
 🌱 The acceleration of training: dataset distillation and coreset  
