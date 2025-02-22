@@ -238,7 +238,7 @@ I'm so honored to receive the [***Google PhD Fellowship***](https://research.goo
   </li>
 
   <li>
-    <strong> LiteFocus: Accelerated Diffusion Inference for Long Audio Synthesi. Interspeech 2024.</strong>
+    <strong> LiteFocus: Accelerated Diffusion Inference for Long Audio Synthesis. Interspeech 2024.</strong>
     <div style="display: inline">
         <a href="https://arxiv.org/abs/2407.10468"> [paper]</a>
         <a href="https://github.com/Yuanshi9815/LiteFocus"> [code]</a>
@@ -340,11 +340,11 @@ I'm so honored to receive the [***Google PhD Fellowship***](https://research.goo
 # 🎖 Honors and Awards 
 - *2024.11*: Google PhD Fellowship
 - *2024.10*: NeurIPS'24 Ourstanding Reviewer
-- *2019-2022(M.Eng.)*: Outstanding Graduate(2022), Tecent Scholarship(2021), CETC28 Scholarship(2021), Huawei Elite Scholarship(2020), Shenzhen Stock Exchange Scholarship(2020), Award of Honor for Graduate(2021, 2020)
-- *2015-2019(B.Eng.)*: Outstanding Engineer Scholarship (2018), Outstanding Student of Zhejiang University (2018, 2017, 2016), Second-Class Academic Scholarship of Zhejiang University (2017, 2016), Second Class Scholarship of National Talent Training Base (2017), CASC Second Class Scholarship (2016)
+- *2019-2022(M.Eng.)*: Outstanding Graduate(2022), Tecent Scholarship(2021), CETC28 Scholarship(2021), Award of Honor for Graduate(2021, 2020)
+- *2015-2019(B.Eng.)*: Outstanding Engineer Scholarship (2018), Outstanding Student of Zhejiang University (2018, 2017, 2016), Second-Class Academic Scholarship of Zhejiang University (2017, 2016), Second Class Scholarship of National Talent Training Base (2017)
 
 # 🎩 Educations
-- *2022.08 - (now)*, Ph.D. Student in Electrical and Computer Engineering, College of Design and Engineering, National University of Singapore
+- *2022.08 - (now)*, Ph.D. Student in College of Design and Engineering, National University of Singapore
 - *2019.08 - 2022.04*, M.Eng. in Computer Science, College of Computer Science and Technology, Zhejiang University
 - *2015.09 - 2019.06*, B.Eng. in Software Engineering, Chu Kochen Honors College, Zhejiang University
 
