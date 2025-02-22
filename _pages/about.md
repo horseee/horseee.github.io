@@ -349,7 +349,7 @@ I'm so honored to receive the [***Google PhD Fellowship***](https://research.goo
 - *2015.09 - 2019.06*, B.Eng. in Software Engineering, Chu Kochen Honors College, Zhejiang University
 
 # 📋 Academic Service
-- Workshop: 2nd workshop on Efficient Large Vision Models (organizing committee)
+- Workshop: Co-Organizor of 2nd workshop on Efficient Large Vision Models, CVPR'25
 - Conference: ACL (24, 23, 22, 21), NeurIPS (24, 23), ICML (25, 24, 23), CVPR (25), ICLR (25, 24), EMNLP (24, 23, 22, 21), ECCV (24), IJCAI (24), NAACL (24), AAAI (25), ICASSP (25)
 - Journal: TPAMI, JVCI, TIP
 
