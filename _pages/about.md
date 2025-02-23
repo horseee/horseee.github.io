@@ -340,8 +340,8 @@ I'm so honored to receive the [***Google PhD Fellowship***](https://research.goo
 # 🎖 Honors and Awards 
 - *2024.11*: Google PhD Fellowship
 - *2024.10*: NeurIPS'24 Ourstanding Reviewer
-- *2019-2022(M.Eng.)*: Outstanding Graduate(2022), Tecent Scholarship(2021), CETC28 Scholarship(2021), Award of Honor for Graduate(2021, 2020)
-- *2015-2019(B.Eng.)*: Outstanding Engineer Scholarship (2018), Outstanding Student of Zhejiang University (2018, 2017, 2016), Second-Class Academic Scholarship of Zhejiang University (2017, 2016), Second Class Scholarship of National Talent Training Base (2017)
+- *2019-2022(M.Eng.)*: Outstanding Graduate(2022), Tencent Scholarship(2021), Award of Honor for Graduate(2021, 2020)
+- *2015-2019(B.Eng.)*: Outstanding Engineer Scholarship (2018), Outstanding Student of Zhejiang University (2018, 2017, 2016), Second-Class Academic Scholarship of Zhejiang University (2017, 2016)
 
 # 🎩 Educations
 - *2022.08 - (now)*, Ph.D. Student in College of Design and Engineering, National University of Singapore
