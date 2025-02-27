@@ -34,6 +34,7 @@ I'm so honored to receive the [***Google PhD Fellowship***](https://research.goo
 
 
 # 🔥 News
+- *2025.02*: &nbsp;Three papers accepted by CVPR'25! Congratulations to all my collaborators and see you in Nashville!
 - *2025.02*: &nbsp;Co-organize the [2nd workshop on Efficient Large Vision Models](https://sites.google.com/view/elvm/home), CVPR 2025.
 - *2025.01*: &nbsp;Invited talk at KAUST Rising Stars in AI Symposium 2025, April 7 - 10. 
 - *2024.11*: &nbsp;🥳 Awarded Google PhD Fellowship
@@ -128,7 +129,9 @@ I'm so honored to receive the [***Google PhD Fellowship***](https://research.goo
 
 [**CoT-Valve: Length-Compressible Chain-of-Thought Tuning**](https://arxiv.org/abs/2502.09601) <img src='https://img.shields.io/github/stars/horseee/CoT-Valve.svg?style=social&label=Star' alt="sym" height="100%">
 
-**Xinyin Ma\***, Guangnian Wan\*, Runpeng Yu, Gongfan Fang, Xinchao Wang
+**Xinyin Ma\***, Guangnian Wan\*, Runpeng Yu, Gongfan Fang, Xinchao Wang 
+
+(*Equal Contribution)
 
 - A tuning and inference strategy that elastically controls CoT length within a single model
 - GSM8K: 741 → 225 tokens with only 0.15% accuracy drop. AIME: 6827 → 4629 tokens (32% reduction) while preserving accuracy
@@ -184,6 +187,42 @@ I'm so honored to receive the [***Google PhD Fellowship***](https://research.goo
         </div>
     </div>
     <div><i><strong>Xinyin Ma</strong>, Yongliang Shen, Gongfan Fang, Chen Chen, Chenghao Jia, Weiming Lu.</i></div>
+  </li>
+  <li>
+    <strong> Introducing Visual Perception Token into Multimodal Large Language Model. Arxiv Preprint</strong>
+    <div style="display: inline">
+        <a href="https://arxiv.org/abs/2502.17425"> [paper]</a>
+        <a href="https://github.com/yu-rp/VisualPerceptionToken"> [code]</a>
+        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
+        <div class="abstract"  style="overflow: hidden; display: none;">  
+            <p> To utilize visual information, Multimodal Large Language Model (MLLM) relies on the perception process of its vision encoder. The completeness and accuracy of visual perception significantly influence the precision of spatial reasoning, fine-grained understanding, and other tasks. However, MLLM still lacks the autonomous capability to control its own visual perception processes, for example, selectively reviewing specific regions of an image or focusing on information related to specific object categories. In this work, we propose the concept of Visual Perception Token, aiming to empower MLLM with a mechanism to control its visual perception processes. We design two types of Visual Perception Tokens, termed the Region Selection Token and the Vision Re-Encoding Token. MLLMs autonomously generate these tokens, just as they generate text, and use them to trigger additional visual perception actions. The Region Selection Token explicitly identifies specific regions in an image that require further perception, while the Vision Re-Encoding Token uses its hidden states as control signals to guide additional visual perception processes. Extensive experiments demonstrate the advantages of these tokens in handling spatial reasoning, improving fine-grained understanding, and other tasks. On average, the introduction of Visual Perception Tokens improves the performance of a 2B model by 23.6%, increasing its score from 0.572 to 0.708, and even outperforms a 7B parameter model by 13.4% (from 0.624).  </p>
+        </div>
+    </div>
+    <div><i>Runpeng Yu*, <strong>Xinyin Ma*</strong>, Xinchao Wang </i></div>
+  </li>
+  <li>
+    <strong> Collaborative Decoding Makes Visual Auto-Regressive Modeling Efficient. CVPR 2025</strong>
+    <div style="display: inline">
+        <a href="https://arxiv.org/abs/2411.17787"> [paper]</a>
+        <a href="https://github.com/czg1225/CoDe"> [code]</a>
+        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
+        <div class="abstract"  style="overflow: hidden; display: none;">  
+            <p> In the rapidly advancing field of image generation, Visual Auto-Regressive (VAR) modeling has garnered considerable attention for its innovative next-scale prediction approach. This paradigm offers substantial improvements in efficiency, scalability, and zero-shot generalization. Yet, the inherently coarse-to-fine nature of VAR introduces a prolonged token sequence, leading to prohibitive memory consumption and computational redundancies. To address these bottlenecks, we propose Collaborative Decoding (CoDe), a novel efficient decoding strategy tailored for the VAR framework. CoDe capitalizes on two critical observations: the substantially reduced parameter demands at larger scales and the exclusive generation patterns across different scales. Based on these insights, we partition the multi-scale inference process into a seamless collaboration between a large model and a small model. The large model serves as the 'drafter', specializing in generating low-frequency content at smaller scales, while the smaller model serves as the 'refiner', solely focusing on predicting high-frequency details at larger scales. This collaboration yields remarkable efficiency with minimal impact on quality: CoDe achieves a 1.7x speedup, slashes memory usage by around 50%, and preserves image quality with only a negligible FID increase from 1.95 to 1.98. When drafting steps are further decreased, CoDe can achieve an impressive 2.9x acceleration ratio, reaching 41 images/s at 256x256 resolution on a single NVIDIA 4090 GPU, while preserving a commendable FID of 2.27 </p>
+        </div>
+    </div>
+    <div><i>Zigeng Chen, <strong>Xinyin Ma</strong>, Gongfan Fang, Xinchao Wang.</i></div>
+  </li>
+  <li>
+    <strong> TinyFusion: Diffusion Transformers Learned Shallow. CVPR 2025</strong>. 
+    <div style="display: inline">
+        <a href="https://arxiv.org/abs/2412.01199"> [paper]</a>
+        <a href="https://github.com/VainF/TinyFusion"> [code]</a>
+        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
+        <div class="abstract"  style="overflow: hidden; display: none;">  
+            <p> Diffusion Transformers have demonstrated remarkable capabilities in image generation but often come with excessive parameterization, resulting in considerable inference overhead in real-world applications. In this work, we present TinyFusion, a depth pruning method designed to remove redundant layers from diffusion transformers via end-to-end learning. The core principle of our approach is to create a pruned model with high recoverability, allowing it to regain strong performance after fine-tuning. To accomplish this, we introduce a differentiable sampling technique to make pruning learnable, paired with a co-optimized parameter to simulate future fine-tuning. While prior works focus on minimizing loss or error after pruning, our method explicitly models and optimizes the post-fine-tuning performance of pruned models. Experimental results indicate that this learnable paradigm offers substantial benefits for layer pruning of diffusion transformers, surpassing existing importance-based and error-based methods. Additionally, TinyFusion exhibits strong generalization across diverse architectures, such as DiTs, MARs, and SiTs. Experiments with DiT-XL show that TinyFusion can craft a shallow diffusion transformer at less than 7% of the pre-training cost, achieving a 2× speedup with an FID score of 2.86, outperforming competitors with comparable efficiency </p>
+        </div>
+    </div>
+    <div><i>Gongfan Fang, Kunjun Li, <strong>Xinyin Ma</strong>, Xinchao Wang.</i></div>
   </li>
   <li>
     <strong> AsyncDiff: Parallelizing Diffusion Models by Asynchronous Denoising. NeurIPS 2024. </strong>
@@ -302,42 +341,14 @@ I'm so honored to receive the [***Google PhD Fellowship***](https://research.goo
     </div>
     <div><i>Yongliang Shen, <strong>Xinyin Ma</strong>, Yechun Tang, Weiming Lu.</i></div>
   </li>  
-  
 </ul>
 
 
-### Preprint
-<ul>
-<li>
-    <strong> Collaborative Decoding Makes Visual Auto-Regressive Modeling Efficient. Arxiv Preprint</strong>
-    <div style="display: inline">
-        <a href="https://arxiv.org/abs/2411.17787"> [paper]</a>
-        <a href="https://github.com/czg1225/CoDe"> [code]</a>
-        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
-        <div class="abstract"  style="overflow: hidden; display: none;">  
-            <p> In the rapidly advancing field of image generation, Visual Auto-Regressive (VAR) modeling has garnered considerable attention for its innovative next-scale prediction approach. This paradigm offers substantial improvements in efficiency, scalability, and zero-shot generalization. Yet, the inherently coarse-to-fine nature of VAR introduces a prolonged token sequence, leading to prohibitive memory consumption and computational redundancies. To address these bottlenecks, we propose Collaborative Decoding (CoDe), a novel efficient decoding strategy tailored for the VAR framework. CoDe capitalizes on two critical observations: the substantially reduced parameter demands at larger scales and the exclusive generation patterns across different scales. Based on these insights, we partition the multi-scale inference process into a seamless collaboration between a large model and a small model. The large model serves as the 'drafter', specializing in generating low-frequency content at smaller scales, while the smaller model serves as the 'refiner', solely focusing on predicting high-frequency details at larger scales. This collaboration yields remarkable efficiency with minimal impact on quality: CoDe achieves a 1.7x speedup, slashes memory usage by around 50%, and preserves image quality with only a negligible FID increase from 1.95 to 1.98. When drafting steps are further decreased, CoDe can achieve an impressive 2.9x acceleration ratio, reaching 41 images/s at 256x256 resolution on a single NVIDIA 4090 GPU, while preserving a commendable FID of 2.27 </p>
-        </div>
-    </div>
-    <div><i>Zigeng Chen, <strong>Xinyin Ma</strong>, Gongfan Fang, Xinchao Wang.</i></div>
-  </li>
-
-  <li>
-    <strong> TinyFusion: Diffusion Transformers Learned Shallow. Arxiv Preprint</strong>. 
-    <div style="display: inline">
-        <a href="https://arxiv.org/abs/2412.01199"> [paper]</a>
-        <a href="https://github.com/VainF/TinyFusion"> [code]</a>
-        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
-        <div class="abstract"  style="overflow: hidden; display: none;">  
-            <p> Diffusion Transformers have demonstrated remarkable capabilities in image generation but often come with excessive parameterization, resulting in considerable inference overhead in real-world applications. In this work, we present TinyFusion, a depth pruning method designed to remove redundant layers from diffusion transformers via end-to-end learning. The core principle of our approach is to create a pruned model with high recoverability, allowing it to regain strong performance after fine-tuning. To accomplish this, we introduce a differentiable sampling technique to make pruning learnable, paired with a co-optimized parameter to simulate future fine-tuning. While prior works focus on minimizing loss or error after pruning, our method explicitly models and optimizes the post-fine-tuning performance of pruned models. Experimental results indicate that this learnable paradigm offers substantial benefits for layer pruning of diffusion transformers, surpassing existing importance-based and error-based methods. Additionally, TinyFusion exhibits strong generalization across diverse architectures, such as DiTs, MARs, and SiTs. Experiments with DiT-XL show that TinyFusion can craft a shallow diffusion transformer at less than 7% of the pre-training cost, achieving a 2× speedup with an FID score of 2.86, outperforming competitors with comparable efficiency </p>
-        </div>
-    </div>
-    <div><i>Gongfan Fang, Kunjun Li, <strong>Xinyin Ma</strong>, Xinchao Wang.</i></div>
-  </li>
-</ul>
 
 
 
 # 🎖 Honors and Awards 
+- *2025.01*: KAUST AI Rising Stars
 - *2024.11*: Google PhD Fellowship
 - *2024.10*: NeurIPS'24 Ourstanding Reviewer
 - *2019-2022(M.Eng.)*: Outstanding Graduate(2022), Tencent Scholarship(2021), Award of Honor for Graduate(2021, 2020)
@@ -350,8 +361,8 @@ I'm so honored to receive the [***Google PhD Fellowship***](https://research.goo
 
 # 📋 Academic Service
 - Workshop: Co-Organizor of 2nd workshop on Efficient Large Vision Models, CVPR'25
-- Conference: ACL (24, 23, 22, 21), NeurIPS (24, 23), ICML (25, 24, 23), CVPR (25), ICLR (25, 24), EMNLP (24, 23, 22, 21), ECCV (24), IJCAI (24), NAACL (24), AAAI (25), ICASSP (25)
-- Journal: TPAMI, JVCI, TIP
+- Conference: ICML (25, 24, 23), ACL (25, 24, 23, 22, 21), CVPR (25), ICLR (25, 24), AAAI (25, 24), ICASSP (25), NeurIPS (24, 23), EMNLP (24, 23, 22, 21), ECCV (24), IJCAI (24), NAACL (24)
+- Journal: TPAMI, JVCI, TIP, TMLR
 
 # 🍞 Teaching Experience
 - Fall 2024, Fall 2023, Spring 2023. TA for EE2211, Introduction to Machine Learning, NUS.
