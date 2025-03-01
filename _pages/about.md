@@ -34,7 +34,7 @@ I'm so honored to receive the [***Google PhD Fellowship***](https://research.goo
 
 
 # 🔥 News
-- *2025.02*: &nbsp;Three papers (SSD, [CoDe](https://arxiv.org/abs/2411.17787) and [TinyFusion](https://arxiv.org/abs/2412.01199))accepted by CVPR'25! Congratulations to all my collaborators and see you in Nashville!
+- *2025.02*: &nbsp;Three papers (SSD, [CoDe](https://arxiv.org/abs/2411.17787) and [TinyFusion](https://arxiv.org/abs/2412.01199)) accepted by CVPR'25! Congratulations to all my collaborators and see you in Nashville!
 - *2025.02*: &nbsp;Two new papers released! Check [CoT-Valve](https://arxiv.org/abs/2502.09601) for controllable and compressible CoT and [VPT](https://arxiv.org/abs/2502.17425) for multimodal reasoning!
 - *2025.02*: &nbsp;Co-organize the [2nd workshop on Efficient Large Vision Models](https://sites.google.com/view/elvm/home), CVPR 2025.
 - *2025.01*: &nbsp;Invited talk at KAUST Rising Stars in AI Symposium 2025, April 7 - 10. 
