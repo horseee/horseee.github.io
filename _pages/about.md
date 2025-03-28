@@ -20,23 +20,26 @@ redirect_from:
 Hi there! 
 
 Welcome to Xinyin Ma(马欣尹)'s website!
-I am currently a Ph.D candidate @ [xML-Lab](https://sites.google.com/view/xml-nus), National University of Singapore from August 2022, advised by [Prof.Xinchao Wang](https://sites.google.com/site/sitexinchaowang/). Previously I obtained my master degree in computer science from Zhejiang University where I was advised by [Prof.Weiming Lu](https://person.zju.edu.cn/en/lwm). I obtained my bachelor degree in software engineering also in Zhejiang University and got the honor degree from Chu Kochen College. 
-Currently, I'm conducting research in efficient deep learning, including:  
-🌲 Efficient Large Language Models and Reasoning Models
-🌱 Efficient image generation, focusing primarily on Diffusion Models and also on some autoregressive ones
-🌿 Compression via synthetic data, like Data-free Distillation
-
-I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. More information about my publications can be found in [Google Scholar](https://scholar.google.com/citations?user=jFUKS0oAAAAJ&hl=en)
-
+I am currently a Ph.D candidate @ [xML-Lab](https://sites.google.com/view/xml-nus), National University of Singapore from August 2022, advised by [Prof.Xinchao Wang](https://sites.google.com/site/sitexinchaowang/). Previously I obtained my master degree in computer science from Zhejiang University, advised by [Prof.Weiming Lu](https://person.zju.edu.cn/en/lwm). I obtained my bachelor degree in software engineering also in Zhejiang University and got the honor degree from Chu Kochen College. 
 I'm so honored to receive the [***Google PhD Fellowship***](https://research.google/programs-and-events/phd-fellowship/recipients/) in 2024.
 
-[//]: <> <span style="color:blue"> I'm actively seeking internship and visiting opportunities. If you have any opportunities available, I would greatly appreciate it if you could reach out to me. Thank you😎! </span>
+Currently, I'm conducting research in efficient deep learning ([Google Scholar](https://scholar.google.com/citations?user=jFUKS0oAAAAJ&hl=en)), including:  
+
+🌲 Efficient Large Language Models and Reasoning Models  
+
+🌱 Efficient image generation, focusing primarily on Diffusion Models and also on some autoregressive ones  
+
+🌿 Compression via synthetic data, like Data-free Distillation  
+
+
+
+[//]: <> <span style="color:blue"> </span>
 
 
 # 🔥 News
-- *2025.02*: &nbsp;Three papers (SSD, [CoDe](https://arxiv.org/abs/2411.17787) and [TinyFusion](https://arxiv.org/abs/2412.01199)) accepted by CVPR'25! Congratulations to all my collaborators and see you in Nashville!
+- *2025.02*: &nbsp;Three papers (SSD, [CoDe](https://arxiv.org/abs/2411.17787) and [TinyFusion](https://arxiv.org/abs/2412.01199)) accepted by CVPR'25.
 - *2025.02*: &nbsp;Two new papers released! Check [CoT-Valve](https://arxiv.org/abs/2502.09601) for controllable and compressible CoT and [VPT](https://arxiv.org/abs/2502.17425) for multimodal reasoning!
-- *2025.02*: &nbsp;Co-organize the [2nd workshop on Efficient Large Vision Models](https://sites.google.com/view/elvm/home), CVPR 2025.
+- *2025.02*: &nbsp;Co-organize the [2nd workshop on Efficient Large Vision Models](https://sites.google.com/view/elvm/home), CVPR'25.
 - *2025.01*: &nbsp;Invited talk at KAUST Rising Stars in AI Symposium 2025, April 7 - 10. 
 - *2024.11*: &nbsp;🥳 Awarded Google PhD Fellowship
 - *2024.09*: &nbsp;Four papers ([Learning-to-Cache](https://arxiv.org/abs/2406.01733), [AsyncDiff](https://arxiv.org/abs/2406.06911), [SlimSAM](https://arxiv.org/abs/2312.05284) and [RemixDiT](https://openreview.net/forum?id=vo5LONGAdo)) accepted by NeurIPS'24! See you in Vancouver!
