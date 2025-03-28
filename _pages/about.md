@@ -21,10 +21,10 @@ Hi there!
 
 Welcome to Xinyin Ma(马欣尹)'s website!
 I am currently a Ph.D candidate @ [xML-Lab](https://sites.google.com/view/xml-nus), National University of Singapore from August 2022, advised by [Prof.Xinchao Wang](https://sites.google.com/site/sitexinchaowang/). Previously I obtained my master degree in computer science from Zhejiang University where I was advised by [Prof.Weiming Lu](https://person.zju.edu.cn/en/lwm). I obtained my bachelor degree in software engineering also in Zhejiang University and got the honor degree from Chu Kochen College. 
-Currently, I'm conducting research in efficient learning, including:  
-🌲 The efficiency of the Language Model and Diffusion Model.  
-🌱 The acceleration of training: dataset distillation and coreset  
-🌿 Compression with synthetic data, e.g., data-free distillation. 
+Currently, I'm conducting research in efficient deep learning, including:  
+🌲 Efficient Large Language Models and Reasoning Models
+🌱 Efficient image generation, focusing primarily on Diffusion Models and also on some autoregressive ones
+🌿 Compression via synthetic data, like Data-free Distillation
 
 I have published several papers in NeurIPS, CVPR, EMNLP, IJCAI. More information about my publications can be found in [Google Scholar](https://scholar.google.com/citations?user=jFUKS0oAAAAJ&hl=en)
 
@@ -361,8 +361,8 @@ I'm so honored to receive the [***Google PhD Fellowship***](https://research.goo
 - *2015.09 - 2019.06*, B.Eng. in Software Engineering, Chu Kochen Honors College, Zhejiang University
 
 # 📋 Academic Service
-- Workshop: Co-Organizor of 2nd workshop on Efficient Large Vision Models, CVPR'25
-- Conference: ICML (25, 24, 23), ACL (25, 24, 23, 22, 21), CVPR (25), ICLR (25, 24), AAAI (25, 24), ICASSP (25), NeurIPS (24, 23), EMNLP (24, 23, 22, 21), ECCV (24), IJCAI (24), NAACL (24)
+- Workshop: Co-organizor of 2nd workshop on Efficient Large Vision Models, CVPR'25
+- Conference: ICML (25, 24, 23), ACL (25, 24, 23, 22, 21), ICCV (25), CVPR (25), ICLR (25, 24), AAAI (25, 24), ICASSP (25), NeurIPS (24, 23), EMNLP (24, 23, 22, 21), ECCV (24), IJCAI (24), NAACL (24)
 - Journal: TPAMI, JVCI, TIP, TMLR
 
 # 🍞 Teaching Experience
