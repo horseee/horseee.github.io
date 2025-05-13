@@ -20,11 +20,10 @@ redirect_from:
 
   <h1 id="about-me" class="text-primary"><i class="fas fa-user"></i> About Me</h1>
 
-  Hi there! 👋  
-  Welcome to **Bhanu Prakash Vangala**’s website!
+Hi there! 👋  
+Welcome to **Bhanu Prakash Vangala**’s website!
 
-  I’m currently a <span class="badge">Ph.D. candidate</span> in Computer Science at the University of Missouri, Columbia <span class="text-accent">(Aug 2023 – Jun 2027)</span>, co-advised by [Dr. Jianlin Cheng](https://calla.rnet.missouri.edu/cheng/) and [Dr. Tanu Malik](https://engineering.missouri.edu/faculty/tanu-malik/).  
-  I earned my M.S. in Computer Science <span class="text-accent">(GPA 4.0/4.0)</span> from Missouri—deployed LLMs under [Dr. Grant J Scott](https://scottgs.mufaculty.umsystem.edu/).  
+I’m currently a <span class="badge">Ph.D. candidate</span> in Computer Science at the University of Missouri, Columbia <span class="text-accent">(Aug 2023 – Jun 2027)</span>, co-advised by [Dr. Jianlin Cheng](https://calla.rnet.missouri.edu/cheng/) and [Dr. Tanu Malik](https://engineering.missouri.edu/faculty/tanu-malik/). I earned my M.S. in Computer Science <span class="text-accent">(GPA 4.0/4.0)</span> from Missouri—deployed LLMs under [Dr. Grant J Scott](https://scottgs.mufaculty.umsystem.edu/).  
   Completed my B.Tech in CSE (Data Analytics) at VIT Vellore, exploring multilingual NLP & large-scale social media analysis.
 
   ## <i class="fas fa-bullseye"></i> Core Research Interests
