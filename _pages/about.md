@@ -308,7 +308,7 @@ Thanks for stopping by—feel free to explore my work on [GitHub](https://bhanup
 
 - Fall 2025, Fall 2024, Spring 2024, Fall 2023 – TA for Web Development  
 
-# ☃️ Internships & Research Experience
+# ☃️ Internships
 
 - *May 2022 – Jan 2023*, **Adobe Research**, NLP Research Intern  
   Conducted research in Information Extraction, Web Mining, and Data Management for intelligent interfaces.  
