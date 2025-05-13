@@ -66,7 +66,6 @@ Thanks for stopping by—feel free to explore my work on [GitHub](https://bhanup
 - *2021*: Collaborated with the **Synergy Team** at VIT, supporting student experience initiatives and university development programs.
 
 # 📝 Publications 
-
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
@@ -74,14 +73,13 @@ Thanks for stopping by—feel free to explore my work on [GitHub](https://bhanup
       <img src='images/papers/publication-placeholder.png' alt="sym" width="100%">
     </div>
   </div>
-  <div class='paper-box-text' markdown="1">
-    [**HalluMat: Hallucination Detection in Scientific LLMs**]()
-
-    **Bhanu Prakash Vangala**, Jianlin Cheng
-
-    - A hybrid evaluation pipeline combining intrinsic and extrinsic techniques to flag hallucinations in domain-specific outputs.  
-    - Applied to biomedical and scientific text generation tasks.
-
+  <div class='paper-box-text'>
+    <p><strong><a href="#">HalluMat: Hallucination Detection in Scientific LLMs</a></strong></p>
+    <p><strong>Bhanu Prakash Vangala</strong>, Jianlin Cheng</p>
+    <ul>
+      <li>A hybrid evaluation pipeline combining intrinsic and extrinsic techniques to flag hallucinations in domain-specific outputs.</li>
+      <li>Applied to biomedical and scientific text generation tasks.</li>
+    </ul>
     <div style="display: inline">
       <a href="#"><strong>[paper]</strong></a>
       <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()"><strong>[abstract]</strong></a>
@@ -99,13 +97,12 @@ Thanks for stopping by—feel free to explore my work on [GitHub](https://bhanup
       <img src='images/papers/publication-placeholder.png' alt="sym" width="100%">
     </div>
   </div>
-  <div class='paper-box-text' markdown="1">
-    [**HalluFormer: Faithfulness Evaluation Framework**]()
-
-    **Bhanu Prakash Vangala**, Jianlin Cheng
-
-    - Transformer-based architecture for multi-dimensional consistency checking of LLM outputs.
-
+  <div class='paper-box-text'>
+    <p><strong><a href="#">HalluFormer: Faithfulness Evaluation Framework</a></strong></p>
+    <p><strong>Bhanu Prakash Vangala</strong>, Jianlin Cheng</p>
+    <ul>
+      <li>Transformer-based architecture for multi-dimensional consistency checking of LLM outputs.</li>
+    </ul>
     <div style="display: inline">
       <a href="#"><strong>[paper]</strong></a>
       <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()"><strong>[abstract]</strong></a>
@@ -123,13 +120,12 @@ Thanks for stopping by—feel free to explore my work on [GitHub](https://bhanup
       <img src='images/papers/publication-placeholder.png' alt="sym" width="100%">
     </div>
   </div>
-  <div class='paper-box-text' markdown="1">
-    [**Deploying LLM-as-a-Service in Kubernetes HPC Clusters**]()
-
-    **Bhanu Prakash Vangala**, Grant Scott, Jianlin Cheng
-
-    - Designed a Helm-based GPU-aware deployment pipeline for LLM inference in research clusters.
-
+  <div class='paper-box-text'>
+    <p><strong><a href="#">Deploying LLM-as-a-Service in Kubernetes HPC Clusters</a></strong></p>
+    <p><strong>Bhanu Prakash Vangala</strong>, Grant Scott, Jianlin Cheng</p>
+    <ul>
+      <li>Designed a Helm-based GPU-aware deployment pipeline for LLM inference in research clusters.</li>
+    </ul>
     <div style="display: inline">
       <a href="#"><strong>[thesis]</strong></a>
       <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()"><strong>[abstract]</strong></a>
@@ -147,14 +143,13 @@ Thanks for stopping by—feel free to explore my work on [GitHub](https://bhanup
       <img src='images/papers/publication-placeholder.png' alt="sym" width="100%">
     </div>
   </div>
-  <div class='paper-box-text' markdown="1">
-    [**Brain Tumor Detection in MRI Images**]()
-
-    **Bhanu Prakash Vangala**
-
-    - Built a CNN-based pipeline to classify MRI scans into normal and tumor-positive cases.  
-    - Used preprocessed image datasets and trained on Google Colab with Keras/TensorFlow.
-
+  <div class='paper-box-text'>
+    <p><strong><a href="#">Brain Tumor Detection in MRI Images</a></strong></p>
+    <p><strong>Bhanu Prakash Vangala</strong></p>
+    <ul>
+      <li>Built a CNN-based pipeline to classify MRI scans into normal and tumor-positive cases.</li>
+      <li>Used preprocessed image datasets and trained on Google Colab with Keras/TensorFlow.</li>
+    </ul>
     <div style="display: inline">
       <a href="#"><strong>[project]</strong></a>
       <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()"><strong>[abstract]</strong></a>
@@ -172,14 +167,13 @@ Thanks for stopping by—feel free to explore my work on [GitHub](https://bhanup
       <img src='images/papers/publication-placeholder.png' alt="sym" width="100%">
     </div>
   </div>
-  <div class='paper-box-text' markdown="1">
-    [**Pneumonia Detection in Chest X-rays Using Deep Learning**]()
-
-    **Bhanu Prakash Vangala**
-
-    - Applied CNN models to classify chest X-rays for pneumonia diagnosis.  
-    - Trained on Kaggle datasets using transfer learning (ResNet, VGG).
-
+  <div class='paper-box-text'>
+    <p><strong><a href="#">Pneumonia Detection in Chest X-rays Using Deep Learning</a></strong></p>
+    <p><strong>Bhanu Prakash Vangala</strong></p>
+    <ul>
+      <li>Applied CNN models to classify chest X-rays for pneumonia diagnosis.</li>
+      <li>Trained on Kaggle datasets using transfer learning (ResNet, VGG).</li>
+    </ul>
     <div style="display: inline">
       <a href="#"><strong>[project]</strong></a>
       <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()"><strong>[abstract]</strong></a>
@@ -197,14 +191,13 @@ Thanks for stopping by—feel free to explore my work on [GitHub](https://bhanup
       <img src='images/papers/publication-placeholder.png' alt="sym" width="100%">
     </div>
   </div>
-  <div class='paper-box-text' markdown="1">
-    [**Image Colorization Using AI**]()
-
-    **Bhanu Prakash Vangala**
-
-    - Developed a deep learning model to convert grayscale images to color.  
-    - Used convolutional autoencoders and GAN-based architectures for photorealistic results.
-
+  <div class='paper-box-text'>
+    <p><strong><a href="#">Image Colorization Using AI</a></strong></p>
+    <p><strong>Bhanu Prakash Vangala</strong></p>
+    <ul>
+      <li>Developed a deep learning model to convert grayscale images to color.</li>
+      <li>Used convolutional autoencoders and GAN-based architectures for photorealistic results.</li>
+    </ul>
     <div style="display: inline">
       <a href="#"><strong>[project]</strong></a>
       <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()"><strong>[abstract]</strong></a>
@@ -214,8 +207,6 @@ Thanks for stopping by—feel free to explore my work on [GitHub](https://bhanup
     </div>
   </div>
 </div>
-
----
 
 # 📊 Projects
 
