@@ -276,20 +276,20 @@ Thanks for stopping by—feel free to explore my work on [GitHub](https://bhanup
 
 - *2023.08 – 2027.06 (expected)*, **Ph.D. in Computer Science**, University of Missouri, Columbia  
   Co-advised by Dr. Jianlin Cheng and Dr. Tanu Malik  
-  - Research focus: Trustworthy and Efficient LLMs, Self-Correcting and Evolving Language Models, Evaluation in LLMs  
+  - **Research focus:** Trustworthy and Efficient LLMs, Self-Correcting and Evolving Language Models, Evaluation in LLMs  
   - Google PhD Fellowship nominee (NLP), Outstanding Student Award recipient  
   - Supported by NASA, National Science Foundation, and Department of Defense grants for research in scientific LLMs and scalable AI infrastructure  
 
 - *2023.08 – 2025.05*, **M.S. in Computer Science**, University of Missouri, Columbia  
-  Thesis: *Deploying LLM-as-a-Service in Kubernetes HPC Clusters*  
-  Advisors: Dr. Grant Scott and Dr. Jianlin Cheng  
-  - GPA: 4.0/4.0  
+  **Thesis:** *Deploying LLM-as-a-Service in Kubernetes HPC Clusters*  
+  **Advisors:** Dr. Grant Scott and Dr. Jianlin Cheng  
+  - **GPA:** 4.0/4.0  
   - Built Helm/Kubernetes-based LLM inference pipelines in HPC environments  
   - TA for Full-Stack MERN Development (mentored 100+ students)  
 
 - *2019.05 – 2023.05*, **B.Tech in Computer Science and Engineering (Data Analytics)**, Vellore Institute of Technology, India  
   - Excellence in Research and Best Department Thesis  
-  - Thesis: *Multilingual Sentiment Analysis of Social Media Posts on KOO platform*  
+  - **Thesis:** *Multilingual Sentiment Analysis of Social Media Posts on KOO platform*  
   - Core member of Synergy Team, Internshala Student Partner and Student Ambassador, Runner-up in VIT AI Tech-Thon  
   - Internship/volunteer work: Adobe (AI Evangelist), Brandiverse (Data Analyst)  
 
