@@ -246,17 +246,29 @@ Thanks for stopping by—feel free to explore my work on [GitHub](https://bhanup
 </ul>
 
 # 🎖 Honors and Awards
+<ul>
+  <li>
+    <strong>2025.05:</strong> <strong>Outstanding Master’s Student Award</strong>, College of Engineering, University of Missouri  
+    <div style="margin-top: 10px;">
+      <img src="images/awards/outstanding-award.jpg" alt="Outstanding Master’s Student Award" style="max-width: 100%; border: 1px solid #ccc; border-radius: 8px;">
+    </div>
+  </li>
+  <li>
+    <strong>2025.03:</strong> 🥈 <strong>Runner-Up – MUIDSI Hackathon</strong> for <em>VisionAI: AI-Powered Assistance for the Visually Impaired</em>, awarded $1,000  
+    <div style="margin-top: 10px;">
+      <img src="images/awards/muidsi-hackathon.jpg" alt="MUIDSI Hackathon Award" style="max-width: 100%; border: 1px solid #ccc; border-radius: 8px;">
+    </div>
+  </li>
+  <li><strong>2025.04:</strong> Selected for <strong>Google PhD Fellowship Nomination</strong>, one of three University of Missouri nominees in NLP</li>
+  <li><strong>2024.10:</strong> <strong>Outstanding Volunteer</strong>, EMNLP 2023</li>
+  <li><strong>2023:</strong> 🏅 <strong>Dean’s Research Excellence Award</strong>, Vellore Institute of Technology (VIT)</li>
+  <li><strong>2023:</strong> <strong>Best Department Thesis Award</strong>, VIT for B.Tech thesis on multilingual sentiment analysis</li>
+  <li><strong>2022:</strong> <strong>Top 2 Academic Performer</strong>, CSE Department, VIT</li>
+  <li><strong>2022:</strong> 🥈 <strong>Runner-Up</strong>, VIT AI Tech-Thon</li>
+  <li><strong>2020:</strong> <strong>Certificate of Outstanding Achievement</strong>, Data Analyst Intern at Brandiverse</li>
+  <li><strong>2019–2023:</strong> Multiple <strong>Academic Merit Scholarships</strong> and recognitions as <strong>Internshala Student Partner (ISP)</strong> and <strong>Synergy Team Lead</strong>, VIT</li>
+</ul>
 
-- *2025.05*: **Outstanding Master’s Student Award**, College of Engineering, University of Missouri  
-- *2025.03*: 🥈 **Runner-Up – MUIDSI Hackathon** for *VisionAI: AI-Powered Assistance for the Visually Impaired*, awarded \$1,000  
-- *2025.04*: Selected for **Google PhD Fellowship Nomination**, one of three University of Missouri nominees in NLP  
-- *2024.10*: **Outstanding Volunteer**, EMNLP 2023  
-- *2023*: 🏅 **Dean’s Research Excellence Award**, Vellore Institute of Technology (VIT)  
-- *2023*: **Best Department Thesis Award**, VIT for B.Tech thesis on multilingual sentiment analysis  
-- *2022*: **Top 2 Academic Performer**, CSE Department, VIT  
-- *2022*: 🥈 **Runner-Up**, VIT AI Tech-Thon  
-- *2020*: **Certificate of Outstanding Achievement**, Data Analyst Intern at Brandiverse  
-- *2019–2023*: Multiple **Academic Merit Scholarships** and recognitions as **Internshala Student Partner (ISP)** and **Synergy Team Lead**, VIT  
 
 # 🎩 Educations
 
