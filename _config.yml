@@ -6,9 +6,9 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Xinyin Ma"
+title                    : "Bhanu Prakash Vangala"
 description              : ""
-repository               : "horseee/horseee.github.io"
+repository               : "bhanuprakashvangala/bhanuprakashvangala.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
@@ -21,15 +21,15 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Xinyin Ma"
+  name             : "Bhanu Prakash Vangala"
   avatar           : "images/android-chrome-512x512.png"
   bio              : "National University of Singapore"
   location         : "Singapore"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=jFUKS0oAAAAJ"
-  email            : "maxinyin@u.nus.edu"
-  researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
+  googlescholar    :  #"https://scholar.google.com/citations?user=jFUKS0oAAAAJ"
+  email            : "bv3hz@umsystem.edu"
+  researchgate     : "https://www.researchgate.net/profile/Bhanu-Prakash-Vangala-3?ev=hdr_xprf" # e.g., "resresearchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
@@ -37,13 +37,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "horseee"
+  github           : "bhanuprakashvangala"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : # e.g., "linkedin username"
+  linkedin         : "https://www.linkedin.com/in/vangalabhanuprakash/" # e.g., "linkedin username"
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
   orcid            : # e.g., "https://orcid.org/xxxx"
   pinterest        :
@@ -51,7 +51,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : horseeeMa
+  twitter          : 
   vine             :
   weibo            :
   xing             :
