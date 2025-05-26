@@ -25,18 +25,20 @@ I'm so honored to receive the [***Google PhD Fellowship***](https://research.goo
 
 Currently, I'm conducting research in efficient deep learning ([Google Scholar](https://scholar.google.com/citations?user=jFUKS0oAAAAJ&hl=en)), including:  
 
-🌲 Efficient Large Language Models and Reasoning Models  
+🌲 Efficient Large Language Models, Reasoning Models and Diffusion Language Models
 
-🌱 Efficient image generation, focusing primarily on Diffusion Models and also on some autoregressive ones  
+🌱 Efficient Image Generation, focusing primarily on Diffusion Models and also on some autoregressive ones  
 
 🌿 Compression via synthetic data, like Data-free Distillation  
 
 
 
-[//]: <> <span style="color:blue"> </span>
+<span style="color:blue">I'm expected to graduate in June 2026 and am currently on the job market. If you have any opportunities, I would greatly appreciate it if you could drop me an email. Thank you! </span>
 
 
 # 🔥 News
+- *2025.05*: &nbsp;We release [dKV-Cache](https://arxiv.org/abs/2505.15781) for the first KV-Cache algorithm for diffusion language models! 
+- *2025.05*: &nbsp;CoT-Valve is accepted by ACL'25!
 - *2025.02*: &nbsp;Three papers (SSD, [CoDe](https://arxiv.org/abs/2411.17787) and [TinyFusion](https://arxiv.org/abs/2412.01199)) accepted by CVPR'25.
 - *2025.02*: &nbsp;Two new papers released! Check [CoT-Valve](https://arxiv.org/abs/2502.09601) for controllable and compressible CoT and [VPT](https://arxiv.org/abs/2502.17425) for multimodal reasoning!
 - *2025.02*: &nbsp;Co-organize the [2nd workshop on Efficient Large Vision Models](https://sites.google.com/view/elvm/home), CVPR'25.
@@ -56,6 +58,31 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
 - *2022.04*: &nbsp; Got my master degree from ZJU! Thanks to my supervisor and all my friends in ZJU!
 
 # 📝 Publications 
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2025</div><img src='images/papers/cot-valve.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**CoT-Valve: Length-Compressible Chain-of-Thought Tuning**](https://arxiv.org/abs/2502.09601) <img src='https://img.shields.io/github/stars/horseee/CoT-Valve.svg?style=social&label=Star' alt="sym" height="100%">
+
+**Xinyin Ma\***, Guangnian Wan\*, Runpeng Yu, Gongfan Fang, Xinchao Wang 
+
+(*Equal Contribution)
+
+- A tuning and inference strategy that elastically controls CoT length within a single model
+- GSM8K: 741 → 225 tokens with only 0.15% accuracy drop. AIME: 6827 → 4629 tokens (32% reduction) while preserving accuracy
+
+<div style="display: inline">
+    <a href="https://arxiv.org/abs/2502.09601"> <strong>[paper]</strong></a>
+    <a href="https://github.com/horseee/CoT-Valve"> <strong>[code]</strong></a>
+    <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" ><strong>[abstract]</strong></a>
+    <div class="abstract"  style="overflow: hidden; display: none;">  
+        <p> Chain-of-Thought significantly enhances a model's reasoning capability, but it also comes with a considerable increase in inference costs due to long chains. With the observation that the reasoning path can be easily compressed under easy tasks but struggle on hard tasks, we explore the feasibility of elastically controlling the length of reasoning paths with only one model, thereby reducing the inference overhead of reasoning models dynamically based on task difficulty. We introduce a new tuning and inference strategy named CoT-Valve, designed to allow models to generate reasoning chains of varying lengths. To achieve this, we propose to identify a direction in the parameter space that, when manipulated, can effectively control the length of generated CoT. Moreover, we show that this property is valuable for compressing the reasoning chain. We construct datasets with chains from long to short for the same questions and explore two enhanced strategies for CoT-Valve: (1) a precise length-compressible CoT tuning method, and (2) a progressive chain length compression approach. Our experiments show that CoT-Valve successfully enables controllability and compressibility of the chain and shows better performance than the prompt-based control. We applied this method to QwQ-32B-Preview, reducing reasoning chains on GSM8K from 741 to 225 tokens with a minor performance drop (95.07% to 94.92%) and on AIME from 6827 to 4629 tokens, with only one additional incorrect answer. </p>
+    </div>
+</div>
+
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='https://github.com/horseee/learning-to-cache/raw/main/assets/teaser.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -128,30 +155,28 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/papers/cot-valve.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='https://github.com/horseee/dKV-Cache/blob/main/assets/teaser.gif?raw=true' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[**CoT-Valve: Length-Compressible Chain-of-Thought Tuning**](https://arxiv.org/abs/2502.09601) <img src='https://img.shields.io/github/stars/horseee/CoT-Valve.svg?style=social&label=Star' alt="sym" height="100%">
+[**dKV-Cache: The Cache for Diffusion Language Models**](https://arxiv.org/abs/2505.15781) <img src='https://img.shields.io/github/stars/horseee/dKV-Cache.svg?style=social&label=Star' alt="sym" height="100%">
 
-**Xinyin Ma\***, Guangnian Wan\*, Runpeng Yu, Gongfan Fang, Xinchao Wang 
+**Xinyin Ma**, Runpeng Yu, Gongfan Fang, Xinchao Wang 
 
-(*Equal Contribution)
-
-- A tuning and inference strategy that elastically controls CoT length within a single model
-- GSM8K: 741 → 225 tokens with only 0.15% accuracy drop. AIME: 6827 → 4629 tokens (32% reduction) while preserving accuracy
+- Delayed Caching Mechanism: dKV-Cache delays the caching of keys and values.
+- Two Variants: (1) dKV-Cache-Decode for high-performance inference. (2) dKV-Cache-Greedy for potentially faster decoding with trade-off in performance.
+- Applied to LLaDA and Dream, dKV-Cache achieves 2x to 10x speedups.
 
 <div style="display: inline">
-    <a href="https://arxiv.org/abs/2502.09601"> <strong>[paper]</strong></a>
-    <a href="https://github.com/horseee/CoT-Valve"> <strong>[code]</strong></a>
+    <a href="https://arxiv.org/abs/2505.15781"> <strong>[paper]</strong></a>
+    <a href="https://github.com/horseee/dKV-Cache"> <strong>[code]</strong></a>
     <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" ><strong>[abstract]</strong></a>
     <div class="abstract"  style="overflow: hidden; display: none;">  
-        <p> Chain-of-Thought significantly enhances a model's reasoning capability, but it also comes with a considerable increase in inference costs due to long chains. With the observation that the reasoning path can be easily compressed under easy tasks but struggle on hard tasks, we explore the feasibility of elastically controlling the length of reasoning paths with only one model, thereby reducing the inference overhead of reasoning models dynamically based on task difficulty. We introduce a new tuning and inference strategy named CoT-Valve, designed to allow models to generate reasoning chains of varying lengths. To achieve this, we propose to identify a direction in the parameter space that, when manipulated, can effectively control the length of generated CoT. Moreover, we show that this property is valuable for compressing the reasoning chain. We construct datasets with chains from long to short for the same questions and explore two enhanced strategies for CoT-Valve: (1) a precise length-compressible CoT tuning method, and (2) a progressive chain length compression approach. Our experiments show that CoT-Valve successfully enables controllability and compressibility of the chain and shows better performance than the prompt-based control. We applied this method to QwQ-32B-Preview, reducing reasoning chains on GSM8K from 741 to 225 tokens with a minor performance drop (95.07% to 94.92%) and on AIME from 6827 to 4629 tokens, with only one additional incorrect answer. </p>
+        <p> Diffusion Language Models (DLMs) have been seen as a promising competitor for autoregressive language models. However, diffusion language models have long been constrained by slow inference. A core challenge is that their non-autoregressive architecture and bidirectional attention preclude the key-value cache that accelerates decoding. We address this bottleneck by proposing a KV-cache-like mechanism, delayed KV-Cache, for the denoising process of DLMs. Our approach is motivated by the observation that different tokens have distinct representation dynamics throughout the diffusion process. Accordingly, we propose a delayed and conditioned caching strategy for key and value states. We design two complementary variants to cache key and value step-by-step: (1) dKV-Cache-Decode, which provides almost lossless acceleration, and even improves performance on long sequences, suggesting that existing DLMs may under-utilise contextual information during inference. (2) dKV-Cache-Greedy, which has aggressive caching with reduced lifespan, achieving higher speed-ups with quadratic time complexity at the cost of some performance degradation. dKV-Cache, in final, achieves from 2-10x speedup in inference, largely narrowing the gap between ARs and DLMs. We evaluate our dKV-Cache on several benchmarks, delivering acceleration across general language understanding, mathematical, and code-generation benchmarks. Experiments demonstrate that cache can also be used in DLMs, even in a training-free manner from current DLMs. </p>
     </div>
 </div>
 
 </div>
 </div>
-
 
 
 <ul>
