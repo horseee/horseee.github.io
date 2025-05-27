@@ -45,20 +45,38 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
 - *2025.01*: &nbsp;Invited talk at KAUST Rising Stars in AI Symposium 2025, April 7 - 10. 
 - *2024.11*: &nbsp;🥳 Awarded Google PhD Fellowship
 - *2024.09*: &nbsp;Four papers ([Learning-to-Cache](https://arxiv.org/abs/2406.01733), [AsyncDiff](https://arxiv.org/abs/2406.06911), [SlimSAM](https://arxiv.org/abs/2312.05284) and [RemixDiT](https://openreview.net/forum?id=vo5LONGAdo)) accepted by NeurIPS'24! See you in Vancouver!
-- *2024.07*: &nbsp;One co-authored paper accepted by ECCV'24! 
 - *2024.07*: &nbsp;⛵ Passed my qualifying exam! 
-- *2024.06*: &nbsp;One co-authored paper accepted by Interspeech'24! 
 - *2024.02*: &nbsp;DeepCache is accepted by CVPR'24! 
 - *2023.12*: &nbsp;🌟 Our new work, DeepCache, accelerates Diffusion Models for FREE! Check our [paper](https://arxiv.org/abs/2312.00858) and [code](https://github.com/horseee/DeepCache)! 
-- *2023.09*: &nbsp;Two papers are accepted by NeurIPS'23. 
 - *2023.06*: &nbsp;🎉 Release LLM-Pruner🐏, the first structural pruning work of LLM. See our [paper](https://arxiv.org/abs/2305.11627) and [code](https://github.com/horseee/LLM-Pruner)! 
-- *2023.02*: &nbsp;One paper 'DepGraph: Towards Any Structural Pruning' accepted by CVPR’23.
 - *2022.08*: &nbsp;⛵ Start my Ph.D. journey in NUS!
 - *2022.04*: &nbsp; One paper ‘Prompting to distill: Boosting Data-Free Knowledge Distillation via Reinforced Prompt’ accepted by IJCAI’22.
 - *2022.04*: &nbsp; Got my master degree from ZJU! Thanks to my supervisor and all my friends in ZJU!
 
 # 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='https://github.com/horseee/dKV-Cache/blob/main/assets/teaser.gif?raw=true' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**dKV-Cache: The Cache for Diffusion Language Models**](https://arxiv.org/abs/2505.15781) <img src='https://img.shields.io/github/stars/horseee/dKV-Cache.svg?style=social&label=Star' alt="sym" height="100%">
+
+**Xinyin Ma**, Runpeng Yu, Gongfan Fang, Xinchao Wang 
+
+- Delayed Caching Mechanism: dKV-Cache delays the caching of keys and values.
+- Two Variants: (1) dKV-Cache-Decode for high-performance inference. (2) dKV-Cache-Greedy for potentially faster decoding with trade-off in performance.
+- Applied to LLaDA and Dream, dKV-Cache achieves 2x to 10x speedups.
+
+<div style="display: inline">
+    <a href="https://arxiv.org/abs/2505.15781"> <strong>[paper]</strong></a>
+    <a href="https://github.com/horseee/dKV-Cache"> <strong>[code]</strong></a>
+    <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" ><strong>[abstract]</strong></a>
+    <div class="abstract"  style="overflow: hidden; display: none;">  
+        <p> Diffusion Language Models (DLMs) have been seen as a promising competitor for autoregressive language models. However, diffusion language models have long been constrained by slow inference. A core challenge is that their non-autoregressive architecture and bidirectional attention preclude the key-value cache that accelerates decoding. We address this bottleneck by proposing a KV-cache-like mechanism, delayed KV-Cache, for the denoising process of DLMs. Our approach is motivated by the observation that different tokens have distinct representation dynamics throughout the diffusion process. Accordingly, we propose a delayed and conditioned caching strategy for key and value states. We design two complementary variants to cache key and value step-by-step: (1) dKV-Cache-Decode, which provides almost lossless acceleration, and even improves performance on long sequences, suggesting that existing DLMs may under-utilise contextual information during inference. (2) dKV-Cache-Greedy, which has aggressive caching with reduced lifespan, achieving higher speed-ups with quadratic time complexity at the cost of some performance degradation. dKV-Cache, in final, achieves from 2-10x speedup in inference, largely narrowing the gap between ARs and DLMs. We evaluate our dKV-Cache on several benchmarks, delivering acceleration across general language understanding, mathematical, and code-generation benchmarks. Experiments demonstrate that cache can also be used in DLMs, even in a training-free manner from current DLMs. </p>
+    </div>
+</div>
+
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2025</div><img src='images/papers/cot-valve.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -155,28 +173,6 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='https://github.com/horseee/dKV-Cache/blob/main/assets/teaser.gif?raw=true' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[**dKV-Cache: The Cache for Diffusion Language Models**](https://arxiv.org/abs/2505.15781) <img src='https://img.shields.io/github/stars/horseee/dKV-Cache.svg?style=social&label=Star' alt="sym" height="100%">
-
-**Xinyin Ma**, Runpeng Yu, Gongfan Fang, Xinchao Wang 
-
-- Delayed Caching Mechanism: dKV-Cache delays the caching of keys and values.
-- Two Variants: (1) dKV-Cache-Decode for high-performance inference. (2) dKV-Cache-Greedy for potentially faster decoding with trade-off in performance.
-- Applied to LLaDA and Dream, dKV-Cache achieves 2x to 10x speedups.
-
-<div style="display: inline">
-    <a href="https://arxiv.org/abs/2505.15781"> <strong>[paper]</strong></a>
-    <a href="https://github.com/horseee/dKV-Cache"> <strong>[code]</strong></a>
-    <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" ><strong>[abstract]</strong></a>
-    <div class="abstract"  style="overflow: hidden; display: none;">  
-        <p> Diffusion Language Models (DLMs) have been seen as a promising competitor for autoregressive language models. However, diffusion language models have long been constrained by slow inference. A core challenge is that their non-autoregressive architecture and bidirectional attention preclude the key-value cache that accelerates decoding. We address this bottleneck by proposing a KV-cache-like mechanism, delayed KV-Cache, for the denoising process of DLMs. Our approach is motivated by the observation that different tokens have distinct representation dynamics throughout the diffusion process. Accordingly, we propose a delayed and conditioned caching strategy for key and value states. We design two complementary variants to cache key and value step-by-step: (1) dKV-Cache-Decode, which provides almost lossless acceleration, and even improves performance on long sequences, suggesting that existing DLMs may under-utilise contextual information during inference. (2) dKV-Cache-Greedy, which has aggressive caching with reduced lifespan, achieving higher speed-ups with quadratic time complexity at the cost of some performance degradation. dKV-Cache, in final, achieves from 2-10x speedup in inference, largely narrowing the gap between ARs and DLMs. We evaluate our dKV-Cache on several benchmarks, delivering acceleration across general language understanding, mathematical, and code-generation benchmarks. Experiments demonstrate that cache can also be used in DLMs, even in a training-free manner from current DLMs. </p>
-    </div>
-</div>
-
-</div>
-</div>
 
 
 <ul>
@@ -393,13 +389,15 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
 - Conference: ICML (25, 24, 23), ACL (25, 24, 23, 22, 21), ICCV (25), CVPR (25), ICLR (25, 24), AAAI (25, 24), ICASSP (25), NeurIPS (24, 23), EMNLP (24, 23, 22, 21), ECCV (24), IJCAI (24), NAACL (24)
 - Journal: TPAMI, JVCI, TIP, TMLR
 
-# 🍞 Teaching Experience
-- Fall 2024, Fall 2023, Spring 2023. TA for EE2211, Introduction to Machine Learning, NUS.
-
 # ☃️ Internships
 - *2020.12 - 2021.6*, Alibaba DAMO Academy, Research Intern. Mentor: [Yong Jiang](https://jiangyong.site).
 - *2018.07 - 2018.11*, Netease Thunderfire UX, Data Analyst Intern. Mentor: Lei Xia.
 
+# 🎙️ Invited Talk 
+- May 29, 2025: IVUL @ KAUST, Topic: Efficient Generative Models via Caching
+
+# 🍞 Teaching Experience
+- Fall 2024, Fall 2023, Spring 2023. TA for EE2211, Introduction to Machine Learning, NUS.
 
 <!-- Statcounter code for personal website
 http://horseee.github.io on Google Sites (new) -->
