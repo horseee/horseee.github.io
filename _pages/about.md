@@ -27,10 +27,9 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
 
 🌲 Efficient Large Language Models, Reasoning Models and Diffusion Language Models
 
-🌱 Efficient Image Generation, focusing primarily on Diffusion Models and also on some autoregressive ones  
+🌱 Efficient Diffusion Generation, mainly for the cache inference paradigm
 
 🌿 Compression via synthetic data, like Data-free Distillation  
-
 
 
 <span style="color:blue">I'm expected to graduate in June 2026 and am currently on the job market. If you have any opportunities, I would greatly appreciate it if you could drop me an email. Thank you! </span>
@@ -373,6 +372,7 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
 
 
 # 🎖 Honors and Awards 
+- *2025.06*: 清源潜力学者 by CAAI
 - *2025.01*: KAUST AI Rising Stars
 - *2024.11*: Google PhD Fellowship
 - *2024.10*: NeurIPS'24 Ourstanding Reviewer
@@ -394,7 +394,8 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
 - *2018.07 - 2018.11*, Netease Thunderfire UX, Data Analyst Intern. Mentor: Lei Xia.
 
 # 🎙️ Invited Talk 
-- May 29, 2025: IVUL @ KAUST, Topic: Efficient Generative Models via Caching
+- May 29, 2025: IVUL @ KAUST. Topic: Efficient Generative Models via Caching
+- (Planned) June 18, 2025: Bytedance Seed. Topic: Efficient Reasoning Model
 
 # 🍞 Teaching Experience
 - Fall 2024, Fall 2023, Spring 2023. TA for EE2211, Introduction to Machine Learning, NUS.
