@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 
-Hi there! 👋
+Hi there! 
 
 Welcome to **Bhanu Prakash Vangala**’s website!
 
@@ -27,16 +27,16 @@ I’m currently a Ph.D. candidate in Computer Science at the University of Misso
 
 My current **core research interests** are funded by the **Department of Defense (U.S. Army ERDC), NSF, and NASA**, highlighting their relevance to critical scientific and technological challenges.
 
-🌲 **Trustworthy and Interpretable AI**  
+**Trustworthy and Interpretable AI**  
 Developing systems that can reason transparently, self-reflect, and correct their own outputs—improving reliability and reducing harmful or misleading responses.
 
-🌱 **Efficient and Scalable Language Models**  
+**Efficient and Scalable Language Models**  
 Focusing on model compression, memory optimization, and large-scale deployment of LLMs for real-time inference in resource-constrained and HPC environments.
 
-🌿 **Factuality and Evaluation in Language Models**  
+**Factuality and Evaluation in Language Models**  
 Designing evaluation benchmarks and hybrid techniques to assess consistency, factual accuracy, and context-grounded reasoning in LLMs.
 
-🍃 **AI for Scientific Discovery**  
+**AI for Scientific Discovery**  
 Applying LLMs in scientific domains such as materials science, biomedical research, and policy modeling—empowering AI to support researchers in hypothesis generation and knowledge synthesis.
 
 Beyond research, I enjoy mentoring students as a Teaching Assistant for full-stack web development courses, helping them connect theoretical concepts with real-world applications. I’m also passionate about guiding international students through blogging and sharing insights on pursuing higher education abroad.
@@ -67,7 +67,7 @@ Thanks for stopping by—feel free to explore my work on [GitHub](https://bhanup
 - *2020*: Joined the **Brandiverse** team as a creative contributor, working on outreach and media strategy.  
 - *2021*: Collaborated with the **Synergy Team** at VIT, supporting student experience initiatives and university development programs.
 
-# 📝 Publications 
+# Publications 
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
@@ -210,7 +210,7 @@ Thanks for stopping by—feel free to explore my work on [GitHub](https://bhanup
   </div>
 </div>
 
-# 📊 Projects
+# Projects
 
 <ul>
   <li>
@@ -247,7 +247,7 @@ Thanks for stopping by—feel free to explore my work on [GitHub](https://bhanup
   </li>
 </ul>
 
-# 🎖 Honors and Awards
+# Honors and Awards
 <ul>
   <li>
     <strong>2025.05:</strong> <strong>Outstanding Master’s Student Award</strong>, College of Engineering, University of Missouri  
@@ -256,23 +256,23 @@ Thanks for stopping by—feel free to explore my work on [GitHub](https://bhanup
     </div>
   </li>
   <li>
-    <strong>2025.03:</strong> 🥈 <strong>Runner-Up – MUIDSI Hackathon</strong> for <em>VisionAI: AI-Powered Assistance for the Visually Impaired</em>, awarded $1,000  
+    <strong>2025.03:</strong> <strong>Runner-Up – MUIDSI Hackathon</strong> for <em>VisionAI: AI-Powered Assistance for the Visually Impaired</em>, awarded $1,000  
     <div style="margin-top: 10px;">
       <img src="images/awards/muidsi-hackathon.jpg" alt="MUIDSI Hackathon Award" style="max-width: 100%; border: 1px solid #ccc; border-radius: 8px;">
     </div>
   </li>
   <li><strong>2025.04:</strong> Selected for <strong>Google PhD Fellowship Nomination</strong>, one of three University of Missouri nominees in NLP</li>
   <li><strong>2024.10:</strong> <strong>Outstanding Volunteer</strong>, EMNLP 2023</li>
-  <li><strong>2023:</strong> 🏅 <strong>Dean’s Research Excellence Award</strong>, Vellore Institute of Technology (VIT)</li>
+  <li><strong>2023:</strong> <strong>Dean’s Research Excellence Award</strong>, Vellore Institute of Technology (VIT)</li>
   <li><strong>2023:</strong> <strong>Best Department Thesis Award</strong>, VIT for B.Tech thesis on multilingual sentiment analysis</li>
   <li><strong>2022:</strong> <strong>Top 2 Academic Performer</strong>, CSE Department, VIT</li>
-  <li><strong>2022:</strong> 🥈 <strong>Runner-Up</strong>, VIT AI Tech-Thon</li>
+  <li><strong>2022:</strong> <strong>Runner-Up</strong>, VIT AI Tech-Thon</li>
   <li><strong>2020:</strong> <strong>Certificate of Outstanding Achievement</strong>, Data Analyst Intern at Brandiverse</li>
   <li><strong>2019–2023:</strong> Multiple <strong>Academic Merit Scholarships</strong> and recognitions as <strong>Internshala Student Partner (ISP)</strong> and <strong>Synergy Team Lead</strong>, VIT</li>
 </ul>
 
 
-# 🎩 Educations
+# Educations
 
 - *2023.08 – 2027.06 (expected)*, **Ph.D. in Computer Science**, University of Missouri, Columbia  
   Co-advised by Dr. Jianlin Cheng and Dr. Tanu Malik  
@@ -299,16 +299,16 @@ Thanks for stopping by—feel free to explore my work on [GitHub](https://bhanup
 
 - *2017.03*, **10th Standard – SSC**, City Central School, India  
 
-# 📋 Academic Service
+# Academic Service
 
 - Conference Volunteer Reviewer: ICML (25, 24, 23), ACL (25, 24, 23), ICCV (25), CVPR (25), ICLR (25), AAAI (25), ICASSP (25), NeurIPS (24), EMNLP (24), ECCV (25), IJCAI (25), NAACL (25)  
 - Journal reviewer: TPAMI, JVCI, TIP, TMLR  
 
-# 🍞 Teaching Experience
+# Teaching Experience
 
 - Fall 2025, Fall 2024, Spring 2024, Fall 2023 – TA for Web Development  
 
-# ☃️ Internships and Research Experience
+# Internships and Research Experience
 
 - *May 2022 – Jan 2023*, **Adobe Research**, NLP Research Intern  
   Conducted research in Information Extraction, Web Mining, and Data Management for intelligent interfaces.  
