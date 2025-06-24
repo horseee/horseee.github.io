@@ -76,18 +76,18 @@ Thanks for stopping by—feel free to explore my work on [GitHub](https://bhanup
     </div>
   </div>
   <div class='paper-box-text'>
-    <p><strong><a href="#">HalluMat: Hallucination Detection in Scientific LLMs</a></strong></p>
+    <p><strong><a href="https://drive.google.com/file/d/1oMbe8br7-wm7NLkrOFbFGtT2vUlxdCTn/view?usp=drive_link">HalluMat: Hallucination Detection in Scientific LLMs</a></strong></p>
     <p><strong>Bhanu Prakash Vangala</strong>, Jianlin Cheng</p>
     <ul>
       <li>A hybrid evaluation pipeline combining intrinsic and extrinsic techniques to flag hallucinations in domain-specific outputs.</li>
       <li>Applied to biomedical and scientific text generation tasks.</li>
     </ul>
     <div style="display: inline">
-      <a href="#"><strong>[paper]</strong></a>
+      <a href="https://drive.google.com/file/d/1oMbe8br7-wm7NLkrOFbFGtT2vUlxdCTn/view?usp=drive_link"><strong>[paper]</strong></a>
       <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()"><strong>[abstract]</strong></a>
     </div>
     <div class="abstract" style="overflow: hidden; display: none;">
-      <p>This work introduces HalluMat, a benchmarking framework designed to assess hallucinations in domain-tuned large language models, especially in scientific domains such as biomedicine and material science. The method integrates intrinsic scoring with external factual checks using ground-truth corpora and curated datasets, enhancing the reliability of hallucination detection in practical applications.</p>
+      <p>Artificial Intelligence (AI), particularly Large Language Models (LLMs), is transforming scientific discovery, enabling rapid knowledge generation and hypothesis formulation. However, a critical challenge is hallucination, where LLMs generate factually incorrect or misleading information, compromising research integrity. To address this, we introduce HalluMatData, a benchmark dataset for evaluating hallucination detection methods, factual consistency, and response robustness in AI-generated materials science content. Alongside, we propose HalluMatDetector, a multi-stage hallucination detection framework integrating intrinsic verification, multi-source retrieval, contradiction graph analysis, and metric-based assessment to detect and mitigate LLM hallucinations. Our findings reveal that hallucination levels vary significantly across materials science subdomains, with high-entropy queries exhibiting greater factual inconsistencies. By utilizing HalluMatDetector’s verification pipeline, we reduce hallucination rates by 30% compared to standard LLM outputs. Furthermore, we introduce the Paraphrased Hallucination Consistency Score (PHCS) to quantify inconsistencies in LLM responses across semantically equivalent queries, offering deeper insights into model reliability. Combining knowledge graph-based contradiction detection and fine-grained factual verification, our dataset and framework establish a more reliable, interpretable, and scientifically rigorous approach for AI-driven discoveries.</p>
     </div>
   </div>
 </div>
@@ -100,17 +100,17 @@ Thanks for stopping by—feel free to explore my work on [GitHub](https://bhanup
     </div>
   </div>
   <div class='paper-box-text'>
-    <p><strong><a href="#">HalluFormer: Faithfulness Evaluation Framework</a></strong></p>
+    <p><strong><a href="https://drive.google.com/file/d/1o6tqCJdhiCTAR4AEM59fV4t2VSdvS4yt/view?usp=drive_link">HalluFormer: Faithfulness Evaluation Framework</a></strong></p>
     <p><strong>Bhanu Prakash Vangala</strong>, Jianlin Cheng</p>
     <ul>
       <li>Transformer-based architecture for multi-dimensional consistency checking of LLM outputs.</li>
     </ul>
     <div style="display: inline">
-      <a href="#"><strong>[paper]</strong></a>
+      <a href="https://drive.google.com/file/d/1o6tqCJdhiCTAR4AEM59fV4t2VSdvS4yt/view?usp=drive_link"><strong>[paper]</strong></a>
       <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()"><strong>[abstract]</strong></a>
     </div>
     <div class="abstract" style="overflow: hidden; display: none;">
-      <p>HalluFormer introduces a structured evaluation model to detect and categorize different types of hallucinations produced by LLMs. It leverages fine-tuned transformer models on domain-specific contexts to score consistency, factual overlap, and logical coherence.</p>
+      <p>Despite the impressive performance of Large Language Models (LLMs) in a variety of natural language processing tasks, they are still prone to producing information that is factually inaccurate, known as hallucination. In critical fields related to scientific and clinical domains that demand highly precise answers, the negative effect of this phenomenon is even more pronounced. To address this problem, we formulate the hallucination detection problem as a classification problem of assessing the consistency between questions, answers and retrieved knowledge contexts and propose HalluFormer, a transformer-based model for detecting hallucinations of LLMs. HalluFormer was trained and tested on the MultiNLI dataset. It achieves an F1 score of 0.9471 on the MultiNLI test dataset. On the blind ANAH test dataset, it achieves an F1 score of 0.7285, indicating it can generalize reasonably well to completely new data. The results demonstrate that transformer-based methods can be utilized to detect hallucinations of LLMs, paving the way for further research on improving the reliability of LLMs.</p>
     </div>
   </div>
 </div>
@@ -146,18 +146,18 @@ Thanks for stopping by—feel free to explore my work on [GitHub](https://bhanup
     </div>
   </div>
   <div class='paper-box-text'>
-    <p><strong><a href="#">Brain Tumor Detection in MRI Images</a></strong></p>
+    <p><strong><a href="https://drive.google.com/file/d/1upCswGveonJPN2vmuXzKlhbKqE8tkGSA/view?usp=sharing">Brain Tumor Detection in MRI Images</a></strong></p>
     <p><strong>Bhanu Prakash Vangala</strong></p>
     <ul>
       <li>Built a CNN-based pipeline to classify MRI scans into normal and tumor-positive cases.</li>
       <li>Used preprocessed image datasets and trained on Google Colab with Keras/TensorFlow.</li>
     </ul>
     <div style="display: inline">
-      <a href="#"><strong>[project]</strong></a>
+      <a href="https://drive.google.com/file/d/1upCswGveonJPN2vmuXzKlhbKqE8tkGSA/view?usp=sharing"><strong>[project]</strong></a>
       <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()"><strong>[abstract]</strong></a>
     </div>
     <div class="abstract" style="overflow: hidden; display: none;">
-      <p>This project implements deep convolutional architectures for identifying brain tumors from MRI scans. The pipeline includes data preprocessing, segmentation, and binary classification, helping radiologists prioritize diagnostic review.</p>
+      <p>Abstract—This study presents a comprehensive approach to detecting brain tumors using deep learning algorithms implemented in TensorFlow. The project develops two distinct convolutional neural network (CNN) models— a custom-designed CNN and the pre-trained ResNet50V2— to identify and classify brain tumor presence from MRI images across two datasets. Both models underwent rigorous training, evaluation, and optimization to enhance their accuracy and generalization capabilities. The custom CNN model included data augmentation techniques like random flipping, rotation, and zooming to reduce overfitting and improve model robustness. The performance of each model was meticulously analyzed through metrics such as accuracy, precision, recall, and F1-score, with results visualized using confusion matrices and performance charts. Additionally, learning rate optimization was performed to find the most effective training parameters. The study not only demonstrates the potential of neural networks in medical imaging diagnostics but also explores the effectiveness of model customization and transfer learning for practical applications in healthcare.</p>
     </div>
   </div>
 </div>
@@ -170,18 +170,18 @@ Thanks for stopping by—feel free to explore my work on [GitHub](https://bhanup
     </div>
   </div>
   <div class='paper-box-text'>
-    <p><strong><a href="#">Pneumonia Detection in Chest X-rays Using Deep Learning</a></strong></p>
+    <p><strong><a href="https://drive.google.com/file/d/1UJKKHXcFIvtjClUyrr6dhatMKN1svU7C/view?usp=sharing">Pneumonia Detection in Chest X-rays Using Deep Learning</a></strong></p>
     <p><strong>Bhanu Prakash Vangala</strong></p>
     <ul>
       <li>Applied CNN models to classify chest X-rays for pneumonia diagnosis.</li>
       <li>Trained on Kaggle datasets using transfer learning (ResNet, VGG).</li>
     </ul>
     <div style="display: inline">
-      <a href="#"><strong>[project]</strong></a>
+      <a href="https://drive.google.com/file/d/1UJKKHXcFIvtjClUyrr6dhatMKN1svU7C/view?usp=sharing"><strong>[project]</strong></a>
       <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()"><strong>[abstract]</strong></a>
     </div>
     <div class="abstract" style="overflow: hidden; display: none;">
-      <p>This project uses transfer learning on standard CNN architectures to detect pneumonia in X-ray images. The system enables rapid, automated assessment for medical screening support, particularly in low-resource clinical environments.</p>
+      <p>Abstract—Pneumonia is a leading cause of morbidity worldwide, necessitating prompt and accurate diagnosis to improve patient outcomes. This study leverages deep learning techniques to automate the detection of pneumonia from chest X-ray images. Five models are evaluated, including a custom Convolutional Neural Network (CNN), ResNet18, VGG16, ResNet50 with K-Fold Cross-Validation, and EfficientNet. Pretrained architectures are fine-tuned on the publicly available Chest X-Ray Pneumonia dataset, with 5,216 training images, and validated using precision, recall, F1-score, and ROC-AUC metrics. Innovative training strategies such as K-fold cross-validation and multi-GPU acceleration are employed to enhance model robustness. Among the models, EfficientNet achieves the highest classification performance, demonstrating the effectiveness of state-of-the-art architectures in medical image classification tasks. The results suggest that deep learning models can offer a reliable, scalable solution for pneumonia detection, paving the way for integration into clinical workflows to assist radiologists in diagnostic decision-making.</p>
     </div>
   </div>
 </div>
@@ -194,18 +194,18 @@ Thanks for stopping by—feel free to explore my work on [GitHub](https://bhanup
     </div>
   </div>
   <div class='paper-box-text'>
-    <p><strong><a href="#">Image Colorization Using AI</a></strong></p>
+    <p><strong><a href="https://drive.google.com/file/d/14GH6eNzC28uhcN1Y-E3iZJ9a5G8mdXLz/view?usp=sharing">Image Colorization Using AI</a></strong></p>
     <p><strong>Bhanu Prakash Vangala</strong></p>
     <ul>
       <li>Developed a deep learning model to convert grayscale images to color.</li>
       <li>Used convolutional autoencoders and GAN-based architectures for photorealistic results.</li>
     </ul>
     <div style="display: inline">
-      <a href="#"><strong>[project]</strong></a>
+      <a href="https://drive.google.com/file/d/14GH6eNzC28uhcN1Y-E3iZJ9a5G8mdXLz/view?usp=sharing"><strong>[project]</strong></a>
       <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()"><strong>[abstract]</strong></a>
     </div>
     <div class="abstract" style="overflow: hidden; display: none;">
-      <p>This project explores automatic colorization of black-and-white images using deep neural networks. By leveraging contextual feature extraction and GANs, the model generates plausible color mappings that restore image vibrancy and realism.</p>
+      <p>Colourization is a PC helped procedure of adding shading to a monochrome picture or film. The procedure involves typically segmenting pictures into areas and following these regions across picture sequences. Neither of these undertakings can be performed dependably by and by; thus, colourization requires extensive user mediation and remains a monotonous, tedious, and costly assignment. Colourization is a term presented by Wilson Markle in 1970 to describe the PC helped process he developed for including shading. Colourizing black and white movies is an old idea going back to 1902. For a considerable length of time, numerous filmmakers restricted colourizing their black and white motion pictures and considered it vandalism of their craft. Today it is acknowledged as an upgrade to the artistic expression. The innovation itself has moved from meticulous hand colourization to the present largely automated strategy. In India, the film Mughal-e-Azam, a blockbuster released in 1960 was remastered in color in 2004. People from different ages crowded the theatres to see it in color, and the movie was a huge hit for the second time!</p>
     </div>
   </div>
 </div>
