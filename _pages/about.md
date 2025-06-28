@@ -29,16 +29,16 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
 
 🌱 Efficient Diffusion Generation, mainly for the cache inference paradigm
 
-🌿 Compression via synthetic data, like Data-free Distillation  
+🌿 Data-centric Compression, e.g., Data-free Distillation, Dataset Distillation
 
 
-<span style="color:blue">I'm expected to graduate in June 2026 and am currently on the job market. If you have any opportunities, I would greatly appreciate it if you could drop me an email. Thank you! </span>
+<span style="color:blue">I'm expected to graduate before June 2026 and am currently on the job market (both academic and industrial opportunities). I would greatly appreciate it if you could drop me an email If you have any opportunities. Thank you! </span>
 
 
 # 🔥 News
 - *2025.05*: &nbsp;We release [dKV-Cache](https://arxiv.org/abs/2505.15781) for the first KV-Cache algorithm for diffusion language models! 
 - *2025.05*: &nbsp;CoT-Valve is accepted by ACL'25!
-- *2025.02*: &nbsp;Three papers (SSD, [CoDe](https://arxiv.org/abs/2411.17787) and [TinyFusion](https://arxiv.org/abs/2412.01199)) accepted by CVPR'25.
+- *2025.02*: &nbsp;Three papers ([SSD](https://openaccess.thecvf.com/content/CVPR2025/papers/Ma_Diffusion_Model_is_Effectively_Its_Own_Teacher_CVPR_2025_paper.pdf), [CoDe](https://arxiv.org/abs/2411.17787) and [TinyFusion](https://arxiv.org/abs/2412.01199)) accepted by CVPR'25.
 - *2025.02*: &nbsp;Two new papers released! Check [CoT-Valve](https://arxiv.org/abs/2502.09601) for controllable and compressible CoT and [VPT](https://arxiv.org/abs/2502.17425) for multimodal reasoning!
 - *2025.02*: &nbsp;Co-organize the [2nd workshop on Efficient Large Vision Models](https://sites.google.com/view/elvm/home), CVPR'25.
 - *2025.01*: &nbsp;Invited talk at KAUST Rising Stars in AI Symposium 2025, April 7 - 10. 
@@ -172,9 +172,19 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
 </div>
 </div>
 
-
-
 <ul>
+  <li>
+    <strong> Diffusion Model is Effectively Its Own Teacher. CVPR 2025. </strong>
+    <div style="display: inline">
+        <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Ma_Diffusion_Model_is_Effectively_Its_Own_Teacher_CVPR_2025_paper.pdf"> [paper]</a>
+        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
+        <div class="abstract"  style="overflow: hidden; display: none;">  
+            <p> In this paper, we introduce a novel self-distillation paradigm for improving the performance of diffusion models. Previous studies have shown that introducing a teacher to distill the diffusion model can enhance its sampling efficiency. We raise an intriguing question: can the diffusion model itself serve as its teacher to further improve the performance of itself? To this end, we propose a new paradigm called Self Step-Distillation (SSD). The core idea of SSD is to integrate the predictions or the intermediate activations of the diffusion model at each timestep with its preceding timestep through a fusion mechanism. We propose two forms, explicit SSD and implicit SSD (iSSD), to perform N-step to N-step distillation from the diffusion model itself to achieve improved image quality. We further elucidate the relationship between SSD and high-order solver, highlighting their underlying relationship. The effectiveness of SSD is validated through extensive experiments on diffusion transformers of various sizes and across different sampling steps. Our results show that this novel self-distillation paradigm can significantly enhance performance. Additionally, our method is compatible with the distillation method designed for few-step inference. Notably, with iSSD trained less than one epoch, we obtain a 32-step DiT-XL/2 achieving an FID of 1.99, outperforming the original 250-step DiT-XL/2 with an FID of 2.26. We further validate the effectiveness of our method on text-to-image diffusion models, such as Stable Diffusion, and also observe notable improvement in image quality. </p>
+        </div>
+    </div>
+    <div><i><strong>Xinyin Ma</strong>, Runpeng Yu, Songhua Liu, Gongfan Fang, Xinchao Wang. </i></div>
+  </li>
+
   <li>
     <strong> Prompting to distill: Boosting Data-Free Knowledge Distillation via Reinforced Prompt. IJCAI 2022. </strong>
     <div style="display: inline">
@@ -213,7 +223,7 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
     <div><i><strong>Xinyin Ma</strong>, Yongliang Shen, Gongfan Fang, Chen Chen, Chenghao Jia, Weiming Lu.</i></div>
   </li>
   <li>
-    <strong> Introducing Visual Perception Token into Multimodal Large Language Model. Arxiv Preprint</strong>
+    <strong> Introducing Visual Perception Token into Multimodal Large Language Model. ICCV 2025</strong>
     <div style="display: inline">
         <a href="https://arxiv.org/abs/2502.17425"> [paper]</a>
         <a href="https://github.com/yu-rp/VisualPerceptionToken"> [code]</a>
@@ -222,7 +232,7 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
             <p> To utilize visual information, Multimodal Large Language Model (MLLM) relies on the perception process of its vision encoder. The completeness and accuracy of visual perception significantly influence the precision of spatial reasoning, fine-grained understanding, and other tasks. However, MLLM still lacks the autonomous capability to control its own visual perception processes, for example, selectively reviewing specific regions of an image or focusing on information related to specific object categories. In this work, we propose the concept of Visual Perception Token, aiming to empower MLLM with a mechanism to control its visual perception processes. We design two types of Visual Perception Tokens, termed the Region Selection Token and the Vision Re-Encoding Token. MLLMs autonomously generate these tokens, just as they generate text, and use them to trigger additional visual perception actions. The Region Selection Token explicitly identifies specific regions in an image that require further perception, while the Vision Re-Encoding Token uses its hidden states as control signals to guide additional visual perception processes. Extensive experiments demonstrate the advantages of these tokens in handling spatial reasoning, improving fine-grained understanding, and other tasks. On average, the introduction of Visual Perception Tokens improves the performance of a 2B model by 23.6%, increasing its score from 0.572 to 0.708, and even outperforms a 7B parameter model by 13.4% (from 0.624).  </p>
         </div>
     </div>
-    <div><i>Runpeng Yu*, <strong>Xinyin Ma*</strong>, Xinchao Wang </i></div>
+    <div><i>Runpeng Yu*, <strong>Xinyin Ma*</strong>, Xinchao Wang (*Equal Contribution) </i></div>
   </li>
   <li>
     <strong> Collaborative Decoding Makes Visual Auto-Regressive Modeling Efficient. CVPR 2025</strong>
@@ -386,7 +396,7 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
 
 # 📋 Academic Service
 - Workshop: Co-organizor of 2nd workshop on Efficient Large Vision Models, CVPR'25
-- Conference: ICML (25, 24, 23), ACL (25, 24, 23, 22, 21), ICCV (25), CVPR (25), ICLR (25, 24), AAAI (25, 24), ICASSP (25), NeurIPS (24, 23), EMNLP (24, 23, 22, 21), ECCV (24), IJCAI (24), NAACL (24)
+- Conference: NeurIPS (25, 24, 23), EMNLP (25, 24, 23, 22, 21), ICML (25, 24, 23), ACL (25, 24, 23, 22, 21), ICCV (25), CVPR (25), ICLR (25, 24), AAAI (25, 24), ICASSP (25), ECCV (24), IJCAI (24), NAACL (24)
 - Journal: TPAMI, JVCI, TIP, TMLR
 
 # ☃️ Internships
@@ -395,7 +405,7 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
 
 # 🎙️ Invited Talk 
 - May 29, 2025: IVUL @ KAUST. Topic: Efficient Generative Models via Caching
-- (Planned) June 18, 2025: Bytedance Seed. Topic: Efficient Reasoning Model
+- June 18, 2025: Multimodal Interation Group @ Bytedance Seed. Topic: Efficient and Hybrid Reasoning Models 
 
 # 🍞 Teaching Experience
 - Fall 2024, Fall 2023, Spring 2023. TA for EE2211, Introduction to Machine Learning, NUS.
