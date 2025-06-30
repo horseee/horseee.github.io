@@ -31,20 +31,24 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
 
 🌿 Data-centric Compression, e.g., Data-free Distillation, Dataset Distillation
 
-
-<span style="color:blue">I'm expected to graduate before June 2026 and am currently on the job market (both academic and industrial opportunities). I would greatly appreciate it if you could drop me an email If you have any opportunities. Thank you! </span>
-
+<div style="background-color:rgb(236, 236, 236); padding: 10px; border-left: 5px solid rgb(2, 47, 92); margin-top: 15px; margin-bottom: 15px;">
+    <span style="color:rgb(34, 75, 141)"><strong>
+    I'm expected to graduate before June 2026 and am currently on the job market (for both academic and industrial opportunities). 
+    I would greatly appreciate it if you could email me about any available opportunities!
+    </strong>
+    </span>
+    
+</div>
 
 # 🔥 News
 - *2025.05*: &nbsp;We release [dKV-Cache](https://arxiv.org/abs/2505.15781) for the first KV-Cache algorithm for diffusion language models! 
-- *2025.05*: &nbsp;CoT-Valve is accepted by ACL'25!
+- *2025.05*: &nbsp;[CoT-Valve](https://arxiv.org/abs/2502.09601) is accepted by ACL'25! See you in Vienna!
 - *2025.02*: &nbsp;Three papers ([SSD](https://openaccess.thecvf.com/content/CVPR2025/papers/Ma_Diffusion_Model_is_Effectively_Its_Own_Teacher_CVPR_2025_paper.pdf), [CoDe](https://arxiv.org/abs/2411.17787) and [TinyFusion](https://arxiv.org/abs/2412.01199)) accepted by CVPR'25.
 - *2025.02*: &nbsp;Two new papers released! Check [CoT-Valve](https://arxiv.org/abs/2502.09601) for controllable and compressible CoT and [VPT](https://arxiv.org/abs/2502.17425) for multimodal reasoning!
 - *2025.02*: &nbsp;Co-organize the [2nd workshop on Efficient Large Vision Models](https://sites.google.com/view/elvm/home), CVPR'25.
 - *2025.01*: &nbsp;Invited talk at KAUST Rising Stars in AI Symposium 2025, April 7 - 10. 
 - *2024.11*: &nbsp;🥳 Awarded Google PhD Fellowship
 - *2024.09*: &nbsp;Four papers ([Learning-to-Cache](https://arxiv.org/abs/2406.01733), [AsyncDiff](https://arxiv.org/abs/2406.06911), [SlimSAM](https://arxiv.org/abs/2312.05284) and [RemixDiT](https://openreview.net/forum?id=vo5LONGAdo)) accepted by NeurIPS'24! See you in Vancouver!
-- *2024.07*: &nbsp;⛵ Passed my qualifying exam! 
 - *2024.02*: &nbsp;DeepCache is accepted by CVPR'24! 
 - *2023.12*: &nbsp;🌟 Our new work, DeepCache, accelerates Diffusion Models for FREE! Check our [paper](https://arxiv.org/abs/2312.00858) and [code](https://github.com/horseee/DeepCache)! 
 - *2023.06*: &nbsp;🎉 Release LLM-Pruner🐏, the first structural pruning work of LLM. See our [paper](https://arxiv.org/abs/2305.11627) and [code](https://github.com/horseee/LLM-Pruner)! 
