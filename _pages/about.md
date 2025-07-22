@@ -27,17 +27,23 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
 
 🌲 Efficient Large Language Models, Reasoning Models and Diffusion Language Models
 
-🌱 Efficient Diffusion Generation, mainly for the cache inference paradigm
+🌱 Efficient Diffusion Models, mainly for the cache inference paradigm
 
 🌿 Data-centric Compression, e.g., Data-free Distillation, Dataset Distillation
 
 <div style="background-color:rgb(236, 236, 236); padding: 10px; border-left: 5px solid rgb(2, 47, 92); margin-top: 15px; margin-bottom: 15px;">
     <span style="color:rgb(34, 75, 141)"><strong>
     I'm expected to graduate before June 2026 and am currently on the job market (for both academic and industrial opportunities). 
-    I would greatly appreciate it if you could email me about any available opportunities!
+    I would greatly appreciate it if you could email me about any available opportunities! 👉 <a href="https://drive.google.com/file/d/1Zj754hRePGebXZeC7Bp_Hl7sFWj3F2dJ/view?usp=drive_link"> <strong>[CV]</strong></a>
     </strong>
     </span>
-    
+</div>
+
+<div style="background-color:rgb(236, 236, 236); padding: 10px; border-left: 5px solid rgb(217, 141, 17); margin-top: 15px; margin-bottom: 15px;">
+    <span style="color:rgb(217, 141, 17)"><strong>
+    I’ll be in Vienna between July 27 and Aug 1 for ACL 2025. Would love to catch up over coffee if you’re around! Feel free to drop me an email :)
+    </strong>
+    </span>
 </div>
 
 # 🔥 News
