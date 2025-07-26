@@ -41,7 +41,7 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
 
 <div style="background-color:rgb(236, 236, 236); padding: 10px; border-left: 5px solid rgb(217, 141, 17); margin-top: 15px; margin-bottom: 15px;">
     <span style="color:rgb(217, 141, 17)"><strong>
-    I’ll be in Vienna between July 27 and Aug 1 for ACL 2025. Would love to catch up over coffee if you’re around! Feel free to drop me an email :)
+    I’ll be in Vienna between July 27 and Aug 1 for ACL 2025. Would love to grab a coffee and talk about making reasoning models or LLMs more efficient! Feel free to drop me an email :)
     </strong>
     </span>
 </div>
