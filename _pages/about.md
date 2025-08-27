@@ -20,7 +20,9 @@ redirect_from:
 Hi there! 
 
 Welcome to Xinyin Ma(马欣尹)'s website!
-I am currently a Ph.D candidate @ [xML-Lab](https://sites.google.com/view/xml-nus), National University of Singapore from August 2022, advised by [Prof.Xinchao Wang](https://sites.google.com/site/sitexinchaowang/). Previously I obtained my master degree in computer science from Zhejiang University, advised by [Prof.Weiming Lu](https://person.zju.edu.cn/en/lwm). I obtained my bachelor degree in software engineering also in Zhejiang University and got the honor degree from Chu Kochen College. 
+I am currently a Ph.D candidate @ [xML-Lab](https://sites.google.com/view/xml-nus), National University of Singapore from August 2022, under the supervision of [Prof.Xinchao Wang](https://sites.google.com/site/sitexinchaowang/). 
+Previously I obtained my master degree and bachelor degree in computer science / software engineering from Zhejiang University, advised by [Prof.Weiming Lu](https://person.zju.edu.cn/en/lwm).
+I'm currently working as a PhD research intern @ [NVIDIA Fundamental Generative AI Research (GenAIR) group](https://research.nvidia.com/labs/genair/).
 I'm so honored to receive the [***Google PhD Fellowship***](https://research.google/programs-and-events/phd-fellowship/recipients/) in 2024.
 
 Currently, I'm conducting research in efficient deep learning ([Google Scholar](https://scholar.google.com/citations?user=jFUKS0oAAAAJ&hl=en)), including:  
@@ -41,6 +43,7 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
 
 
 # 🔥 News
+- *2025.08*: Start the internship at NVIDIA🥳 
 - *2025.05*: &nbsp;We release [dKV-Cache](https://arxiv.org/abs/2505.15781) for the first KV-Cache algorithm for diffusion language models! 
 - *2025.05*: &nbsp;[CoT-Valve](https://arxiv.org/abs/2502.09601) is accepted by ACL'25! See you in Vienna!
 - *2025.02*: &nbsp;Three papers ([SSD](https://openaccess.thecvf.com/content/CVPR2025/papers/Ma_Diffusion_Model_is_Effectively_Its_Own_Teacher_CVPR_2025_paper.pdf), [CoDe](https://arxiv.org/abs/2411.17787) and [TinyFusion](https://arxiv.org/abs/2412.01199)) accepted by CVPR'25.
@@ -404,6 +407,7 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
 - Journal: TPAMI, JVCI, TIP, TMLR
 
 # ☃️ Internships
+- *2025.08 - Current*, NVIDIA GenAIR, PhD Research Intern. Mentor: [Weili Nie](https://research.nvidia.com/labs/genair/author/weili-nie/) and [Arash Vahdat](https://research.nvidia.com/labs/genair/author/arash-vahdat/)
 - *2020.12 - 2021.6*, Alibaba DAMO Academy, Research Intern. Mentor: [Yong Jiang](https://jiangyong.site).
 - *2018.07 - 2018.11*, Netease Thunderfire UX, Data Analyst Intern. Mentor: Lei Xia.
 
