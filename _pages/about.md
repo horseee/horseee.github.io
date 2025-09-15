@@ -43,6 +43,7 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
 
 
 # 🔥 News
+- *2025.09*: [Survey](https://arxiv.org/abs/2504.10903) for efficient reasoning models accepted by TMLR
 - *2025.08*: Start the internship at NVIDIA🥳 
 - *2025.05*: &nbsp;We release [dKV-Cache](https://arxiv.org/abs/2505.15781) for the first KV-Cache algorithm for diffusion language models! 
 - *2025.05*: &nbsp;[CoT-Valve](https://arxiv.org/abs/2502.09601) is accepted by ACL'25! See you in Vienna!
@@ -414,6 +415,9 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
 # 🎙️ Invited Talk 
 - May 29, 2025: IVUL @ KAUST. Topic: Efficient Generative Models via Caching
 - June 18, 2025: Multimodal Interation Group @ Bytedance Seed. Topic: Efficient and Hybrid Reasoning Models 
+- Sept 12, 2025: Think Forward Lab @ Amazon. Topic: Controllable, Automatic and Efficient Reasoning Models
+- Sept 19, 2025: REAL Lab @ ZJU. Topic: Two Dimensions of Efficiency in Large Language Models: Structure and Decoding
+
 
 # 🍞 Teaching Experience
 - Fall 2024, Fall 2023, Spring 2023. TA for EE2211, Introduction to Machine Learning, NUS.
