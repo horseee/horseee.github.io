@@ -62,7 +62,7 @@ Currently, I'm conducting research in efficient generative models ([Google Schol
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS'25</div><img src='https://github.com/horseee/dKV-Cache/blob/main/assets/teaser.gif?raw=true' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='https://github.com/horseee/dKV-Cache/blob/main/assets/teaser.gif?raw=true' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [**dKV-Cache: The Cache for Diffusion Language Models**](https://arxiv.org/abs/2505.15781) <img src='https://img.shields.io/github/stars/horseee/dKV-Cache.svg?style=social&label=Star' alt="sym" height="100%">
@@ -192,7 +192,6 @@ Currently, I'm conducting research in efficient generative models ([Google Schol
     </div>
     <div><i><strong>Xinyin Ma</strong>, Runpeng Yu, Songhua Liu, Gongfan Fang, Xinchao Wang. </i></div>
   </li>
-
   <li>
     <strong> Prompting to distill: Boosting Data-Free Knowledge Distillation via Reinforced Prompt. IJCAI 2022. </strong>
     <div style="display: inline">
@@ -231,7 +230,7 @@ Currently, I'm conducting research in efficient generative models ([Google Schol
     <div><i><strong>Xinyin Ma</strong>, Yongliang Shen, Gongfan Fang, Chen Chen, Chenghao Jia, Weiming Lu.</i></div>
   </li>
   <li>
-    <strong> Introducing Visual Perception Token into Multimodal Large Language Model. ICCV 2025</strong>
+    <strong> Introducing Visual Perception Token into Multimodal Large Language Model. ICCV 2025.</strong>
     <div style="display: inline">
         <a href="https://arxiv.org/abs/2502.17425"> [paper]</a>
         <a href="https://github.com/yu-rp/VisualPerceptionToken"> [code]</a>
@@ -241,6 +240,30 @@ Currently, I'm conducting research in efficient generative models ([Google Schol
         </div>
     </div>
     <div><i>Runpeng Yu*, <strong>Xinyin Ma*</strong>, Xinchao Wang (*Equal Contribution) </i></div>
+  </li>
+  <li>
+    <strong> Thinkless: LLM Learns When to Think. NeurIPS 2025.</strong>
+    <div style="display: inline">
+        <a href="https://arxiv.org/abs/2505.13379"> [paper]</a>
+        <a href="https://github.com/VainF/Thinkless"> [code]</a>
+        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
+        <div class="abstract"  style="overflow: hidden; display: none;">  
+            <p> Reasoning Language Models, capable of extended chain-of-thought reasoning, have demonstrated remarkable performance on tasks requiring complex logical inference. However, applying elaborate reasoning for all queries often results in substantial computational inefficiencies, particularly when many problems admit straightforward solutions. This motivates an open question: Can LLMs learn when to think? To answer this, we propose Thinkless, a learnable framework that empowers an LLM to adaptively select between short-form and long-form reasoning, based on both task complexity and the model's ability. Thinkless is trained under a reinforcement learning paradigm and employs two control tokens, <u>short</u> for concise responses and <u>think</u> for detailed reasoning. At the core of our method is a Decoupled Group Relative Policy Optimization (DeGRPO) algorithm, which decomposes the learning objective of hybrid reasoning into two components: (1) a control token loss that governs the selection of the reasoning mode, and (2) a response loss that improves the accuracy of the generated answers. This decoupled formulation enables fine-grained control over the contributions of each objective, stabilizing training and effectively preventing collapse observed in vanilla GRPO. Empirically, on several benchmarks such as Minerva Algebra, MATH-500, and GSM8K, Thinkless is able to reduce the usage of long-chain thinking by 50% - 90%, significantly improving the efficiency of Reasoning Language Models. </p>
+        </div>
+    </div>
+    <div><i>Gongfan Fang, <strong>Xinyin Ma</strong>, Xinchao Wang.</i></div>
+  </li>
+  <li>
+    <strong> VeriThinker: Learning to Verify Makes Reasoning Model Efficient. NeurIPS 2025</strong>
+    <div style="display: inline">
+        <a href="https://arxiv.org/abs/2505.17941"> [paper]</a>
+        <a href="https://github.com/czg1225/VeriThinker"> [code]</a>
+        <a class="fakelink" onclick="$(this).siblings('.abstract').slideToggle()" >[abstract]</a>
+        <div class="abstract"  style="overflow: hidden; display: none;">  
+            <p> Large Reasoning Models (LRMs) excel at complex tasks using Chain-of-Thought (CoT) reasoning. However, their tendency to overthinking leads to unnecessarily lengthy reasoning chains, dramatically increasing inference costs. To mitigate this issue, we introduce VeriThinker, a novel approach for CoT compression. Unlike conventional methods that fine-tune LRMs directly on the original reasoning task using synthetic concise CoT data, we innovatively fine-tune the model solely through an auxiliary verification task. By training LRMs to accurately verify the correctness of CoT solutions, the LRMs inherently become more discerning about the necessity of subsequent self-reflection steps, thereby effectively suppressing overthinking. Extensive experiments validate that VeriThinker substantially reduces reasoning chain lengths while maintaining or even slightly improving accuracy. When applied to DeepSeek-R1-Distill-Qwen-7B, our approach reduces reasoning tokens on MATH500 from 3790 to 2125 while improving accuracy by 0.8% (94.0% to 94.8%), and on AIME25, tokens decrease from 14321 to 10287 with a 2.1% accuracy gain (38.7% to 40.8%). Additionally, our experiments demonstrate that VeriThinker can also be zero-shot generalized to speculative reasoning. </p>
+        </div>
+    </div>
+    <div><i>Zigeng Chen, <strong>Xinyin Ma</strong>, Gongfan Fang, Xinchao Wang.</i></div>
   </li>
   <li>
     <strong> Collaborative Decoding Makes Visual Auto-Regressive Modeling Efficient. CVPR 2025</strong>
