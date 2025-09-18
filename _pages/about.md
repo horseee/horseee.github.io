@@ -25,7 +25,7 @@ Previously I obtained my master degree and bachelor degree in computer science /
 I'm currently working as a PhD research intern @ [NVIDIA Fundamental Generative AI Research (GenAIR) group](https://research.nvidia.com/labs/genair/).
 I'm so honored to receive the [***Google PhD Fellowship***](https://research.google/programs-and-events/phd-fellowship/recipients/) in 2024.
 
-Currently, I'm conducting research in efficient deep learning ([Google Scholar](https://scholar.google.com/citations?user=jFUKS0oAAAAJ&hl=en)), including:  
+Currently, I'm conducting research in efficient generative models ([Google Scholar](https://scholar.google.com/citations?user=jFUKS0oAAAAJ&hl=en)), including:  
 
 🌲 Efficient Large Language Models, Reasoning Models and Diffusion Language Models
 
@@ -43,7 +43,7 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
 
 
 # 🔥 News
-- *2025.09*: [Survey](https://arxiv.org/abs/2504.10903) for efficient reasoning models accepted by TMLR
+- *2025.09*: Three papers ([dKV-Cache](https://arxiv.org/abs/2505.15781), [Thinkless](https://arxiv.org/abs/2505.13379) and [VeriThinker](https://arxiv.org/abs/2505.17941)) accepted by NeurIPS'25 and one [survey](https://arxiv.org/abs/2504.10903) accepted by TMLR.
 - *2025.08*: Start the internship at NVIDIA🥳 
 - *2025.05*: &nbsp;We release [dKV-Cache](https://arxiv.org/abs/2505.15781) for the first KV-Cache algorithm for diffusion language models! 
 - *2025.05*: &nbsp;[CoT-Valve](https://arxiv.org/abs/2502.09601) is accepted by ACL'25! See you in Vienna!
@@ -62,7 +62,7 @@ Currently, I'm conducting research in efficient deep learning ([Google Scholar](
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='https://github.com/horseee/dKV-Cache/blob/main/assets/teaser.gif?raw=true' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS'25</div><img src='https://github.com/horseee/dKV-Cache/blob/main/assets/teaser.gif?raw=true' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [**dKV-Cache: The Cache for Diffusion Language Models**](https://arxiv.org/abs/2505.15781) <img src='https://img.shields.io/github/stars/horseee/dKV-Cache.svg?style=social&label=Star' alt="sym" height="100%">
