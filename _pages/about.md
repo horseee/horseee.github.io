@@ -439,7 +439,7 @@ Currently, I'm conducting research in efficient generative models ([Google Schol
 - May 29, 2025: IVUL @ KAUST. Topic: Efficient Generative Models via Caching
 - June 18, 2025: Multimodal Interation Group @ Bytedance Seed. Topic: Efficient and Hybrid Reasoning Models 
 - Sept 12, 2025: Think Forward Lab @ Amazon. Topic: Controllable, Automatic and Efficient Reasoning Models
-- Sept 19, 2025: REAL Lab @ ZJU. Topic: Two Dimensions of Efficiency in Large Language Models: Structure and Decoding
+- Sept 25, 2025: REAL Lab @ ZJU. Topic: Two Dimensions of Efficiency in Large Language Models: Structure and Decoding
 
 
 # 🍞 Teaching Experience
