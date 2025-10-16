@@ -41,6 +41,13 @@ Currently, I'm conducting research in efficient generative models ([Google Schol
     </span>
 </div>
 
+<div style="background-color:rgb(236, 236, 236); padding: 10px; border-left: 5px solid rgb(182, 122, 33); margin-top: 15px; margin-bottom: 15px;">
+    <span style="color:rgba(182, 122, 33, 1)"><strong>
+    I’ll be in Honolulu for ICCV 2025 (Oct 18–24). Super open to any chat or meetup! Feel free to send me an email if you’d like to connect.
+    </strong>
+    </span>
+</div>
+
 
 # 🔥 News
 - *2025.09*: Three papers ([dKV-Cache](https://arxiv.org/abs/2505.15781), [Thinkless](https://arxiv.org/abs/2505.13379) and [VeriThinker](https://arxiv.org/abs/2505.17941)) accepted by NeurIPS'25 and one [survey](https://arxiv.org/abs/2504.10903) accepted by TMLR.
