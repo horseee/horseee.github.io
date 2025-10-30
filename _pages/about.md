@@ -17,57 +17,39 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi there! 
-
-Welcome to Xinyin Ma(马欣尹)'s website!
-I am currently a Ph.D candidate @ [xML-Lab](https://sites.google.com/view/xml-nus), National University of Singapore from August 2022, under the supervision of [Prof.Xinchao Wang](https://sites.google.com/site/sitexinchaowang/). 
-Previously I obtained my master degree and bachelor degree in computer science / software engineering from Zhejiang University, advised by [Prof.Weiming Lu](https://person.zju.edu.cn/en/lwm).
+I am currently a final-year Ph.D student @ [xML-Lab](https://sites.google.com/view/xml-nus), National University of Singapore, under the supervision of [Prof.Xinchao Wang](https://sites.google.com/site/sitexinchaowang/). 
+Previously I obtained my master degree and bachelor degree in computer science from Zhejiang University, advised by [Prof.Weiming Lu](https://person.zju.edu.cn/en/lwm).
 I'm currently working as a PhD research intern @ [NVIDIA Fundamental Generative AI Research (GenAIR) group](https://research.nvidia.com/labs/genair/).
-I'm so honored to receive the [***Google PhD Fellowship***](https://research.google/programs-and-events/phd-fellowship/recipients/) in 2024.
+I'm so honored to receive the [Google PhD Fellowship](https://research.google/programs-and-events/phd-fellowship/recipients/) in 2024.
 
-Currently, I'm conducting research in efficient generative models ([Google Scholar](https://scholar.google.com/citations?user=jFUKS0oAAAAJ&hl=en)), including:  
+I'm interested in efficiency research for generative models, including:
 
-🌲 Efficient Large Language Models, Reasoning Models and Diffusion Language Models
+🌲 Large language models, reasoning models and diffusion language models
 
-🌱 Efficient Diffusion Models, mainly for the cache inference paradigm
+🌱 Image and video diffusion models
 
 🌿 Data-centric Compression, e.g., Data-free Distillation, Dataset Distillation
 
 <div style="background-color:rgb(236, 236, 236); padding: 10px; border-left: 5px solid rgb(2, 47, 92); margin-top: 15px; margin-bottom: 15px;">
     <span style="color:rgb(34, 75, 141)"><strong>
-    I'm expected to graduate before June 2026 and am currently on the job market (for both academic and industrial opportunities). 
-    I would greatly appreciate it if you could email me about any available opportunities!
-    </strong>
-    </span>
-</div>
-
-<div style="background-color:rgb(236, 236, 236); padding: 10px; border-left: 5px solid rgb(182, 122, 33); margin-top: 15px; margin-bottom: 15px;">
-    <span style="color:rgba(182, 122, 33, 1)"><strong>
-    I’ll be in Honolulu for ICCV 2025 (Oct 18–24). Super open to any chat or meetup! Feel free to send me an email if you’d like to connect.
+    I'm expected to graduate before June 2026 and am currently on the job market. 
+    I would greatly appreciate it if you could email me if you have any opportunities!
     </strong>
     </span>
 </div>
 
 
 # 🔥 News
-- *2025.09*: Three papers ([dKV-Cache](https://arxiv.org/abs/2505.15781), [Thinkless](https://arxiv.org/abs/2505.13379) and [VeriThinker](https://arxiv.org/abs/2505.17941)) accepted by NeurIPS'25 and one [survey](https://arxiv.org/abs/2504.10903) accepted by TMLR.
-- *2025.08*: Start the internship at NVIDIA🥳 
-- *2025.05*: &nbsp;We release [dKV-Cache](https://arxiv.org/abs/2505.15781) for the first KV-Cache algorithm for diffusion language models! 
-- *2025.05*: &nbsp;[CoT-Valve](https://arxiv.org/abs/2502.09601) is accepted by ACL'25! See you in Vienna!
-- *2025.02*: &nbsp;Three papers ([SSD](https://openaccess.thecvf.com/content/CVPR2025/papers/Ma_Diffusion_Model_is_Effectively_Its_Own_Teacher_CVPR_2025_paper.pdf), [CoDe](https://arxiv.org/abs/2411.17787) and [TinyFusion](https://arxiv.org/abs/2412.01199)) accepted by CVPR'25.
-- *2025.02*: &nbsp;Two new papers released! Check [CoT-Valve](https://arxiv.org/abs/2502.09601) for controllable and compressible CoT and [VPT](https://arxiv.org/abs/2502.17425) for multimodal reasoning!
-- *2025.02*: &nbsp;Co-organize the [2nd workshop on Efficient Large Vision Models](https://sites.google.com/view/elvm/home), CVPR'25.
-- *2025.01*: &nbsp;Invited talk at KAUST Rising Stars in AI Symposium 2025, April 7 - 10. 
-- *2024.11*: &nbsp;🥳 Awarded Google PhD Fellowship
-- *2024.09*: &nbsp;Four papers ([Learning-to-Cache](https://arxiv.org/abs/2406.01733), [AsyncDiff](https://arxiv.org/abs/2406.06911), [SlimSAM](https://arxiv.org/abs/2312.05284) and [RemixDiT](https://openreview.net/forum?id=vo5LONGAdo)) accepted by NeurIPS'24! See you in Vancouver!
-- *2024.02*: &nbsp;DeepCache is accepted by CVPR'24! 
+- *2025.09*: &nbsp;🌟 Three papers ([dKV-Cache](https://arxiv.org/abs/2505.15781), [Thinkless](https://arxiv.org/abs/2505.13379) and [VeriThinker](https://arxiv.org/abs/2505.17941)) accepted by NeurIPS'25 and one [survey](https://arxiv.org/abs/2504.10903) accepted by TMLR.
+- *2025.08*: &nbsp;⛵ Start the internship at NVIDIA
+- *2025.02*: &nbsp;🌟 Co-organize the [2nd workshop on Efficient Large Vision Models](https://sites.google.com/view/elvm/home), CVPR'25.
+- *2025.01*: &nbsp;🥳 Awarded KAUST Rising Stars 2025. 
+- *2024.11*: &nbsp;🥳 Awarded Google PhD Fellowship 
 - *2023.12*: &nbsp;🌟 Our new work, DeepCache, accelerates Diffusion Models for FREE! Check our [paper](https://arxiv.org/abs/2312.00858) and [code](https://github.com/horseee/DeepCache)! 
-- *2023.06*: &nbsp;🎉 Release LLM-Pruner🐏, the first structural pruning work of LLM. See our [paper](https://arxiv.org/abs/2305.11627) and [code](https://github.com/horseee/LLM-Pruner)! 
+- *2023.06*: &nbsp;🌟 Release LLM-Pruner🐏, the first structural pruning work of LLM. See our [paper](https://arxiv.org/abs/2305.11627) and [code](https://github.com/horseee/LLM-Pruner)! 
 - *2022.08*: &nbsp;⛵ Start my Ph.D. journey in NUS!
-- *2022.04*: &nbsp; One paper ‘Prompting to distill: Boosting Data-Free Knowledge Distillation via Reinforced Prompt’ accepted by IJCAI’22.
-- *2022.04*: &nbsp; Got my master degree from ZJU! Thanks to my supervisor and all my friends in ZJU!
 
-# 📝 Publications 
+# 📝 Research 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='https://github.com/horseee/dKV-Cache/blob/main/assets/teaser.gif?raw=true' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -424,8 +406,7 @@ Currently, I'm conducting research in efficient generative models ([Google Schol
 - *2025.01*: KAUST AI Rising Stars
 - *2024.11*: Google PhD Fellowship
 - *2024.10*: NeurIPS'24 Ourstanding Reviewer
-- *2019-2022(M.Eng.)*: Outstanding Graduate(2022), Tencent Scholarship(2021), Award of Honor for Graduate(2021, 2020)
-- *2015-2019(B.Eng.)*: Outstanding Engineer Scholarship (2018), Outstanding Student of Zhejiang University (2018, 2017, 2016), Second-Class Academic Scholarship of Zhejiang University (2017, 2016)
+- *Before 2022*: Tencent Scholarship, Huawei Elite Scholarship
 
 # 🎩 Educations
 - *2022.08 - (now)*, Ph.D. Student in College of Design and Engineering, National University of Singapore
