@@ -19,7 +19,7 @@ redirect_from:
 
 I am currently a final-year Ph.D student @ [xML-Lab](https://sites.google.com/view/xml-nus), National University of Singapore, under the supervision of [Prof.Xinchao Wang](https://sites.google.com/site/sitexinchaowang/). 
 Previously I obtained my master degree and bachelor degree in computer science from Zhejiang University, advised by [Prof.Weiming Lu](https://person.zju.edu.cn/en/lwm).
-I'm currently working as a PhD research intern @ [NVIDIA Fundamental Generative AI Research (GenAIR) group](https://research.nvidia.com/labs/genair/).
+I previously worked as a research intern @ [NVIDIA Fundamental Generative AI Research (GenAIR) group](https://research.nvidia.com/labs/genair/).
 I'm so honored to receive the [Google PhD Fellowship](https://research.google/programs-and-events/phd-fellowship/recipients/) in 2024.
 
 I'm interested in efficiency research for generative models, including:
@@ -30,18 +30,10 @@ I'm interested in efficiency research for generative models, including:
 
 🌿 Data-centric Compression, e.g., Data-free Distillation, Dataset Distillation
 
-<div style="background-color:rgb(236, 236, 236); padding: 10px; border-left: 5px solid rgb(2, 47, 92); margin-top: 15px; margin-bottom: 15px;">
-    <span style="color:rgb(34, 75, 141)"><strong>
-    I'm expected to graduate before June 2026 and am currently on the job market. 
-    I would greatly appreciate it if you could email me if you have any opportunities!
-    </strong>
-    </span>
-</div>
-
 
 # 🔥 News
+- *2025.09*: &nbsp;🌟 Three papers accepted at ICLR 2025. Congratulations to my collaborators!
 - *2025.09*: &nbsp;🌟 Three papers ([dKV-Cache](https://arxiv.org/abs/2505.15781), [Thinkless](https://arxiv.org/abs/2505.13379) and [VeriThinker](https://arxiv.org/abs/2505.17941)) accepted by NeurIPS'25 and one [survey](https://arxiv.org/abs/2504.10903) accepted by TMLR.
-- *2025.08*: &nbsp;⛵ Start the internship at NVIDIA
 - *2025.02*: &nbsp;🌟 Co-organize the [2nd workshop on Efficient Large Vision Models](https://sites.google.com/view/elvm/home), CVPR'25.
 - *2025.01*: &nbsp;🥳 Awarded KAUST Rising Stars 2025. 
 - *2024.11*: &nbsp;🥳 Awarded Google PhD Fellowship 
@@ -415,11 +407,11 @@ I'm interested in efficiency research for generative models, including:
 
 # 📋 Academic Service
 - Workshop: Co-organizor of 2nd workshop on Efficient Large Vision Models, CVPR'25
-- Conference: NeurIPS (25, 24, 23), EMNLP (25, 24, 23, 22, 21), ICML (25, 24, 23), ACL (25, 24, 23, 22, 21), ICCV (25), CVPR (25), ICLR (25, 24), AAAI (25, 24), ICASSP (25), ECCV (24), IJCAI (24), NAACL (24)
+- Conference: ACL (26,25, 24, 23, 22, 21), CVPR (26, 25), ICLR (26, 25, 24), NeurIPS (25, 24, 23), EMNLP (25, 24, 23, 22, 21), ICML (25, 24, 23), ICCV (25), AAAI (25, 24), ICASSP (25), ECCV (24), IJCAI (24), NAACL (24)
 - Journal: TPAMI, JVCI, TIP, TMLR
 
 # ☃️ Internships
-- *2025.08 - Current*, NVIDIA GenAIR, PhD Research Intern. Mentor: [Weili Nie](https://research.nvidia.com/labs/genair/author/weili-nie/) and [Arash Vahdat](https://research.nvidia.com/labs/genair/author/arash-vahdat/)
+- *2025.08 - 2026.01*, NVIDIA GenAIR, PhD Research Intern. Mentor: [Weili Nie](https://research.nvidia.com/labs/genair/author/weili-nie/) and [Arash Vahdat](https://research.nvidia.com/labs/genair/author/arash-vahdat/)
 - *2020.12 - 2021.6*, Alibaba DAMO Academy, Research Intern. Mentor: [Yong Jiang](https://jiangyong.site).
 - *2018.07 - 2018.11*, Netease Thunderfire UX, Data Analyst Intern. Mentor: Lei Xia.
 
