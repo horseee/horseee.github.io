@@ -32,7 +32,7 @@ I'm interested in efficiency research for generative models, including:
 
 
 # 🔥 News
-- *2025.09*: &nbsp;🌟 Three papers accepted at ICLR 2025. Congratulations to my collaborators!
+- *2025.09*: &nbsp;🌟 Three papers accepted at ICLR'26. Congratulations to my collaborators!
 - *2025.09*: &nbsp;🌟 Three papers ([dKV-Cache](https://arxiv.org/abs/2505.15781), [Thinkless](https://arxiv.org/abs/2505.13379) and [VeriThinker](https://arxiv.org/abs/2505.17941)) accepted by NeurIPS'25 and one [survey](https://arxiv.org/abs/2504.10903) accepted by TMLR.
 - *2025.02*: &nbsp;🌟 Co-organize the [2nd workshop on Efficient Large Vision Models](https://sites.google.com/view/elvm/home), CVPR'25.
 - *2025.01*: &nbsp;🥳 Awarded KAUST Rising Stars 2025. 
